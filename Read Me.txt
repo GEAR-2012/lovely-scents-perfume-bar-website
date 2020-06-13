@@ -29,3 +29,6 @@ v2.3
 v2.4
 - Modify to Online order possibility
 - Out of stock tracking
+
+v2.5
+- hide pictures behind text on mobile version
