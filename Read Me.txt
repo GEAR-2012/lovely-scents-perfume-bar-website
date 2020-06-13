@@ -1,0 +1,31 @@
+-----------     Version history     -----------
+
+v2.1
+- correcting the hamburger menu
+  /the menu container .menu was covering the content in the page
+  so it is hidden until the menu btn is clicked./
+  /after a menu btn click the menu was not disappearing./
+  • review and correct javascript files.
+- price tag pop up.
+  index.html line: 534-538, 736
+  style.css line: 730, 740-771, 1305, 1541
+  a new script file: special.js
+
+- lightbox gallery
+- extended price list
+- header logo link to home
+- correcting typing mistakes, like self-shelf, selves-shelves
+- horizontal rules <hr> in price list for better sectioning
+- correcting the welcome page font colour
+
+v2.2
+- scroll behavior modified to smooth.
+- price tag pop up expired so removed.
+
+v2.3
+- COVID-19 price list
+- No infill under COVID-19
+
+v2.4
+- Modify to Online order possibility
+- Out of stock tracking
