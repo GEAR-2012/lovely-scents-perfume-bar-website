@@ -32,3 +32,6 @@ v2.4
 
 v2.5
 - hide pictures behind text on mobile version
+- updated hamburger menu
+- updated CSS
+- new icons in footer

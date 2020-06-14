@@ -1,39 +1,54 @@
-//jshint esversion: 6
-
+/* Last modified 14 Jun 2020 by Sandor Tudja in Kemnay, Scotland */
+/* © Gear Web development 2020 */
 const getMenuBtn = document.querySelector(".container-menu-btn");
 const getMenuItems = document.querySelectorAll(".menu-item");
 const getMenu = document.querySelector(".menu");
-const x = window.innerWidth;
-
+const screenWidth = window.outerWidth;
+const menuAnimSpeed = 0.3; //animation speed in seconds
+const menuStiffness = 8; //change the number bigger to more stiffness
+const itemAnimDelay = menuAnimSpeed / menuStiffness; // item anim delay increment
+var fullAnimTime = menuAnimSpeed + itemAnimDelay * getMenuItems.length;
 let menuSwitch = false; //Is menu on?
+let hideTimer;
+let delayTimer;
 
-if (x < 1024) {
-  getMenu.classList.add("no-show");
+// mobile portrait & landscape & tablet portrait
+if (screenWidth <= 1024) {
+  setUpMenu();
+}
+
+function setUpMenu() {
   getMenuBtn.addEventListener("click", menuToggle);
-  for (let i = 0; i < getMenuItems.length; i++) {
-    getMenuItems[i].addEventListener("click", menuToggle);
-  }
+  getMenu.classList.add("no-show");
+  // set menu items to animate
+  getMenuItems.forEach((menuItem, i) => {
+    menuItem.addEventListener("click", menuToggle);
+    menuItem.style.transition = `all ${menuAnimSpeed}s ${
+      (i + 1) * itemAnimDelay
+    }s`;
+  });
 }
 
 function menuToggle() {
-  let speed = 0.3; //animation speed in seconds
-  let stiff = 8; //change the number bigger to more stiffness
-  let menuLength = getMenuItems.length;
+  let moveX = 15;
+  clearTimeout(hideTimer);
+  clearTimeout(delayTimer);
   if (menuSwitch === false) {
-    //Switch on
-    getMenu.classList.toggle("no-show");
-    for (i = 0; i < menuLength; i++) {
-      getMenuItems[i].style.transition = "all " + speed + "s " + i * (speed / stiff) + "s";
-      getMenuItems[i].style.transform = "skewY(-3deg) translateX(15px)";
-    }
+    // show
+    getMenu.classList.remove("no-show");
     menuSwitch = true;
   } else if (menuSwitch === true) {
-    //Switch off
-    getMenu.classList.toggle("no-show");
-    for (i = 0; i < menuLength; i++) {
-      getMenuItems[i].style.transition = "all " + speed + "s " + i * (speed / stiff) + "s";
-      getMenuItems[i].style.transform = "skewY(-3deg) translateX(210px)";
-    }
+    // hide
+    hideTimer = setTimeout(() => {
+      getMenu.classList.add("no-show");
+    }, fullAnimTime * 1000);
+    moveX = 210;
     menuSwitch = false;
   }
+  // Pull in & out all menu items
+  delayTimer = setTimeout(() => {
+    getMenuItems.forEach((menuItem) => {
+      menuItem.style.transform = `skewY(-3deg) translateX(${moveX}px)`;
+    });
+  }, 10);
 }
