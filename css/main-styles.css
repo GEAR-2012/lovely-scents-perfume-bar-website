@@ -2,28 +2,28 @@
 /* Last modified 14 Jun 2020 by Sandor Tudja in Kemnay, Scotland */
 /* © Gear Web development 2020 */
 :root {
-  /* ========================== VARIABLES ========================== */
-  /* ----------------- colors ----------------- */
-  /*--- gold ---*/
-  --base: rgb(174, 148, 83);
-  --baseOp1: rgba(174, 148, 83, 0.8);
-  --baseOp2: rgba(174, 148, 83, 0.9);
-  --baseOp3: rgba(174, 148, 83, 0.3);
-  /*--- dark ---*/
-  --dark: rgb(0, 0, 0);
-  --darkOp1: rgba(0, 0, 0, 0.8);
-  --darkOp2: rgba(0, 0, 0, 0.9);
-  --darkOp3: rgba(0, 0, 0, 0.3);
-  /*--- light ---*/
-  --light: rgb(255, 255, 255);
-  --lightOp1: rgba(255, 255, 255, 0.8);
-  --lightOp2: rgba(255, 255, 255, 0.9);
-  --lightOp3: rgba(255, 255, 255, 0.2);
-  /* ----------------- fonts ----------------- */
-  /* fancy one */
-  --fontHea: "Cinzel Decorative", cursive;
-  /* normal */
-  --fontPar: "Exo 2", sans-serif;
+    /* ========================== VARIABLES ========================== */
+    /* ----------------- colors ----------------- */
+    /*--- gold ---*/
+    --base: rgb(174, 148, 83);
+    --baseOp1: rgba(174, 148, 83, 0.8);
+    --baseOp2: rgba(174, 148, 83, 0.9);
+    --baseOp3: rgba(174, 148, 83, 0.3);
+    /*--- dark ---*/
+    --dark: rgb(0, 0, 0);
+    --darkOp1: rgba(0, 0, 0, 0.8);
+    --darkOp2: rgba(0, 0, 0, 0.9);
+    --darkOp3: rgba(0, 0, 0, 0.3);
+    /*--- light ---*/
+    --light: rgb(255, 255, 255);
+    --lightOp1: rgba(255, 255, 255, 0.8);
+    --lightOp2: rgba(255, 255, 255, 0.9);
+    --lightOp3: rgba(255, 255, 255, 0.2);
+    /* ----------------- fonts ----------------- */
+    /* fancy one */
+    --fontHea: "Cinzel Decorative", cursive;
+    /* normal */
+    --fontPar: "Exo 2", sans-serif;
 }
 
 /*
@@ -86,63 +86,63 @@ GLOBAL
 =================
  */
 * {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--base);
+    background-color: var(--base);
 }
 
 /* menu links to position the sections */
 .anchor {
-  display: block;
-  position: relative;
-  top: -65px;
-  visibility: hidden;
+    display: block;
+    position: relative;
+    top: -65px;
+    visibility: hidden;
 }
 
 /* menu link only the first one to position the welcome screen */
 #an1 {
-  top: -130px;
+    top: -130px;
 }
 
 .wrapper {
-  width: 100%;
-  margin: 0 auto;
-  background-color: var(--base);
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--base);
 }
 
 .wrapper .block {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 30px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px 8px;
 }
 
 .wrapper .block .frame {
-  width: 100%;
-  display: grid;
-  gap: 30px;
+    width: 100%;
+    display: grid;
+    gap: 14px;
 }
 
 hr {
-  border: none;
-  border-top: dotted;
-  border-width: 3px;
-  border-color: var(--baseOp1);
-  margin: 0 auto;
-  width: 90%;
+    border: none;
+    border-top: dotted;
+    border-width: 3px;
+    border-color: var(--baseOp1);
+    margin: 0 auto;
+    width: 90%;
 }
 
 .block.light {
-  background-color: var(--lightOp1);
+    background-color: var(--lightOp1);
 }
 
 .block.dark {
-  background-color: var(--darkOp1);
+    background-color: var(--darkOp1);
 }
 
 /*
@@ -150,43 +150,43 @@ buttons
 ---------------
  */
 .btn {
-  font-family: var(--fontPar);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 40px;
-  padding: 0 24px;
-  border-radius: 14px;
-  outline: none;
-  cursor: pointer;
-  box-shadow: 0 0 10px var(--darkOp1);
+    font-family: var(--fontPar);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 36px;
+    padding: 0 20px;
+    border-radius: 14px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--darkOp1);
 }
 
 .btn:active {
-  box-shadow: 0 0 1px var(--darkOp1);
+    box-shadow: 0 0 1px var(--darkOp1);
 }
 
 .btn.light {
-  color: var(--darkOp1);
-  border: 3px solid var(--lightOp1);
-  background-color: var(--baseOp1);
+    color: var(--darkOp1);
+    border: 3px solid var(--lightOp1);
+    background-color: var(--baseOp1);
 }
 
 .btn.light:active {
-  color: var(--dark);
-  border: 3px solid var(--light);
-  background-color: var(--base);
+    color: var(--dark);
+    border: 3px solid var(--light);
+    background-color: var(--base);
 }
 
 .btn.dark {
-  color: var(--lightOp1);
-  border: 3px solid var(--baseOp1);
-  background-color: var(--darkOp1);
+    color: var(--lightOp1);
+    border: 3px solid var(--baseOp1);
+    background-color: var(--darkOp1);
 }
 
 .btn.dark:active {
-  color: var(--light);
-  border: 3px solid var(--base);
-  background-color: var(--dark);
+    color: var(--light);
+    border: 3px solid var(--base);
+    background-color: var(--dark);
 }
 /* *********** */
 
@@ -195,59 +195,59 @@ font styles
 ---------------
  */
 .section-title {
-  font-family: var(--fontHea);
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 43px;
-  text-transform: capitalize;
-  text-align: center;
-  text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
-  opacity: 0.8;
+    font-family: var(--fontHea);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 43px;
+    text-transform: capitalize;
+    text-align: center;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
 }
 
 .section-title.light {
-  color: var(--lightOp1);
+    color: var(--lightOp1);
 }
 
 .section-title.dark {
-  color: var(--darkOp1);
+    color: var(--darkOp1);
 }
 
 .paragraph {
-  font-family: var(--fontPar);
-  font-size: 20px;
-  line-height: 29px;
-  text-align: left;
-  opacity: 0.8;
+    font-family: var(--fontPar);
+    font-size: 1.2rem;
+    line-height: 29px;
+    text-align: left;
+    opacity: 0.8;
 }
 
 .paragraph.light {
-  font-weight: 300;
-  color: var(--lightOp1);
+    font-weight: 300;
+    color: var(--lightOp1);
 }
 
 .paragraph.dark {
-  font-weight: 400;
-  color: var(--darkOp1);
+    font-weight: 400;
+    color: var(--darkOp1);
 }
 
 ::placeholder {
-  font-family: var(--fontPar);
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 32px;
-  color: var(--lightOp3);
-  text-align: center;
+    font-family: var(--fontPar);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--lightOp3);
+    text-align: center;
 }
 
 .input {
-  font-family: var(--fontPar);
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 32px;
-  color: var(--lightOp1);
-  text-align: center;
-  padding-bottom: 4px;
+    font-family: var(--fontPar);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--lightOp1);
+    text-align: center;
+    padding-bottom: 4px;
 }
 
 /*
@@ -256,41 +256,41 @@ HEADER
 =================
 */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 65px;
-  z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    z-index: 1;
 }
 
 .phone-menu-BG {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  fill: var(--darkOp2);
-  opacity: 0.8;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    fill: var(--darkOp2);
+    opacity: 0.8;
 }
 
 .logo-header {
-  fill-rule: evenodd;
-  clip-rule: evenodd;
-  stroke-linejoin: round;
-  stroke-miterlimit: 2;
-  fill: var(--base);
-  width: 50px;
-  position: absolute;
-  top: 5px;
-  left: calc(100vw / 2 - 25px);
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    stroke-linejoin: round;
+    stroke-miterlimit: 2;
+    fill: var(--base);
+    width: 50px;
+    position: absolute;
+    top: 5px;
+    left: calc(100vw / 2 - 25px);
 }
 
 .navigation {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-end;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
 }
 
 /*
@@ -298,71 +298,71 @@ menu button
 ---------------
  */
 .container-menu-btn {
-  position: absolute;
-  top: -16px;
-  right: -16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 56px;
-  height: 56px;
-  cursor: pointer;
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
 }
 
 .menu-btn {
-  width: 56px;
-  height: 56px;
+    width: 56px;
+    height: 56px;
 }
 
 .line {
-  vector-effect: non-scaling-stroke;
-  stroke: rgba(255, 255, 255, 0.9);
-  stroke-width: 4;
-  stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+    stroke: rgba(255, 255, 255, 0.9);
+    stroke-width: 4;
+    stroke-linecap: round;
 }
 
 .circle {
-  vector-effect: non-scaling-stroke;
-  opacity: 0;
-  stroke: rgba(255, 255, 255, 0.9);
-  stroke-width: 4;
-  fill: none;
+    vector-effect: non-scaling-stroke;
+    opacity: 0;
+    stroke: rgba(255, 255, 255, 0.9);
+    stroke-width: 4;
+    fill: none;
 }
 
 /* *********** */
 .menu {
-  position: absolute;
-  top: 46px;
-  right: 1px;
+    position: absolute;
+    top: 46px;
+    right: 1px;
 }
 
 /* JavaScript handle this class */
 .menu.no-show {
-  display: none;
+    display: none;
 }
 
 .menu-item {
-  margin-top: 1px;
-  box-sizing: border-box;
-  width: 187px;
-  border: 0.5px solid var(--dark);
-  border-radius: 5px;
-  background-color: var(--light);
-  box-shadow: 0 0 8px var(--darkOp1);
-  transform: skewY(-3deg) translateX(210px);
+    margin-top: 1px;
+    box-sizing: border-box;
+    width: 187px;
+    border: 0.5px solid var(--dark);
+    border-radius: 5px;
+    background-color: var(--light);
+    box-shadow: 0 0 8px var(--darkOp1);
+    transform: skewY(-3deg) translateX(210px);
 }
 
 .menu-item a {
-  display: block;
-  list-style: none;
-  font-family: var(--fontPar);
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 36px;
-  text-transform: capitalize;
-  color: var(--darkOp2);
-  padding-left: 20px;
-  transition: all 0.2s;
+    display: block;
+    list-style: none;
+    font-family: var(--fontPar);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: var(--darkOp2);
+    padding-left: 20px;
+    transition: all 0.2s;
 }
 
 /*
@@ -372,108 +372,108 @@ HOME / WELCOME
 */
 
 .welcome {
-  height: 100vh;
+    height: 100vh;
 }
 
 @keyframes moveCap {
-  25% {
-    transform: translateY(-20px);
-  }
+    25% {
+        transform: translateY(-20px);
+    }
 
-  75% {
-    transform: translateY(10px);
-  }
+    75% {
+        transform: translateY(10px);
+    }
 }
 
 .work .bottle-head {
-  animation: moveCap 3s infinite;
+    animation: moveCap 3s infinite;
 }
 
 @keyframes scaleFlames {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
 
-  25% {
-    transform: scale(0);
-    opacity: 1;
-  }
+    25% {
+        transform: scale(0);
+        opacity: 1;
+    }
 
-  99% {
-    transform: scale(1.1);
-    opacity: 0;
-  }
+    99% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
 
-  100% {
-    transform: scale(0);
-    opacity: 0;
-  }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
 }
 
 .work .flames {
-  animation: scaleFlames 3s infinite;
-  transform-origin: 166px 56px;
+    animation: scaleFlames 3s infinite;
+    transform-origin: 166px 56px;
 }
 
 .flame {
-  fill-opacity: 0.5;
+    fill-opacity: 0.5;
 }
 
 .welcome .frame {
-  box-sizing: border-box;
-  height: 100%;
-  padding: 90px 0 40px;
-  align-content: space-between;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 50px 0 0;
+    align-content: space-between;
 }
 
 .welcome h1,
 .welcome h2,
 .welcome h3 {
-  color: var(--darkOp1);
-  font-family: var(--fontHea);
-  text-transform: uppercase;
-  text-align: center;
-  text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
-  opacity: 0.8;
+    color: var(--darkOp1);
+    font-family: var(--fontHea);
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
 }
 
 .welcome h1 {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 37px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37px;
 }
 
 .welcome h2 {
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 37px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 37px;
 }
 
 .welcome h3 {
-  font-size: 34px;
-  font-weight: 400;
-  line-height: 46px;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 46px;
 }
 
 .logo-container {
-  width: 100%;
+    width: 100%;
 }
 
 .logo-main {
-  width: 100%;
-  margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .logo {
-  fill-rule: evenodd;
-  clip-rule: evenodd;
-  stroke-linejoin: round;
-  stroke-miterlimit: 2;
-  fill: var(--base);
-  width: 200px;
-  margin-left: 71px;
-  transition: all 1.5s ease-in-out;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    stroke-linejoin: round;
+    stroke-miterlimit: 2;
+    fill: var(--base);
+    width: 200px;
+    margin-left: 86px;
+    transition: all 1.5s ease-in-out;
 }
 
 /*
@@ -485,32 +485,32 @@ THE PERFUME
 }
 
 .the-perfume .section-title {
-  display: flex;
-  flex-flow: column nowrap;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .the-perfume .container {
 }
 
 .the-perfume .container .paragraph {
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 40px;
+    width: 94%;
+    margin: 0 auto;
+    padding-top: 40px;
 }
 
 .the-perfume .container .paragraph span + span {
-  display: block;
-  padding-top: 20px;
+    display: block;
+    padding-top: 20px;
 }
 
 .the-perfume .pictures {
-  width: 100%;
-  height: 100%;
-  display: none;
+    width: 100%;
+    height: 100%;
+    display: none;
 }
 
 .the-perfume .pictures img {
-  width: 100%;
+    width: 100%;
 }
 
 /*
@@ -522,30 +522,30 @@ PACKAGING
 }
 
 .packaging .container {
-  /* position: relative;
+    /* position: relative;
   width: 100%;
   padding-bottom: 26px; */
 }
 
 .packaging .container .paragraph {
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 40px;
+    width: 94%;
+    margin: 0 auto;
+    padding-top: 40px;
 }
 
 .packaging .container .paragraph span + span {
-  display: block;
-  padding-top: 20px;
+    display: block;
+    padding-top: 20px;
 }
 
 .packaging .pictures {
-  width: 100%;
-  height: 100%;
-  display: none;
+    width: 100%;
+    height: 100%;
+    display: none;
 }
 
 .packaging .pictures img {
-  width: 100%;
+    width: 100%;
 }
 
 /*
@@ -557,68 +557,68 @@ PERFUME LIST
 }
 
 .btn-container-parlist {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .table.parlist {
-  font-family: var(--fontPar);
-  text-align: left;
-  color: var(--baseOp1);
+    font-family: var(--fontPar);
+    text-align: left;
+    color: var(--baseOp1);
 }
 
 .table.parlist th:nth-of-type(2),
 .table.parlist th:nth-of-type(4),
 .table.parlist td:nth-of-type(2),
 .table.parlist td:nth-of-type(4) {
-  display: none;
+    display: none;
 }
 
 .table.parlist th:first-child,
 .table.parlist td:first-child,
 .table.parlist caption {
-  padding-left: 4px;
+    padding-left: 4px;
 }
 
 /* selecting all columns but the firs one */
 .table.parlist th + th,
 .table.parlist td + td {
-  padding-left: 16px;
+    padding-left: 16px;
 }
 
 .table.parlist,
 .table.parlist th,
 .table.parlist td {
-  border-bottom: 1px solid var(--baseOp3);
-  border-collapse: collapse;
+    border-bottom: 1px solid var(--baseOp3);
+    border-collapse: collapse;
 }
 
 .table.parlist caption {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 31px;
-  text-align: left;
-  margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31px;
+    text-align: left;
+    margin-bottom: 30px;
 }
 
 .table.parlist th {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 28px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
 }
 
 .table.parlist td {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
-  padding-top: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-top: 4px;
 }
 
 .unavailable {
-  color: grey;
-  opacity: 0.4;
-  text-decoration: line-through;
+    color: grey;
+    opacity: 0.4;
+    text-decoration: line-through;
 }
 
 /*
@@ -630,101 +630,109 @@ PRICE LIST
 }
 
 .btn-container-pricelist {
-  display: none; /* flex in wider screen */
-  justify-content: space-between;
-  width: 100%;
+    display: none; /* flex in wider screen */
+    justify-content: space-between;
+    width: 100%;
 }
 
 .table.pricelist {
-  font-family: var(--fontPar);
-  text-align: right;
-  color: var(--darkOp1);
+    font-family: var(--fontPar);
+    text-align: right;
+    color: var(--darkOp1);
 }
 
 .table.pricelist td:first-child {
-  padding-left: 4px;
+    padding-left: 4px;
 }
 
 /* selecting all columns but the firs one */
 .table.pricelist td + td {
-  padding-left: 18px;
+    padding-left: 8px;
 }
 
 .table.pricelist td:last-child {
-  padding-right: 4px;
+    padding-right: 4px;
 }
 
 .table.pricelist,
 .table.pricelist td {
-  border-bottom: 1px solid var(--darkOp3);
-  border-collapse: collapse;
+    border-bottom: 1px solid var(--darkOp3);
+    border-collapse: collapse;
 }
 
 .table.pricelist caption {
-  font-size: 22px;
-  font-weight: 500;
-  padding-bottom: 12px;
-  text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 12px;
+    text-align: center;
 }
 
 .table.pricelist td {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 20px;
-  padding-top: 4px;
-  white-space: nowrap;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 4px;
+    white-space: nowrap;
 }
 
 .table.pricelist.init td:nth-of-type(3),
 .table.pricelist.ref td:nth-of-type(3),
 .table.pricelist.discount td:nth-of-type(2),
 .table.pricelist.gift-packaging td:nth-of-type(2) {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 /* COVID-19 */
 .table.pricelist td {
-  font-size: 10px;
+    font-size: 11px;
 }
 /* new prices */
 .table.pricelist.init td:nth-child(3) {
-  position: relative;
-  font-weight: normal;
+    position: relative;
+    font-weight: normal;
 }
 
 .table.pricelist.init td:nth-child(3):before {
-  position: absolute;
-  bottom: 8px;
-  left: 15px;
-  content: "";
-  width: 84%;
-  border-bottom: 2px solid red;
-  transform: skewY(-10deg);
+    position: absolute;
+    bottom: 8px;
+    left: 11px;
+    content: "";
+    width: 84%;
+    border-bottom: 2px solid red;
+    transform: skewY(-10deg);
 }
 
 .table.pricelist.init td:last-child {
-  font-weight: bold;
+    font-weight: bold;
 }
 /* no refill service */
 .table.pricelist.ref {
-  position: relative;
-  color: rgba(133, 133, 133, 0.3);
+    position: relative;
+    color: rgba(133, 133, 133, 0.3);
 }
 
 .table.pricelist.ref:before {
-  content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus (COVID-19) measurements.";
-  white-space: pre;
-  text-align: center;
-  position: absolute;
-  top: 66px;
-  left: -6px;
-  font-size: 12px;
-  line-height: 1.4rem;
-  padding: 8px 14px;
-  color: rgb(17, 14, 9);
-  border: 2px solid rgb(58, 58, 58);
-  border-radius: 10px;
-  background-color: rgb(255, 253, 165);
+    content: "Sorry.\aThis service temporarily unavailable\a because of the\a Coronavirus (COVID-19)\a measurements.";
+    white-space: pre;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    font-size: 12px;
+    line-height: 1.4rem;
+    padding: 8px 26px;
+    color: rgb(17, 14, 9);
+    border: 2px solid rgb(58, 58, 58);
+    border-radius: 10px;
+    background-color: rgb(255, 253, 165);
+}
+
+.table.pricelist.gift-packaging td:first-of-type {
+    padding-left: 50px;
+}
+
+.table.pricelist.gift-packaging td:last-of-type {
+    padding-right: 80px;
 }
 /* END OF COVID-19 */
 
@@ -734,7 +742,7 @@ GALLERY
 =================
 */
 .gallery {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 /*
@@ -748,20 +756,20 @@ ORDER
 =================
 */
 .order {
-  color: var(--base);
+    color: var(--base);
 }
 
 .order .frame p {
-  text-align: center;
+    text-align: center;
 }
 
 .order .frame .phone {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .order .frame span {
-  font-size: 1rem;
-  font-style: italic;
+    font-size: 1rem;
+    font-style: italic;
 }
 
 /*
@@ -770,36 +778,38 @@ CONTACT
 =================
 */
 .contact {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .contact .form {
-  display: grid;
-  gap: 20px;
-  justify-items: center;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    justify-items: center;
 }
 
 .contact input {
-  width: 100%;
-  outline: none;
-  border: none;
-  border-bottom: 2px solid var(--baseOp1);
-  background: none;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--baseOp1);
+    background: none;
 }
 
 .contact textarea {
-  width: 100%;
-  min-height: 177px;
-  max-height: 800px;
-  outline: none;
-  border: 2px solid var(--baseOp1);
-  border-radius: 14px;
-  resize: vertical;
-  background: none;
+    width: 100%;
+    min-height: 177px;
+    max-height: 800px;
+    outline: none;
+    border: 2px solid var(--baseOp1);
+    border-radius: 14px;
+    resize: vertical;
+    background: none;
 }
 
 .contact .btn {
-  padding: 0 18px;
+    padding: 0 18px;
 }
 
 /*
@@ -808,27 +818,26 @@ FOOTER
 =================
 */
 footer {
-  padding: 20px 10px;
-  background-color: var(--darkOp2);
-  color: var(--lightOp1);
-  display: grid;
-  row-gap: 12px;
-  column-gap: 30px;
-  grid-template-columns: 30px auto;
-  grid-template-rows: repeat(3, 30px);
-  align-items: center;
+    padding: 20px 10px;
+    background-color: var(--darkOp2);
+    color: var(--lightOp1);
+    display: grid;
+    gap: 12px 18px;
+    grid-template-columns: 26px auto;
+    grid-template-rows: repeat(3, 26px);
+    align-items: center;
 }
 
 i {
-  font-size: 30px;
-  justify-self: center;
+    font-size: 26px;
+    justify-self: center;
 }
 
 footer a {
-  font-family: var(--fontPar);
-  font-size: 20px;
-  font-weight: 300;
-  color: var(--lightOp1);
+    font-family: var(--fontPar);
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--lightOp1);
 }
 
 /*
@@ -843,103 +852,103 @@ footer a {
 *****************************   TABLET PORTRAIT   *****************************
 */
 @media only screen and (min-width: 768px) and (orientation: portrait) {
-  /*
+    /*
   =================
   GLOBAL
   =================
    */
 
-  hr {
-    border-width: 8px;
-    margin: 60px auto 0;
-  }
+    hr {
+        border-width: 8px;
+        margin: 60px auto 0;
+    }
 
-  hr:nth-of-type(1) {
-    display: none;
-  }
+    hr:nth-of-type(1) {
+        display: none;
+    }
 
-  /*
+    /*
   font styles
   ---------------
    */
-  .section-title {
-    font-size: 52px;
-    line-height: 70px;
-    padding-top: 50px;
-  }
+    .section-title {
+        font-size: 52px;
+        line-height: 70px;
+        padding-top: 50px;
+    }
 
-  .paragraph {
-    font-size: 24px;
-    line-height: 34px;
-  }
+    .paragraph {
+        font-size: 24px;
+        line-height: 34px;
+    }
 
-  ::placeholder {
-    font-size: 28px;
-    line-height: 34px;
-  }
+    ::placeholder {
+        font-size: 28px;
+        line-height: 34px;
+    }
 
-  .input {
-    font-size: 28px;
-    line-height: 34px;
-  }
+    .input {
+        font-size: 28px;
+        line-height: 34px;
+    }
 
-  /*
+    /*
   buttons
   ---------------
    */
-  .btn {
-    font-size: 24px;
-    line-height: 50px;
-    padding: 0 34px 0 34px;
-  }
+    .btn {
+        font-size: 24px;
+        line-height: 50px;
+        padding: 0 34px 0 34px;
+    }
 
-  /*
+    /*
   =================
   HEADER
   =================
   */
-  header {
-    /* background-color: var(--darkOp2); */
-  }
+    header {
+        /* background-color: var(--darkOp2); */
+    }
 
-  .phone-menu-BG {
-    /* display: none; */
-  }
+    .phone-menu-BG {
+        /* display: none; */
+    }
 
-  .logo-header {
-    /* top: 7.5px;
+    .logo-header {
+        /* top: 7.5px;
     left: 28px; */
-  }
+    }
 
-  .navigation {
-    /* position: absolute;
+    .navigation {
+        /* position: absolute;
     top: 0;
     left: 100px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start; */
-  }
+    }
 
-  /*
+    /*
   menu button
   ---------------
    */
-  .container-menu-btn {
-    /* display: none; */
-  }
-  /* *********** */
+    .container-menu-btn {
+        /* display: none; */
+    }
+    /* *********** */
 
-  .menu {
-    /* top: 17.5px;
+    .menu {
+        /* top: 17.5px;
     left: 0px;
     width: 650px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between; */
-  }
+    }
 
-  .menu-item {
-    /* display: block;
+    .menu-item {
+        /* display: block;
     margin: 0;
     box-sizing: content-box;
     width: auto;
@@ -947,347 +956,347 @@ footer a {
     background: none;
     box-shadow: none;
     transform: skewY(0deg) translateX(0px); */
-  }
+    }
 
-  .menu-item a {
-    /* font-size: 18px;
+    .menu-item a {
+        /* font-size: 18px;
     line-height: 32px;
     color: var(--lightOp2);
     padding: 0 4px;
     border-radius: 5px;
     transition: all 0.6s ease; */
-    /*  */
-  }
+        /*  */
+    }
 
-  .menu-item a:hover {
-    /* background-color: var(--lightOp2);
+    .menu-item a:hover {
+        /* background-color: var(--lightOp2);
     color: var(--darkOp2); */
-  }
+    }
 
-  .menu-item:hover {
-    /* box-shadow: none;
+    .menu-item:hover {
+        /* box-shadow: none;
     transform: skewY(0deg) translateX(0px) !important; */
-  }
+    }
 
-  /*
+    /*
   =================
   HOME / WELCOME
   =================
   */
 
-  .welcome {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
+    .welcome {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 
-  .welcome h3:nth-child(2) {
-    text-align: left;
-    padding-top: 0;
-    margin-left: 47px;
-    align-self: flex-start;
-  }
+    .welcome h3:nth-child(2) {
+        text-align: left;
+        padding-top: 0;
+        margin-left: 47px;
+        align-self: flex-start;
+    }
 
-  .welcome h1,
-  .welcome h2 {
-    font-size: 34px;
-    line-height: 46px;
-    text-align: center;
-    margin-top: 18px;
-  }
+    .welcome h1,
+    .welcome h2 {
+        font-size: 34px;
+        line-height: 46px;
+        text-align: center;
+        margin-top: 18px;
+    }
 
-  .welcome h3:last-child {
-    padding-top: 0;
-    text-align: right;
-    margin-right: 47px;
-    align-self: flex-end;
-  }
+    .welcome h3:last-child {
+        padding-top: 0;
+        text-align: right;
+        margin-right: 47px;
+        align-self: flex-end;
+    }
 
-  .welcome h1 {
-    font-weight: 700;
-  }
+    .welcome h1 {
+        font-weight: 700;
+    }
 
-  .welcome h2 {
-    font-weight: 400;
-  }
+    .welcome h2 {
+        font-weight: 400;
+    }
 
-  .welcome h3 {
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 81px;
-  }
+    .welcome h3 {
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 81px;
+    }
 
-  .logo-container {
-    width: fit-content;
-    margin: 0;
-  }
+    .logo-container {
+        width: fit-content;
+        margin: 0;
+    }
 
-  .logo-main {
-    margin-left: 54px;
-  }
+    .logo-main {
+        margin-left: 54px;
+    }
 
-  .logo {
-    width: 205px;
-  }
+    .logo {
+        width: 205px;
+    }
 
-  /*
+    /*
   =================
   THE PERFUME
   =================
   */
-  /* .the-perfume .section-title {
+    /* .the-perfume .section-title {
     width: fit-content;
     margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
   } */
 
-  /* .the-perfume .section-title span {
+    /* .the-perfume .section-title span {
     padding: 0 10px;
   } */
 
-  .the-perfume .container {
-    position: static;
-    width: 90%;
-    margin: 50px auto;
-    display: grid;
-    gap: 30px;
-    grid-template-columns: 1fr 0.6fr;
-    padding-bottom: 0;
-  }
+    .the-perfume .container {
+        position: static;
+        width: 90%;
+        margin: 50px auto;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 0.6fr;
+        padding-bottom: 0;
+    }
 
-  .the-perfume .container .paragraph {
-    margin: 0;
-    padding-top: 0;
-  }
+    .the-perfume .container .paragraph {
+        margin: 0;
+        padding-top: 0;
+    }
 
-  .the-perfume .container .paragraph span + span {
-    display: block;
-    padding-top: 20px;
-  }
+    .the-perfume .container .paragraph span + span {
+        display: block;
+        padding-top: 20px;
+    }
 
-  .the-perfume .pictures {
-    /* position: static; */
-    display: grid;
-    align-content: space-between;
-    /* gap: 20px; */
-  }
+    .the-perfume .pictures {
+        /* position: static; */
+        display: grid;
+        align-content: space-between;
+        /* gap: 20px; */
+    }
 
-  /* .the-perfume .pictures img {
+    /* .the-perfume .pictures img {
     margin: 6px;
   } */
 
-  /* .the-perfume .pictures img:nth-of-type(2),
+    /* .the-perfume .pictures img:nth-of-type(2),
   .the-perfume .pictures img:nth-of-type(3) {
     display: none;
   } */
 
-  .the-perfume .pictures img:nth-of-type(1) {
-    order: 1;
-  }
+    .the-perfume .pictures img:nth-of-type(1) {
+        order: 1;
+    }
 
-  .the-perfume .pictures img:nth-of-type(4) {
-    order: -1;
-  }
+    .the-perfume .pictures img:nth-of-type(4) {
+        order: -1;
+    }
 
-  /*
+    /*
   =================
   PACKAGING
   =================
   */
-  .packaging .container {
-    position: static;
-    width: 95%;
-    margin: 50px auto;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-  }
+    .packaging .container {
+        position: static;
+        width: 95%;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+    }
 
-  .packaging .container .paragraph {
-    width: 49%;
-    margin: 0;
-    padding-top: 0;
-    order: 1;
-  }
+    .packaging .container .paragraph {
+        width: 49%;
+        margin: 0;
+        padding-top: 0;
+        order: 1;
+    }
 
-  .packaging .container .paragraph span + span {
-    display: block;
-    padding-top: 20px;
-  }
+    .packaging .container .paragraph span + span {
+        display: block;
+        padding-top: 20px;
+    }
 
-  .packaging .pictures {
-    position: static;
-    width: 49%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    opacity: 1;
-    overflow: visible;
-  }
+    .packaging .pictures {
+        position: static;
+        width: 49%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        opacity: 1;
+        overflow: visible;
+    }
 
-  .packaging .pictures img {
-    margin: 6px;
-  }
+    .packaging .pictures img {
+        margin: 6px;
+    }
 
-  .packaging .pictures img:nth-of-type(2) {
-    display: none;
-  }
+    .packaging .pictures img:nth-of-type(2) {
+        display: none;
+    }
 
-  /*
+    /*
   =================
   PERFUME LIST
   =================
   */
-  .btn-container-parlist {
-    width: 434px;
-    margin: 48px auto 0;
-  }
+    .btn-container-parlist {
+        width: 434px;
+        margin: 48px auto 0;
+    }
 
-  .table.parlist {
-    width: 94%;
-    margin: 52px auto 0;
-  }
+    .table.parlist {
+        width: 94%;
+        margin: 52px auto 0;
+    }
 
-  .table.parlist th:nth-of-type(2),
-  .table.parlist th:nth-of-type(4),
-  .table.parlist td:nth-of-type(2),
-  .table.parlist td:nth-of-type(4) {
-    display: table-cell;
-  }
+    .table.parlist th:nth-of-type(2),
+    .table.parlist th:nth-of-type(4),
+    .table.parlist td:nth-of-type(2),
+    .table.parlist td:nth-of-type(4) {
+        display: table-cell;
+    }
 
-  .table.parlist caption {
-    font-size: 35px;
-    line-height: 41px;
-  }
+    .table.parlist caption {
+        font-size: 35px;
+        line-height: 41px;
+    }
 
-  .table.parlist th {
-    font-size: 24px;
-    line-height: 36px;
-    padding-top: 5px;
-  }
+    .table.parlist th {
+        font-size: 24px;
+        line-height: 36px;
+        padding-top: 5px;
+    }
 
-  .table.parlist td {
-    font-size: 20px;
-    line-height: 30px;
-    padding-top: 5px;
-  }
+    .table.parlist td {
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 5px;
+    }
 
-  /*
+    /*
   =================
   PRICE LIST
   =================
   */
-  .btn-container-pricelist {
-    /* display: flex;
+    .btn-container-pricelist {
+        /* display: flex;
     justify-content: space-between;
     width: 90%;
     margin: 50px auto 0; */
-  }
+    }
 
-  .table.pricelist {
-    margin: 60px auto 0;
-  }
+    .table.pricelist {
+        margin: 60px auto 0;
+    }
 
-  /* selecting all columns but the firs one */
-  .table.pricelist td + td {
-    padding-left: 40px;
-  }
+    /* selecting all columns but the firs one */
+    .table.pricelist td + td {
+        padding-left: 40px;
+    }
 
-  .table.pricelist caption {
-    font-size: 46px;
-    line-height: 60px;
-    margin-bottom: 18px;
-  }
+    .table.pricelist caption {
+        font-size: 46px;
+        line-height: 60px;
+        margin-bottom: 18px;
+    }
 
-  .table.pricelist.init caption,
-  .table.pricelist.ref caption {
-    display: none;
-  }
+    .table.pricelist.init caption,
+    .table.pricelist.ref caption {
+        display: none;
+    }
 
-  .table.pricelist td {
-    font-size: 24px;
-    line-height: 50px;
-    padding-top: 10px;
-  }
+    .table.pricelist td {
+        font-size: 24px;
+        line-height: 50px;
+        padding-top: 10px;
+    }
 
-  #info .popup {
-    width: 274px;
-    font-size: 0.8em;
-    top: -50px;
-    right: 60px;
-  }
+    #info .popup {
+        width: 274px;
+        font-size: 0.8em;
+        top: -50px;
+        right: 60px;
+    }
 
-  /* COVID-19 */
+    /* COVID-19 */
 
-  /* new prices */
-  .table.pricelist.init td:nth-child(3):before {
-    bottom: 20px;
-    left: 32px;
-    width: 84%;
-    border-bottom: 3px solid red;
-  }
+    /* new prices */
+    .table.pricelist.init td:nth-child(3):before {
+        bottom: 20px;
+        left: 32px;
+        width: 84%;
+        border-bottom: 3px solid red;
+    }
 
-  /* no refill service */
-  .table.pricelist.ref:before {
-    top: 80px;
-    left: -166px;
-    font-size: 1.4rem;
-    line-height: 3.4rem;
-    padding: 28px 50px;
-    border: 3px solid rgb(58, 58, 58);
-    border-radius: 10px;
-  }
-  /* END OF COVID-19 */
+    /* no refill service */
+    .table.pricelist.ref:before {
+        top: 80px;
+        left: -166px;
+        font-size: 1.4rem;
+        line-height: 3.4rem;
+        padding: 28px 50px;
+        border: 3px solid rgb(58, 58, 58);
+        border-radius: 10px;
+    }
+    /* END OF COVID-19 */
 
-  /*
+    /*
   =================
   GALLERY
   =================
   */
-  .gallery .container {
-    width: 912px;
-  }
+    .gallery .container {
+        width: 912px;
+    }
 
-  /*
+    /*
   =================
   CONTACT
   =================
   */
-  .contact .form {
-    width: 526px;
-    margin: 50px auto 0;
-  }
+    .contact .form {
+        width: 526px;
+        margin: 50px auto 0;
+    }
 
-  .contact input {
-    margin-bottom: 16px;
-    padding-bottom: 10px;
-  }
+    .contact input {
+        margin-bottom: 16px;
+        padding-bottom: 10px;
+    }
 
-  .contact textarea {
-    margin: 34px 0 50px;
-    padding-top: 10px;
-  }
+    .contact textarea {
+        margin: 34px 0 50px;
+        padding-top: 10px;
+    }
 
-  .contact .btn {
-    padding: 3px 28px;
-  }
+    .contact .btn {
+        padding: 3px 28px;
+    }
 
-  /*
+    /*
   =================
   FOOTER
   =================
   */
-  footer {
-    justify-content: flex-start;
-  }
+    footer {
+        justify-content: flex-start;
+    }
 
-  footer .container {
-    margin-left: 40px;
-  }
+    footer .container {
+        margin-left: 40px;
+    }
 }
 /*
 *****************************   NEW MEDIA QUERY   *****************************
@@ -1301,221 +1310,221 @@ footer a {
 *****************************   DESKTOP/LAPTOP   *****************************
 */
 @media only screen and (min-width: 1300px) and (orientation: landscape) {
-  /*
+    /*
   =================
   GLOBAL
   =================
    */
-  .wrapper {
-    width: 1280px;
-  }
+    .wrapper {
+        width: 1280px;
+    }
 
-  hr {
-    border-width: 8px;
-    margin: 60px auto 0;
-  }
+    hr {
+        border-width: 8px;
+        margin: 60px auto 0;
+    }
 
-  /*
+    /*
   font styles
   ---------------
    */
-  .section-title {
-    font-size: 64px;
-    line-height: 86px;
-    padding-top: 60px;
-  }
+    .section-title {
+        font-size: 64px;
+        line-height: 86px;
+        padding-top: 60px;
+    }
 
-  /*
+    /*
   =================
   HEADER
   =================
   */
-  .navigation {
-    left: 200px;
-  }
+    .navigation {
+        left: 200px;
+    }
 
-  .menu {
-    width: 960px;
-  }
+    .menu {
+        width: 960px;
+    }
 
-  /*
+    /*
   =================
   HOME / WELCOME
   =================
   */
-  .welcome {
-    box-sizing: border-box;
-    padding-top: 100px;
-    padding-bottom: 60px;
-  }
+    .welcome {
+        box-sizing: border-box;
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
 
-  .welcome h3:nth-child(2) {
-    margin-left: 55px;
-  }
+    .welcome h3:nth-child(2) {
+        margin-left: 55px;
+    }
 
-  .welcome h1,
-  .welcome h2 {
-    font-size: 42px;
-    line-height: 57px;
-    margin-top: 20px;
-  }
+    .welcome h1,
+    .welcome h2 {
+        font-size: 42px;
+        line-height: 57px;
+        margin-top: 20px;
+    }
 
-  .welcome h3:last-child {
-    margin-right: 55px;
-  }
+    .welcome h3:last-child {
+        margin-right: 55px;
+    }
 
-  .welcome h3 {
-    font-size: 64px;
-    line-height: 86px;
-  }
+    .welcome h3 {
+        font-size: 64px;
+        line-height: 86px;
+    }
 
-  .logo-main {
-    margin-left: 74px;
-  }
+    .logo-main {
+        margin-left: 74px;
+    }
 
-  .logo {
-    width: 226px;
-  }
+    .logo {
+        width: 226px;
+    }
 
-  /*
+    /*
   =================
   THE PERFUME
   =================
   */
 
-  /* .the-perfume .section-title {
+    /* .the-perfume .section-title {
     width: fit-content;
     margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
   } */
 
-  /* .the-perfume .section-title span {
+    /* .the-perfume .section-title span {
     padding: 0 10px;
   } */
 
-  .the-perfume .container {
-    width: 92%;
-    margin: 54px auto;
-  }
+    .the-perfume .container {
+        width: 92%;
+        margin: 54px auto;
+    }
 
-  .the-perfume .container .paragraph {
-    width: 48%;
-  }
+    .the-perfume .container .paragraph {
+        width: 48%;
+    }
 
-  .the-perfume .pictures {
-    width: 48%;
-    height: 720px;
-  }
+    .the-perfume .pictures {
+        width: 48%;
+        height: 720px;
+    }
 
-  .the-perfume .pictures img {
-    margin: 0;
-  }
+    .the-perfume .pictures img {
+        margin: 0;
+    }
 
-  .the-perfume .pictures img:nth-of-type(5) {
-    display: none;
-  }
+    .the-perfume .pictures img:nth-of-type(5) {
+        display: none;
+    }
 
-  /*
+    /*
   =================
   PACKAGING
   =================
   */
-  .packaging .container {
-    width: 92%;
-    margin: 54px auto;
-  }
+    .packaging .container {
+        width: 92%;
+        margin: 54px auto;
+    }
 
-  .packaging .container .paragraph {
-    width: 48%;
-  }
+    .packaging .container .paragraph {
+        width: 48%;
+    }
 
-  .packaging .pictures {
-    width: 48%;
-  }
+    .packaging .pictures {
+        width: 48%;
+    }
 
-  .packaging .pictures img {
-    margin: 0;
-  }
+    .packaging .pictures img {
+        margin: 0;
+    }
 
-  .packaging .pictures img:nth-of-type(3) {
-    display: none;
-  }
+    .packaging .pictures img:nth-of-type(3) {
+        display: none;
+    }
 
-  /*
+    /*
   =================
   PERFUME LIST
   =================
   */
-  .table.parlist {
-    width: 1200px;
-  }
+    .table.parlist {
+        width: 1200px;
+    }
 
-  .table.parlist caption {
-    font-size: 41px;
-    line-height: 46px;
-  }
+    .table.parlist caption {
+        font-size: 41px;
+        line-height: 46px;
+    }
 
-  .table.parlist th {
-    font-size: 32px;
-    line-height: 46px;
-    padding-top: 6px;
-  }
+    .table.parlist th {
+        font-size: 32px;
+        line-height: 46px;
+        padding-top: 6px;
+    }
 
-  .table.parlist td {
-    font-size: 32px;
-    line-height: 46px;
-    padding-top: 6px;
-  }
+    .table.parlist td {
+        font-size: 32px;
+        line-height: 46px;
+        padding-top: 6px;
+    }
 
-  /*
+    /*
   =================
   PRICE LIST
   =================
   */
-  .btn-container-pricelist {
-    width: 983px;
-  }
+    .btn-container-pricelist {
+        width: 983px;
+    }
 
-  /* selecting all columns but the firs one */
-  .table.pricelist td + td {
-    padding-left: 44px;
-  }
+    /* selecting all columns but the firs one */
+    .table.pricelist td + td {
+        padding-left: 44px;
+    }
 
-  .table.pricelist td {
-    font-size: 41px;
-    line-height: 52px;
-    padding-top: 10px;
-  }
+    .table.pricelist td {
+        font-size: 41px;
+        line-height: 52px;
+        padding-top: 10px;
+    }
 
-  .table.pricelist caption {
-    font-size: 56px;
-    line-height: 70px;
-    margin-bottom: 24px;
-  }
+    .table.pricelist caption {
+        font-size: 56px;
+        line-height: 70px;
+        margin-bottom: 24px;
+    }
 
-  /* COVID-19 */
-  /* new prices */
-  .table.pricelist.init td:nth-child(3):before {
-    left: 36px;
-    width: 88%;
-    border-bottom: 4px solid red;
-  }
+    /* COVID-19 */
+    /* new prices */
+    .table.pricelist.init td:nth-child(3):before {
+        left: 36px;
+        width: 88%;
+        border-bottom: 4px solid red;
+    }
 
-  /* no refill service */
-  .table.pricelist.ref:before {
-    font-size: 2rem;
-    line-height: 3.4rem;
-    padding: 40px 80px;
-  }
-  /* END OF COVID-19 */
+    /* no refill service */
+    .table.pricelist.ref:before {
+        font-size: 2rem;
+        line-height: 3.4rem;
+        padding: 40px 80px;
+    }
+    /* END OF COVID-19 */
 
-  /*
+    /*
   =================
   GALLERY
   =================
   */
-  .gallery .container {
-    width: 1168px;
-  }
+    .gallery .container {
+        width: 1168px;
+    }
 }
