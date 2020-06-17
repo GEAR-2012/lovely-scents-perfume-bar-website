@@ -28,7 +28,14 @@
 
 /*
 ====================  TABLE OF CONTENT  ====================
-MOBILE portrait
+MOBILE PORTRAIT
+MOBILE LANDSCAPE
+SMALL TABLET PORTRAIT (min-width: 768)
+LARGE TABLET PORTRAIT (min-width: 1024)
+SMALL TABLET LANDSCAPE (min-width: 1024)
+DESKTOP/LAPTOP (min-width: 1336)
+-------------------------------------------------
+In each there are subcategories:
 - GLOBAL
   - buttons
   - font styles
@@ -43,50 +50,6 @@ MOBILE portrait
 - ORDER
 - CONTACT
 - FOOTER
--------------------------------------------------
-MOBILE landscape
-- GLOBAL
-  - font styles
-- HEADER
-- HOME / WELCOME
-- THE PERFUME
-- PACKAGING
-- PERFUME LIST
-- PRICE LIST
-- CONTACT
-- FOOTER
--------------------------------------------------
-TABLET portrait
-@media min-width: 768px
-- GLOBAL
-- font styles
-- buttons
-- HEADER
-- menu button
-- HOME / WELCOME
-- THE PERFUME
-- PACKAGING
-- PERFUME LIST
-- PRICE LIST
-- GALLERY
-- CONTACT
-- FOOTER
--------------------------------------------------
-TABLET landscape
-@media min-width: 1024px
--------------------------------------------------
-DESKTOP/LAPTOP
-@media min-width: 1336px
-- GLOBAL
-- font styles
-- HEADER
-- HOME / WELCOME
-- THE PERFUME
-- PACKAGING
-- PERFUME LIST
-- PRICE LIST
-- GALLERY
-============================================================
 */
 
 /*
@@ -1207,6 +1170,10 @@ footer a {
         grid-template-columns: 1fr 0.8fr;
     }
 
+    .the-perfume .container .paragraph span + span {
+        padding-top: 28px;
+    }
+
     .the-perfume .pictures {
         display: grid;
         align-content: start;
@@ -1231,6 +1198,10 @@ footer a {
 
     .packaging .container .paragraph {
         order: 1;
+    }
+
+    .packaging .container .paragraph span + span {
+        padding-top: 28px;
     }
 
     .packaging .pictures {
@@ -1304,15 +1275,15 @@ footer a {
 
     .table.pricelist td {
         font-size: 24px;
-        line-height: 50px;
-        padding-top: 10px;
+        line-height: 35px;
+        padding-top: 14px;
     }
 
     /* COVID-19 */
     /* new prices */
     .table.pricelist.init td:nth-child(3):before {
-        bottom: 20px;
-        left: 30px;
+        bottom: 14px;
+        left: 24px;
         border-width: 3px;
     }
 
@@ -1357,10 +1328,6 @@ footer a {
     CONTACT
     =================
     */
-    .contact {
-        margin-top: 10px;
-    }
-
     .contact .form {
         width: 50%;
         gap: 20px;
@@ -1396,56 +1363,32 @@ footer a {
         font-size: 24px;
     }
 }
-/* ||||||||||||||||||||| FINISHED UNTIL THIS POINT ||||||||||||||||||||| */
+
 /*
 *****************************   NEW MEDIA QUERY   *****************************
 *****************************   LARGE TABLET PORTRAIT   *****************************
 */
-@media only screen and (min-width: 11024px) and (orientation: portrait) {
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
     /*
     =================
     GLOBAL
     =================
     */
-    /* menu links to position the sections */
     .anchor {
-        /* display: block;
-        position: relative;
-        top: -65px;
-        visibility: hidden; */
-    }
-
-    /* menu link only the first one to position the welcome screen */
-    #an1 {
-        /* top: -130px; */
-    }
-
-    .wrapper {
-        /* width: 100%;
-        margin: 0 auto;
-        background-color: var(--base); */
+        top: -100px;
     }
 
     .wrapper .block {
-        /* box-sizing: border-box;
-        width: 100%;
-        padding: 30px 8px; */
+        padding: 66px 40px;
     }
 
     .wrapper .block .frame {
-        /* width: 100%;
-        display: grid;
-        gap: 14px;
-        justify-items: center; */
+        gap: 74px;
     }
 
     hr {
-        /* border: none;
-        border-top: dotted;
-        border-width: 3px;
-        border-color: var(--baseOp1);
-        margin: 0 auto;
-        width: 90%; */
+        border-width: 10px;
+        width: 90%;
     }
 
     /*
@@ -1453,690 +1396,285 @@ footer a {
     ---------------
     */
     .btn {
-        /* font-family: var(--fontPar);
-        font-size: 22px;
-        font-weight: 500;
-        line-height: 36px;
-        padding: 0 20px;
-        border-radius: 14px;
-        outline: none;
-        cursor: pointer; */
-        /* box-shadow: 0 0 10px var(--darkOp1); */
-    }
-
-    .btn:active {
-        /* box-shadow: 0 0 1px var(--darkOp1); */
-    }
-
-    .btn.light {
-        /* color: var(--darkOp1); */
-        /* border: 3px solid var(--lightOp1); */
-        /* background-color: var(--baseOp1); */
-        /* border-width: 3px; */
-    }
-
-    .btn.light:active {
-        /* color: var(--dark);
-        border: 3px solid var(--light);
-        background-color: var(--base); */
-        /* border-width: 3px; */
-    }
-
-    .btn.dark {
-        /* color: var(--lightOp1);
-        border: 3px solid var(--baseOp1);
-        background-color: var(--darkOp1); */
-        /* border-width: 3px; */
-    }
-
-    .btn.dark:active {
-        /* color: var(--light);
-        border: 3px solid var(--base);
-        background-color: var(--dark); */
-        /* border-width: 3px; */
+        font-size: 28px;
+        line-height: 52px;
+        padding: 0 30px;
+        border-radius: 20px;
     }
     /* *********** */
 
     /*
-  =================
-  HEADER
-  =================
-  */
-    header {
-        height: 80px;
-
-        /* background-color: var(--darkOp2); */
+    font styles
+    ---------------
+    */
+    .section-title {
+        font-size: 48px;
+        line-height: 58px;
     }
 
-    .phone-menu-BG {
-        /* display: none; */
+    .paragraph {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+
+    ::placeholder {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .input {
+        font-size: 36px;
+        line-height: 46px;
+        padding-bottom: 18px;
+    }
+
+    /*
+    =================
+    HEADER
+    =================
+    */
+    header {
+        height: 80px;
     }
 
     .logo-header {
         top: 14px;
-        /* left: 28px; */
         transform: translateX(-36%) scale(1.4);
     }
 
-    .navigation {
-        /* position: absolute;
-    top: 0;
-    left: 100px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start; */
-    }
-
     /*
-  menu button
-  ---------------
-   */
+    menu button
+    ---------------
+    */
     .container-menu-btn {
-        /* position: absolute; */
         top: -17px;
-        /* right: -16px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 56px;
-        height: 56px; */
-        /* cursor: pointer; */
         transform: scale(1.1);
     }
-
     /* *********** */
 
     .menu {
         top: 52px;
         right: 10px;
-        /* width: 650px;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between; */
     }
 
     .menu-item {
-        /* display: block; */
         margin-top: 4px;
-        /* box-sizing: content-box; */
         width: 270px;
         border-radius: 10px;
-        /* border: none;
-        background: none;
-        box-shadow: none;
-        transform: skewY(0deg) translateX(0px); */
     }
 
     .menu-item a {
         font-size: 34px;
         line-height: 46px;
-        /* color: var(--lightOp2); */
         padding: 0 22px;
-        /* border-radius: 5px;
-        transition: all 0.6s ease; */
-    }
-
-    .menu-item a:hover {
-        /* background-color: var(--lightOp2);
-    color: var(--darkOp2); */
-    }
-
-    .menu-item:hover {
-        /* box-shadow: none;
-    transform: skewY(0deg) translateX(0px) !important; */
     }
 
     /*
-  =================
-  HOME / WELCOME
-  =================
-  */
-
-    .welcome {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-around;
-        align-items: center;
-        padding-top: 0px;
-        padding-bottom: 0px;
+    =================
+    HOME / WELCOME
+    =================
+    */
+    .welcome .frame {
+        padding: 3vh 0 0;
     }
 
-    .welcome h3:nth-child(2) {
-        text-align: left;
-        padding-top: 0;
-        margin-left: 47px;
-        align-self: flex-start;
+    .logo {
+        width: 330px;
+        transform: translateX(30px);
     }
 
     .welcome h1,
     .welcome h2 {
-        font-size: 34px;
-        line-height: 46px;
-        text-align: center;
-        margin-top: 18px;
-    }
-
-    .welcome h3:last-child {
-        padding-top: 0;
-        text-align: right;
-        margin-right: 47px;
-        align-self: flex-end;
-    }
-
-    .welcome h1 {
-        font-weight: 700;
-    }
-
-    .welcome h2 {
-        font-weight: 400;
+        font-size: 46px;
+        line-height: 68px;
     }
 
     .welcome h3 {
-        font-size: 60px;
-        font-weight: 400;
-        line-height: 81px;
-    }
-
-    .logo-container {
-        width: fit-content;
-        margin: 0;
-    }
-
-    .logo-main {
-        margin-left: 54px;
-    }
-
-    .logo {
-        width: 205px;
+        font-size: 70px;
+        line-height: 90px;
     }
 
     /*
-  =================
-  THE PERFUME
-  =================
-  */
-    /* .the-perfume .section-title {
-    width: fit-content;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row nowrap;
-  } */
-
-    /* .the-perfume .section-title span {
-    padding: 0 10px;
-  } */
-
+    =================
+    THE PERFUME
+    =================
+    */
     .the-perfume .container {
-        position: static;
-        width: 90%;
-        margin: 50px auto;
-        display: grid;
-        gap: 30px;
+        gap: 40px;
         grid-template-columns: 1fr 0.6fr;
-        padding-bottom: 0;
-    }
-
-    .the-perfume .container .paragraph {
-        margin: 0;
-        padding-top: 0;
     }
 
     .the-perfume .container .paragraph span + span {
-        display: block;
-        padding-top: 20px;
+        padding-top: 32px;
     }
 
     .the-perfume .pictures {
-        /* position: static; */
-        display: grid;
-        align-content: space-between;
-        /* gap: 20px; */
-    }
-
-    /* .the-perfume .pictures img {
-    margin: 6px;
-  } */
-
-    /* .the-perfume .pictures img:nth-of-type(2),
-  .the-perfume .pictures img:nth-of-type(3) {
-    display: none;
-  } */
-
-    .the-perfume .pictures img:nth-of-type(1) {
-        order: 1;
-    }
-
-    .the-perfume .pictures img:nth-of-type(4) {
-        order: -1;
+        gap: 38px;
     }
 
     /*
-  =================
-  PACKAGING
-  =================
-  */
+    =================
+    PACKAGING
+    =================
+    */
     .packaging .container {
-        position: static;
-        width: 95%;
-        margin: 50px auto;
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0;
-    }
-
-    .packaging .container .paragraph {
-        width: 49%;
-        margin: 0;
-        padding-top: 0;
-        order: 1;
+        gap: 40px;
+        grid-template-columns: 0.6fr 1fr;
     }
 
     .packaging .container .paragraph span + span {
-        display: block;
-        padding-top: 20px;
+        padding-top: 32px;
     }
 
     .packaging .pictures {
-        position: static;
-        width: 49%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        opacity: 1;
-        overflow: visible;
-    }
-
-    .packaging .pictures img {
-        margin: 6px;
-    }
-
-    .packaging .pictures img:nth-of-type(2) {
-        display: none;
+        gap: 38px;
     }
 
     /*
-  =================
-  PERFUME LIST
-  =================
-  */
-    .btn-container-parlist {
-        width: 434px;
-        margin: 48px auto 0;
+    =================
+    PERFUME LIST
+    =================
+    */
+    .table.parlist th:first-child,
+    .table.parlist td:first-child,
+    .table.parlist caption {
+        padding-left: 14px;
     }
 
-    .table.parlist {
-        width: 94%;
-        margin: 52px auto 0;
+    /* selecting all columns but the firs one */
+    .table.parlist th + th,
+    .table.parlist td + td {
+        padding-left: 30px;
     }
 
-    .table.parlist th:nth-of-type(2),
-    .table.parlist th:nth-of-type(4),
-    .table.parlist td:nth-of-type(2),
-    .table.parlist td:nth-of-type(4) {
-        display: table-cell;
+    .table.parlist,
+    .table.parlist th,
+    .table.parlist td {
+        border-width: 2px;
     }
 
     .table.parlist caption {
-        font-size: 35px;
-        line-height: 41px;
+        font-size: 40px;
+        line-height: 50px;
     }
 
     .table.parlist th {
         font-size: 24px;
-        line-height: 36px;
-        padding-top: 5px;
+        line-height: 40px;
     }
 
     .table.parlist td {
-        font-size: 20px;
-        line-height: 30px;
-        padding-top: 5px;
+        font-size: 24px;
+        line-height: 32px;
+        padding-top: 8px;
     }
 
     /*
-  =================
-  PRICE LIST
-  =================
-  */
+    =================
+    PRICE LIST
+    =================
+    */
     .btn-container-pricelist {
-        /* display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 50px auto 0; */
+        width: 82%;
     }
 
-    .table.pricelist {
-        margin: 60px auto 0;
+    .table.pricelist td:first-child {
+        padding-left: 26px;
     }
 
     /* selecting all columns but the firs one */
     .table.pricelist td + td {
-        padding-left: 40px;
+        padding-left: 32px;
     }
 
-    .table.pricelist caption {
-        font-size: 46px;
-        line-height: 60px;
-        margin-bottom: 18px;
-    }
-
-    .table.pricelist.init caption,
-    .table.pricelist.ref caption {
-        display: none;
+    .table.pricelist td:last-child {
+        padding-right: 26px;
     }
 
     .table.pricelist td {
-        font-size: 24px;
-        line-height: 50px;
-        padding-top: 10px;
-    }
-
-    #info .popup {
-        width: 274px;
-        font-size: 0.8em;
-        top: -50px;
-        right: 60px;
+        font-size: 32px;
+        line-height: 46px;
+        padding-top: 18px;
     }
 
     /* COVID-19 */
-
     /* new prices */
     .table.pricelist.init td:nth-child(3):before {
-        bottom: 20px;
-        left: 32px;
-        width: 84%;
-        border-bottom: 3px solid red;
+        bottom: 18px;
+        border-width: 4px;
     }
 
     /* no refill service */
     .table.pricelist.ref:before {
-        top: 80px;
-        left: -166px;
-        font-size: 1.4rem;
-        line-height: 3.4rem;
-        padding: 28px 50px;
-        border: 3px solid rgb(58, 58, 58);
-        border-radius: 10px;
+        top: 54px;
+        font-size: 2.4rem;
+        line-height: 4rem;
+        padding: 24px 60px;
+        border-width: 4px;
+        border-radius: 30px;
     }
     /* END OF COVID-19 */
 
     /*
-  =================
-  GALLERY
-  =================
-  */
-    .gallery .container {
-        width: 912px;
+    =================
+    ORDER
+    =================
+    */
+    .order .frame p {
+        font-size: 2.6rem;
+    }
+
+    .order .frame .phone {
+        font-size: 4.8rem;
+        line-height: 5rem;
+    }
+
+    .order .frame span {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
     }
 
     /*
-  =================
-  CONTACT
-  =================
-  */
+    =================
+    CONTACT
+    =================
+    */
     .contact .form {
-        width: 526px;
-        margin: 50px auto 0;
-    }
-
-    .contact input {
-        margin-bottom: 16px;
-        padding-bottom: 10px;
-    }
-
-    .contact textarea {
-        margin: 34px 0 50px;
-        padding-top: 10px;
-    }
-
-    .contact .btn {
-        padding: 3px 28px;
+        width: 60%;
+        gap: 32px;
     }
 
     /*
-  =================
-  FOOTER
-  =================
-  */
+    =================
+    FOOTER
+    =================
+    */
     footer {
-        justify-content: flex-start;
+        padding: 36px 40px;
+        gap: 26px 54px;
+        grid-template-columns: 42px auto;
+        grid-template-rows: repeat(3, 42px);
     }
 
-    footer .container {
-        margin-left: 40px;
+    i {
+        font-size: 42px;
+    }
+
+    footer a {
+        font-size: 30px;
     }
 }
-
+/* ||||||||||||||||||||| FINISHED UNTIL THIS POINT ||||||||||||||||||||| */
 /*
 *****************************   NEW MEDIA QUERY   *****************************
-*****************************   TABLET LANDSCAPE   *****************************
+*****************************   SMALL TABLET LANDSCAPE   *****************************
 */
-@media only screen and(min-width: 11024px) and(orientation: landscape) {
+@media only screen and(min-width: 1024px) and(orientation: landscape) {
 }
 
 /*
 *****************************   NEW MEDIA QUERY   *****************************
 *****************************   DESKTOP/LAPTOP   *****************************
 */
-@media only screen and (min-width: 11336px) and (orientation: landscape) {
-    /*
-  =================
-  GLOBAL
-  =================
-   */
-    .wrapper {
-        width: 1280px;
-    }
-
-    hr {
-        border-width: 8px;
-        margin: 60px auto 0;
-    }
-
-    /*
-  font styles
-  ---------------
-   */
-    .section-title {
-        font-size: 64px;
-        line-height: 86px;
-        padding-top: 60px;
-    }
-
-    /*
-  =================
-  HEADER
-  =================
-  */
-    .navigation {
-        left: 200px;
-    }
-
-    .menu {
-        width: 960px;
-    }
-
-    /*
-  =================
-  HOME / WELCOME
-  =================
-  */
-    .welcome {
-        box-sizing: border-box;
-        padding-top: 100px;
-        padding-bottom: 60px;
-    }
-
-    .welcome h3:nth-child(2) {
-        margin-left: 55px;
-    }
-
-    .welcome h1,
-    .welcome h2 {
-        font-size: 42px;
-        line-height: 57px;
-        margin-top: 20px;
-    }
-
-    .welcome h3:last-child {
-        margin-right: 55px;
-    }
-
-    .welcome h3 {
-        font-size: 64px;
-        line-height: 86px;
-    }
-
-    .logo-main {
-        margin-left: 74px;
-    }
-
-    .logo {
-        width: 226px;
-    }
-
-    /*
-  =================
-  THE PERFUME
-  =================
-  */
-
-    /* .the-perfume .section-title {
-    width: fit-content;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row nowrap;
-  } */
-
-    /* .the-perfume .section-title span {
-    padding: 0 10px;
-  } */
-
-    .the-perfume .container {
-        width: 92%;
-        margin: 54px auto;
-    }
-
-    .the-perfume .container .paragraph {
-        width: 48%;
-    }
-
-    .the-perfume .pictures {
-        width: 48%;
-        height: 720px;
-    }
-
-    .the-perfume .pictures img {
-        margin: 0;
-    }
-
-    .the-perfume .pictures img:nth-of-type(5) {
-        display: none;
-    }
-
-    /*
-  =================
-  PACKAGING
-  =================
-  */
-    .packaging .container {
-        width: 92%;
-        margin: 54px auto;
-    }
-
-    .packaging .container .paragraph {
-        width: 48%;
-    }
-
-    .packaging .pictures {
-        width: 48%;
-    }
-
-    .packaging .pictures img {
-        margin: 0;
-    }
-
-    .packaging .pictures img:nth-of-type(3) {
-        display: none;
-    }
-
-    /*
-  =================
-  PERFUME LIST
-  =================
-  */
-    .table.parlist {
-        width: 1200px;
-    }
-
-    .table.parlist caption {
-        font-size: 41px;
-        line-height: 46px;
-    }
-
-    .table.parlist th {
-        font-size: 32px;
-        line-height: 46px;
-        padding-top: 6px;
-    }
-
-    .table.parlist td {
-        font-size: 32px;
-        line-height: 46px;
-        padding-top: 6px;
-    }
-
-    /*
-  =================
-  PRICE LIST
-  =================
-  */
-    .btn-container-pricelist {
-        width: 983px;
-    }
-
-    /* selecting all columns but the firs one */
-    .table.pricelist td + td {
-        padding-left: 44px;
-    }
-
-    .table.pricelist td {
-        font-size: 41px;
-        line-height: 52px;
-        padding-top: 10px;
-    }
-
-    .table.pricelist caption {
-        font-size: 56px;
-        line-height: 70px;
-        margin-bottom: 24px;
-    }
-
-    /* COVID-19 */
-    /* new prices */
-    .table.pricelist.init td:nth-child(3):before {
-        left: 36px;
-        width: 88%;
-        border-bottom: 4px solid red;
-    }
-
-    /* no refill service */
-    .table.pricelist.ref:before {
-        font-size: 2rem;
-        line-height: 3.4rem;
-        padding: 40px 80px;
-    }
-    /* END OF COVID-19 */
-
-    /*
-  =================
-  GALLERY
-  =================
-  */
-    .gallery .container {
-        width: 1168px;
-    }
+@media only screen and (min-width: 1336px) and (orientation: landscape) {
 }
-
-/* 2173 */
-/* 2458 */
