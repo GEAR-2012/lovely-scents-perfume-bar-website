@@ -1,4 +1,4 @@
-/* Last modified 16 Jun 2020 by Sandor Tudja in Kemnay, Scotland */
+/* Last modified 19 Jun 2020 by Sandor Tudja in Kemnay, Scotland */
 /* © Gear Web development 2020 */
 const getMenuBtn = document.querySelector(".container-menu-btn");
 const getMenuItems = document.querySelectorAll(".menu-item");
@@ -8,9 +8,13 @@ const menuAnimSpeed = 0.3; //animation speed in seconds
 const menuStiffness = 8; //change the number bigger to more stiffness
 const itemAnimDelay = menuAnimSpeed / menuStiffness; // item anim delay increment
 let fullAnimTime = menuAnimSpeed + itemAnimDelay * getMenuItems.length;
-let menuSwitch = false; //Is menu on?
+let menuSwitch = true; //Is menu on?
 let hideTimer;
 let delayTimer;
+
+onorientationchange = function () {
+    location.reload();
+};
 
 // calculate the hidden state of the menu items (transleteX amount)
 function setMenuSlideAmount() {
@@ -21,7 +25,7 @@ function setMenuSlideAmount() {
     } else if (screenWidth < 1024) {
         // small tablet
         x = 250;
-    } else if (screenWidth < 1336) {
+    } else if (screenWidth < 1366) {
         // large tablet
         x = 300;
     }
@@ -29,13 +33,13 @@ function setMenuSlideAmount() {
 }
 
 // mobile portrait & landscape & tablet portrait
-if (screenWidth <= 1024) {
+if (screenWidth < 1366) {
     setUpMenu();
 }
 
 function setUpMenu() {
     getMenuBtn.addEventListener("click", menuToggle);
-    getMenu.classList.add("no-show");
+    menuToggle();
     // set menu items to animate
     getMenuItems.forEach((menuItem, i) => {
         menuItem.addEventListener("click", menuToggle);

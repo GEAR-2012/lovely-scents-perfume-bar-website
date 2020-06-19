@@ -1,9 +1,9 @@
 /* This is a mobile first CSS style */
-/* Last modified 17 Jun 2020 by Sandor Tudja in Kemnay, Scotland */
+/* Last modified 19 Jun 2020 by Sandor Tudja in Kemnay, Scotland */
 /* © Gear Web development 2020 */
 :root {
     /* ========================== VARIABLES ========================== */
-    /* ----------------- colors ----------------- */
+    /* ----------------- used colors ----------------- */
     /*--- gold ---*/
     --base: rgb(174, 148, 83);
     --baseOp1: rgba(174, 148, 83, 0.8);
@@ -19,7 +19,7 @@
     --lightOp1: rgba(255, 255, 255, 0.8);
     --lightOp2: rgba(255, 255, 255, 0.9);
     --lightOp3: rgba(255, 255, 255, 0.2);
-    /* ----------------- fonts ----------------- */
+    /* ----------------- used fonts ----------------- */
     /* fancy one */
     --fontHea: "Cinzel Decorative", cursive;
     /* normal */
@@ -33,7 +33,7 @@ MOBILE LANDSCAPE
 SMALL TABLET PORTRAIT (min-width: 768)
 LARGE TABLET PORTRAIT (min-width: 1024)
 SMALL TABLET LANDSCAPE (min-width: 1024)
-DESKTOP/LAPTOP (min-width: 1336)
+DESKTOP/LAPTOP (min-width: 1366)
 -------------------------------------------------
 In each there are subcategories:
 - GLOBAL
@@ -454,6 +454,7 @@ HOME / WELCOME
     stroke-miterlimit: 2;
     fill: var(--base);
     width: 200px;
+    transform: translateX(19px);
     transition: all 1.5s ease-in-out;
 }
 
@@ -726,16 +727,30 @@ ORDER
     color: var(--base);
 }
 
+.order .frame {
+    margin-top: 24px;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 4px dotted var(--base);
+    border-radius: 10px;
+}
+
 .order .frame p {
     text-align: center;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .order .frame .phone {
-    font-size: 2rem;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
 }
 
 .order .frame span {
     font-size: 1rem;
+    line-height: 1rem;
     font-style: italic;
 }
 
@@ -837,7 +852,6 @@ footer a {
     .input {
         font-size: 20px;
         line-height: 22px;
-        padding-bottom: 4px;
     }
 
     /*
@@ -856,8 +870,8 @@ footer a {
     }
 
     .logo-header {
-        width: 40px;
-        top: 4px;
+        top: -2px;
+        transform: translateX(-40%) scale(0.8);
     }
 
     .menu {
@@ -1081,7 +1095,6 @@ footer a {
     .input {
         font-size: 26px;
         line-height: 36px;
-        padding-bottom: 12px;
     }
 
     /*
@@ -1291,9 +1304,9 @@ footer a {
     .table.pricelist.ref:before {
         content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus (COVID-19)\a measurements.";
         top: 42px;
-        font-size: 2rem;
-        line-height: 3.7rem;
-        padding: 28px 40px;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        padding: 26px 40px;
         border-width: 3px;
         border-radius: 22px;
     }
@@ -1306,11 +1319,15 @@ footer a {
     */
     .order .frame {
         margin-top: 40px;
+        padding: 52px;
         gap: 50px;
+        border-width: 7px;
+        border-radius: 24px;
     }
 
     .order .frame p {
         font-size: 2.2rem;
+        line-height: 2.4rem;
     }
 
     .order .frame .phone {
@@ -1320,7 +1337,7 @@ footer a {
 
     .order .frame span {
         font-size: 2rem;
-        line-height: 3rem;
+        line-height: 2rem;
     }
 
     /*
@@ -1425,7 +1442,6 @@ footer a {
     .input {
         font-size: 36px;
         line-height: 46px;
-        padding-bottom: 18px;
     }
 
     /*
@@ -1664,17 +1680,726 @@ footer a {
         font-size: 30px;
     }
 }
-/* ||||||||||||||||||||| FINISHED UNTIL THIS POINT ||||||||||||||||||||| */
+
 /*
 *****************************   NEW MEDIA QUERY   *****************************
 *****************************   SMALL TABLET LANDSCAPE   *****************************
 */
-@media only screen and(min-width: 1024px) and(orientation: landscape) {
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+    /*     
+    =================
+    GLOBAL
+    =================
+    */
+    /* menu links to position the sections */
+    .anchor {
+        top: -75px;
+    }
+
+    .wrapper .block {
+        padding: 30px 42px;
+    }
+
+    .wrapper .block .frame {
+        gap: 46px;
+    }
+
+    hr {
+        border-width: 8px;
+        width: 80%;
+    }
+
+    /*
+    buttons
+    ---------------
+    */
+    .btn {
+        font-size: 24px;
+        line-height: 44px;
+        padding: 0 22px;
+        border-radius: 16px;
+        box-shadow: 0 0 10px var(--darkOp3);
+    }
+
+    .btn.light,
+    .btn.light:active,
+    .btn.dark,
+    .btn.dark:active {
+        border-width: 3px;
+    }
+
+    /* *********** */
+
+    /*
+    font styles
+    ---------------
+    */
+    .section-title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .paragraph {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    /*
+    =================
+    HEADER
+    =================
+    */
+    header {
+        height: 77px;
+    }
+
+    .logo-header {
+        top: 14px;
+        transform: translateX(-39%) scale(1.2);
+    }
+
+    /*
+    menu button
+    ---------------
+    */
+    .container-menu-btn {
+        top: -18px;
+        transform: scale(1);
+    }
+    /* *********** */
+
+    .menu {
+        top: 46px;
+        right: 6px;
+    }
+
+    .menu-item {
+        margin-top: 3px;
+        width: 220px;
+        border-radius: 8px;
+    }
+
+    .menu-item a {
+        font-size: 28px;
+        line-height: 38px;
+        padding: 0 18px;
+    }
+
+    /*
+    =================
+    HOME / WELCOME
+    =================
+    */
+    .welcome .frame {
+        padding: 10vh 0 0;
+        gap: 26px !important;
+    }
+
+    .welcome h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .welcome h2 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .welcome h3 {
+        font-size: 50px;
+        line-height: 72px;
+    }
+
+    .logo-container {
+        flex-flow: column nowrap;
+    }
+
+    .logo-main {
+        width: 100%;
+        margin-bottom: 6vh;
+    }
+
+    .logo {
+        width: 260px;
+        transform: translateX(24px);
+    }
+
+    .welcome-text-2 h3 {
+        align-self: flex-end;
+    }
+
+    .welcome-text-2 div {
+        margin-bottom: 4vh;
+    }
+
+    /*
+    =================
+    THE PERFUME
+    =================
+    */
+    .the-perfume .container {
+        width: 100%;
+        padding-top: 50px;
+        display: grid;
+        gap: 40px;
+        grid-template-columns: 1fr 0.6fr;
+    }
+
+    .the-perfume .container .paragraph span + span {
+        padding-top: 32px;
+    }
+
+    .the-perfume .pictures {
+        display: grid;
+        align-content: start;
+        gap: 50px;
+    }
+
+    .the-perfume .pictures img {
+        width: 100%;
+    }
+
+    .the-perfume .pictures img:nth-of-type(3),
+    .the-perfume .pictures img:nth-of-type(4) {
+        display: none;
+    }
+
+    /*
+    =================
+    PACKAGING
+    =================
+    */
+    .packaging .container {
+        width: 100%;
+        padding-top: 50px;
+        display: grid;
+        gap: 40px;
+        grid-template-columns: 0.6fr 1fr;
+    }
+
+    .packaging .container .paragraph {
+        order: 1;
+    }
+
+    .packaging .container .paragraph span + span {
+        padding-top: 32px;
+    }
+
+    .packaging .pictures {
+        display: grid;
+        align-content: start;
+        gap: 50px;
+    }
+
+    .packaging .pictures img {
+        width: 100%;
+    }
+
+    .packaging .pictures img:nth-of-type(2) {
+        display: none;
+    }
+
+    /*
+    =================
+    PERFUME LIST
+    =================
+    */
+    .table.parlist th:first-child,
+    .table.parlist td:first-child,
+    .table.parlist caption {
+        padding-left: 18px;
+    }
+
+    /* selecting all columns but the firs one */
+    .table.parlist th + th,
+    .table.parlist td + td {
+        padding-left: 34px;
+    }
+
+    .table.parlist,
+    .table.parlist th,
+    .table.parlist td {
+        border-width: 2px;
+    }
+
+    .table.parlist caption {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 28px;
+    }
+
+    .table.parlist th {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .table.parlist td {
+        font-size: 22px;
+        line-height: 30px;
+        padding-top: 10px;
+    }
+
+    /*
+    =================
+    PRICE LIST
+    =================
+    */
+    .btn-container-pricelist {
+        /* display: flex; */
+        width: 70%;
+    }
+
+    .table.pricelist td:first-child {
+        padding-left: 14px;
+    }
+
+    /* selecting all columns but the firs one */
+    .table.pricelist td + td {
+        padding-left: 26px;
+    }
+
+    .table.pricelist td:last-child {
+        padding-right: 14px;
+    }
+
+    .table.pricelist caption {
+        font-size: 46px;
+        line-height: 66px;
+    }
+
+    .table.pricelist.init caption,
+    .table.pricelist.ref caption {
+        display: none;
+    }
+
+    .table.pricelist td {
+        font-size: 24px;
+        line-height: 35px;
+        padding-top: 14px;
+    }
+
+    /* COVID-19 */
+    /* new prices */
+    .table.pricelist.init td:nth-child(3):before {
+        bottom: 14px;
+        left: 24px;
+        border-width: 3px;
+    }
+
+    /* no refill service */
+    .table.pricelist.ref:before {
+        content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus (COVID-19)\a measurements.";
+        top: 42px;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        padding: 26px 40px;
+        border-width: 3px;
+        border-radius: 22px;
+    }
+    /* END OF COVID-19 */
+
+    /*
+    =================
+    ORDER
+    =================
+    */
+    .order .frame {
+        margin-top: 40px;
+        padding: 52px;
+        border-width: 7px;
+        border-radius: 24px;
+    }
+
+    .order .frame p {
+        font-size: 2.6rem;
+        line-height: 3rem;
+    }
+
+    .order .frame .phone {
+        font-size: 4.2rem;
+        line-height: 4.2rem;
+    }
+
+    .order .frame span {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    /*
+    =================
+    CONTACT
+    =================
+    */
+    .contact .form {
+        width: 40%;
+        gap: 28px;
+    }
+
+    /*
+    =================
+    FOOTER
+    =================
+    */
+    footer {
+        padding: 30px 42px;
+        gap: 14px 30px;
+        grid-template-columns: 34px auto;
+        grid-template-rows: repeat(3, 34px);
+    }
+
+    i {
+        font-size: 34px;
+    }
+
+    footer a {
+        font-size: 24px;
+    }
 }
 
 /*
 *****************************   NEW MEDIA QUERY   *****************************
 *****************************   DESKTOP/LAPTOP   *****************************
 */
-@media only screen and (min-width: 1336px) and (orientation: landscape) {
+@media only screen and (min-width: 1366px) and (orientation: landscape) {
+    /*     
+    =================
+    GLOBAL
+    =================
+    */
+    /* menu links to position the sections */
+    .anchor {
+        top: -110px;
+    }
+
+    .wrapper .block {
+        min-width: 1280px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 50px 50px;
+    }
+
+    .wrapper .block .frame {
+        gap: 60px;
+    }
+
+    /*
+    buttons
+    ---------------
+    */
+    .btn {
+        font-size: 30px;
+        line-height: 48px;
+        padding: 0 34px;
+        border-radius: 20px;
+    }
+    /* *********** */
+
+    /*
+    font styles
+    ---------------
+    */
+    .section-title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .paragraph {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    ::placeholder {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .input {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    /*
+    =================
+    HEADER
+    =================
+    */
+    header {
+        height: 60px;
+        padding-left: 20px;
+        background-color: var(--darkOp1);
+        display: flex;
+        align-items: center;
+    }
+
+    .phone-menu-BG {
+        display: none;
+    }
+
+    .logo-header {
+        position: static;
+        transform: translateX(0) scale(1);
+    }
+
+    .navigation {
+        width: 100%;
+        position: static;
+        display: block;
+        margin-left: 20px;
+    }
+
+    /*
+    menu button
+    ---------------
+    */
+    .container-menu-btn {
+        display: none;
+    }
+    /* *********** */
+
+    .menu {
+        position: static;
+        display: flex;
+    }
+
+    .menu-item {
+        box-sizing: content-box;
+        width: auto;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+        box-shadow: none;
+        transform: skew(0) translate(0);
+    }
+
+    .menu-item a {
+        font-size: 28px;
+        line-height: 60px;
+        padding: 0 12px;
+        color: var(--lightOp2);
+    }
+
+    /*
+    =================
+    HOME / WELCOME
+    =================
+    */
+    .welcome .frame {
+        padding: 4vh 0 0;
+        gap: 8vh !important;
+    }
+
+    .welcome h1,
+    .welcome h2 {
+        font-size: 44px;
+        line-height: 68px;
+    }
+
+    .welcome h3 {
+        font-size: 60px;
+        line-height: 84px;
+    }
+
+    .logo-main {
+        margin-bottom: 8vh;
+    }
+
+    .logo {
+        width: 320px;
+        transform: translateX(26px);
+    }
+
+    .welcome-text-2 div {
+        margin-bottom: 8vh;
+    }
+
+    /*
+    =================
+    THE PERFUME
+    =================
+    */
+    .the-perfume .container {
+        gap: 50px;
+        grid-template-columns: 1fr 0.3fr;
+    }
+
+    .the-perfume .pictures {
+        gap: 30px;
+    }
+
+    /*
+    =================
+    PACKAGING
+    =================
+    */
+    .packaging .container {
+        gap: 50px;
+        grid-template-columns: 0.3fr 1fr;
+    }
+
+    .packaging .pictures {
+        gap: 30px;
+    }
+
+    /*
+    =================
+    PERFUME LIST
+    =================
+    */
+    .table.parlist th:first-child,
+    .table.parlist td:first-child,
+    .table.parlist caption {
+        padding-left: 24px;
+    }
+
+    /* selecting all columns but the firs one */
+    .table.parlist th + th,
+    .table.parlist td + td {
+        padding-left: 36px;
+    }
+
+    .table.parlist caption {
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 36px;
+    }
+
+    .table.parlist th {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .table.parlist td {
+        font-size: 28px;
+        line-height: 34px;
+        padding-top: 16px;
+    }
+
+    /*
+    =================
+    PRICE LIST
+    =================
+    */
+    .table.pricelist,
+    .table.pricelist td {
+        border-width: 2px;
+    }
+
+    .table.pricelist td:first-child {
+        padding-left: 24px;
+    }
+
+    /* selecting all columns but the firs one */
+    .table.pricelist td + td {
+        padding-left: 36px;
+    }
+
+    .table.pricelist td:last-child {
+        padding-right: 24px;
+    }
+
+    .table.pricelist caption {
+        font-size: 36px;
+        line-height: 48px;
+        padding-bottom: 36px;
+    }
+
+    .table.pricelist td {
+        font-size: 28px;
+        line-height: 34px;
+        padding-top: 16px;
+    }
+
+    /* COVID-19 */
+    /* new prices */
+    .table.pricelist.init td:nth-child(3):before {
+        bottom: 12px;
+        left: 28px;
+        border-width: 4px;
+    }
+
+    /* no refill service */
+    .table.pricelist.ref:before {
+        top: 37px;
+        font-size: 2rem;
+        line-height: 3rem;
+        padding: 30px 62px;
+        border-width: 4px;
+        border-radius: 28px;
+    }
+    /* END OF COVID-19 */
+    /*
+    =================
+    GALLERY
+    =================
+    */
+    .gallery {
+        margin-top: 10px !important;
+    }
+
+    /*
+    more here:
+    css/style-lightbox.css
+    */
+
+    /*
+    =================
+    ORDER
+    =================
+    */
+    .order .frame {
+        margin-top: 54px;
+        padding: 60px;
+        border-width: 10px;
+        border-radius: 50px;
+    }
+
+    .order .frame p {
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+    }
+
+    .order .frame .phone {
+        font-size: 4.4rem;
+        line-height: 4.4rem;
+    }
+
+    .order .frame span {
+        font-size: 2.2rem;
+        line-height: 2.2rem;
+    }
+
+    /*
+    =================
+    CONTACT
+    =================
+    */
+    .contact {
+        margin-top: 10px !important;
+    }
+
+    .contact .form {
+        width: 46%;
+        gap: 36px;
+    }
+
+    /*
+    =================
+    FOOTER
+    =================
+    */
+    footer {
+        padding: 34px 48px;
+        gap: 18px 40px;
+        grid-template-columns: 38px auto;
+        grid-template-rows: repeat(3, 38px);
+    }
+
+    i {
+        font-size: 38px;
+    }
+
+    footer a {
+        font-size: 28px;
+    }
 }
