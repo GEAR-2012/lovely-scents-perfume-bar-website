@@ -427,7 +427,8 @@ HOME / WELCOME
 
 .cont__logo {
     width: 50vw;
-    padding-left: 12%;
+    max-width: 220px;
+    padding-left: 7vw;
 }
 
 .cont__3 {
@@ -920,6 +921,7 @@ footer a {
 
     .cont__logo {
         width: 26vw;
+        max-width: 150px;
         padding-left: 0;
     }
 
@@ -1200,7 +1202,8 @@ footer a {
 
     .cont__logo {
         width: 40vw;
-        padding-left: 8%;
+        max-width: 320px;
+        padding-left: 5vw;
     }
 
     .cont__3 {
@@ -1567,7 +1570,8 @@ footer a {
 
     .cont__logo {
         width: 45vw;
-        padding-left: 9%;
+        max-width: 490px;
+        padding-left: 6vw;
     }
 
     .cont__3 {
@@ -1878,7 +1882,7 @@ footer a {
     }
 
     .cont__1 {
-        min-height: 38rem;
+        min-height: 30rem;
         max-height: 60rem;
     }
 
@@ -1891,6 +1895,7 @@ footer a {
 
     .cont__logo {
         width: 30vw;
+        max-width: 320px;
     }
 
     .cont__3 {
@@ -2279,6 +2284,11 @@ footer a {
     .cont__2 {
         min-height: 26rem;
         max-height: 50rem;
+    }
+
+    .cont__logo {
+        width: 35vw;
+        max-width: 410px;
     }
 
     .cont__3 {

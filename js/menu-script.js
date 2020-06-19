@@ -16,6 +16,10 @@ onorientationchange = function () {
     location.reload();
 };
 
+onresize = function () {
+    location.reload();
+};
+
 // calculate the hidden state of the menu items (transleteX amount)
 function setMenuSlideAmount() {
     let x; // hidden state of the menu items (transleteX amount)
