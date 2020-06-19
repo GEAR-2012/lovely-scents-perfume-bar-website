@@ -350,7 +350,12 @@ HOME / WELCOME
 =================
 */
 .welcome {
+    /* padding-top: header height + the bottom padding */
     height: 100vh;
+    padding-top: calc(65px + 30px) !important;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
 
 @keyframes moveCap {
@@ -398,53 +403,41 @@ HOME / WELCOME
     fill-opacity: 0.5;
 }
 
-.welcome .frame {
+.cont__1 {
     box-sizing: border-box;
     height: 100%;
-    padding: 10vh 0 0;
-    align-content: center;
+    min-height: 21.5rem;
+    max-height: 30rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.welcome h1,
-.welcome h2,
-.welcome h3 {
-    color: var(--darkOp1);
-    font-family: var(--fontHea);
-    text-transform: uppercase;
-    text-align: center;
-    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
-    opacity: 0.8;
-}
-
-.welcome h1 {
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 37px;
-}
-
-.welcome h2 {
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 37px;
-}
-
-.welcome h3 {
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 46px;
-}
-
-.logo-container {
+.cont__2 {
     width: 100%;
+    height: 50vh;
+    min-height: 16rem;
+    max-height: 20rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    align-items: center;
 }
 
-.logo-main {
-    width: 100%;
-    margin-bottom: 6vh;
-    text-align: center;
+.cont__logo {
+    width: 50vw;
+    padding-left: 12%;
+}
+
+.cont__3 {
+    height: 16vh;
+    min-height: 5.2rem;
+    max-height: 6rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -453,19 +446,40 @@ HOME / WELCOME
     stroke-linejoin: round;
     stroke-miterlimit: 2;
     fill: var(--base);
-    width: 200px;
-    transform: translateX(19px);
+    width: 100%;
     transition: all 1.5s ease-in-out;
 }
 
-.welcome-text-2 {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
+/* fonts */
+.welcome h1,
+.welcome h2,
+.welcome h3 {
+    white-space: nowrap;
+    color: var(--darkOp1);
+    font-family: var(--fontHea);
+    text-transform: uppercase;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
 }
 
-.welcome-text-2 div {
-    margin-bottom: 6vh;
+.welcome h1,
+.welcome h2 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+.welcome h1 {
+    font-weight: 700;
+}
+
+.welcome h2 {
+    font-weight: 500;
+}
+
+.welcome h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.5rem;
 }
 
 /*
@@ -888,22 +902,33 @@ footer a {
     HOME / WELCOME
     =================
     */
-    .welcome .frame {
-        padding: 13vh 0 0;
-        gap: 0px !important;
+    .welcome {
+        /* padding-top: header height + the bottom padding */
+        padding-top: calc(48px + 14px) !important;
     }
 
-    .welcome h3 {
-        justify-self: start;
+    .cont__1 {
+        min-height: initial;
     }
 
-    .logo-container {
+    .cont__2 {
+        width: 80%;
+        min-height: initial;
+        max-height: initial;
         flex-flow: row nowrap;
     }
 
-    .logo-main {
-        width: 50%;
-        margin-bottom: 0;
+    .cont__logo {
+        width: 26vw;
+        padding-left: 0;
+    }
+
+    .welcome h3:first-of-type {
+        align-self: flex-start;
+    }
+
+    .welcome h3:last-of-type {
+        align-self: flex-end;
     }
 
     /*
@@ -1158,32 +1183,41 @@ footer a {
     HOME / WELCOME
     =================
     */
-    .welcome .frame {
-        padding: 5vh 0 0;
+    .welcome {
+        /* padding-top: header height + the bottom padding */
+        padding-top: calc(72px + 40px) !important;
     }
 
-    .logo-main {
-        margin-bottom: 8vh;
+    .cont__1 {
+        min-height: 42rem;
+        max-height: 64rem;
     }
 
-    .logo {
-        width: 280px;
-        transform: translateX(25px);
+    .cont__2 {
+        min-height: 30rem;
+        max-height: 36rem;
     }
 
-    .welcome-text-2 div {
-        margin-bottom: 8vh;
+    .cont__logo {
+        width: 40vw;
+        padding-left: 8%;
     }
 
+    .cont__3 {
+        min-height: 8.6rem;
+        max-height: 12rem;
+    }
+
+    /* fonts */
     .welcome h1,
     .welcome h2 {
-        font-size: 36px;
-        line-height: 58px;
+        font-size: 3rem;
+        line-height: 4.2rem;
     }
 
     .welcome h3 {
-        font-size: 60px;
-        line-height: 81px;
+        font-size: 2.8rem;
+        line-height: 3.8rem;
     }
 
     /*
@@ -1516,24 +1550,41 @@ footer a {
     HOME / WELCOME
     =================
     */
-    .welcome .frame {
-        padding: 3vh 0 0;
+    .welcome {
+        /* padding-top: header height + the bottom padding */
+        padding-top: calc(80px + 66px) !important;
     }
 
-    .logo {
-        width: 330px;
-        transform: translateX(30px);
+    .cont__1 {
+        min-height: 52rem;
+        max-height: 84rem;
     }
 
+    .cont__2 {
+        min-height: 44rem;
+        max-height: 48rem;
+    }
+
+    .cont__logo {
+        width: 45vw;
+        padding-left: 9%;
+    }
+
+    .cont__3 {
+        min-height: 11rem;
+        max-height: 12.4rem;
+    }
+
+    /* fonts */
     .welcome h1,
     .welcome h2 {
-        font-size: 46px;
-        line-height: 68px;
+        font-size: 3.8rem;
+        line-height: 5.4rem;
     }
 
     .welcome h3 {
-        font-size: 70px;
-        line-height: 90px;
+        font-size: 3.7rem;
+        line-height: 5.2rem;
     }
 
     /*
@@ -1821,46 +1872,42 @@ footer a {
     HOME / WELCOME
     =================
     */
-    .welcome .frame {
-        padding: 10vh 0 0;
-        gap: 26px !important;
+    .welcome {
+        /* padding-top: header height + the bottom padding */
+        padding-top: calc(77px + 30px) !important;
     }
 
-    .welcome h1 {
-        font-size: 40px;
-        line-height: 60px;
+    .cont__1 {
+        min-height: 38rem;
+        max-height: 60rem;
     }
 
+    .cont__2 {
+        width: 84%;
+        height: 40vh;
+        min-height: 20rem;
+        max-height: 32rem;
+    }
+
+    .cont__logo {
+        width: 30vw;
+    }
+
+    .cont__3 {
+        min-height: 11rem;
+        max-height: 12.4rem;
+    }
+
+    /* fonts */
+    .welcome h1,
     .welcome h2 {
-        font-size: 40px;
-        line-height: 60px;
+        font-size: 3rem;
+        line-height: 4.2rem;
     }
 
     .welcome h3 {
-        font-size: 50px;
-        line-height: 72px;
-    }
-
-    .logo-container {
-        flex-flow: column nowrap;
-    }
-
-    .logo-main {
-        width: 100%;
-        margin-bottom: 6vh;
-    }
-
-    .logo {
-        width: 260px;
-        transform: translateX(24px);
-    }
-
-    .welcome-text-2 h3 {
-        align-self: flex-end;
-    }
-
-    .welcome-text-2 div {
-        margin-bottom: 4vh;
+        font-size: 2.8rem;
+        line-height: 3.8rem;
     }
 
     /*
@@ -2220,33 +2267,36 @@ footer a {
     HOME / WELCOME
     =================
     */
-    .welcome .frame {
-        padding: 4vh 0 0;
-        gap: 8vh !important;
+    .welcome {
+        /* padding-top: header height + the bottom padding */
+        padding-top: calc(60px + 50px) !important;
     }
 
+    .cont__1 {
+        max-height: 70rem;
+    }
+
+    .cont__2 {
+        min-height: 26rem;
+        max-height: 50rem;
+    }
+
+    .cont__3 {
+        height: 20vh;
+        min-height: 11.2rem;
+        max-height: 20rem;
+    }
+
+    /* fonts */
     .welcome h1,
     .welcome h2 {
-        font-size: 44px;
-        line-height: 68px;
+        font-size: 3.8rem;
+        line-height: 5.4rem;
     }
 
     .welcome h3 {
-        font-size: 60px;
-        line-height: 84px;
-    }
-
-    .logo-main {
-        margin-bottom: 8vh;
-    }
-
-    .logo {
-        width: 320px;
-        transform: translateX(26px);
-    }
-
-    .welcome-text-2 div {
-        margin-bottom: 8vh;
+        font-size: 3.7rem;
+        line-height: 5.2rem;
     }
 
     /*
