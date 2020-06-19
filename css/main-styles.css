@@ -534,7 +534,6 @@ PERFUME LIST
     font-family: var(--fontPar);
     text-align: left;
     color: var(--baseOp1);
-    width: 100%;
 }
 
 .table.parlist th:nth-of-type(2),
@@ -554,6 +553,11 @@ PERFUME LIST
 .table.parlist th + th,
 .table.parlist td + td {
     padding-left: 16px;
+}
+
+.table.parlist th:last-child,
+.table.parlist td:last-child {
+    padding-right: 4px;
 }
 
 .table.parlist,
@@ -929,6 +933,17 @@ footer a {
         width: 50%;
     }
 
+    .table.parlist th:first-child,
+    .table.parlist td:first-child,
+    .table.parlist caption {
+        padding-left: 26px;
+    }
+
+    .table.parlist th:last-child,
+    .table.parlist td:last-child {
+        padding-right: 26px;
+    }
+
     .table.parlist th:nth-of-type(2),
     .table.parlist th:nth-of-type(4),
     .table.parlist td:nth-of-type(2),
@@ -1232,14 +1247,25 @@ footer a {
     PERFUME LIST
     =================
     */
+    .btn-container-parlist {
+        width: 60%;
+    }
+
     .table.parlist th:first-child,
     .table.parlist td:first-child,
     .table.parlist caption {
-        padding-left: 12px;
+        padding-left: 14px;
     }
 
-    .btn-container-parlist {
-        width: 60%;
+    /* selecting all columns but the firs one */
+    .table.parlist th + th,
+    .table.parlist td + td {
+        padding-left: 26px;
+    }
+
+    .table.parlist th:last-child,
+    .table.parlist td:last-child {
+        padding-right: 14px;
     }
 
     .table.parlist th:nth-of-type(2),
@@ -1554,13 +1580,18 @@ footer a {
     .table.parlist th:first-child,
     .table.parlist td:first-child,
     .table.parlist caption {
-        padding-left: 14px;
+        padding-left: 26px;
     }
 
     /* selecting all columns but the firs one */
     .table.parlist th + th,
     .table.parlist td + td {
-        padding-left: 30px;
+        padding-left: 32px;
+    }
+
+    .table.parlist th:last-child,
+    .table.parlist td:last-child {
+        padding-right: 26px;
     }
 
     .table.parlist,
@@ -1907,13 +1938,18 @@ footer a {
     .table.parlist th:first-child,
     .table.parlist td:first-child,
     .table.parlist caption {
-        padding-left: 18px;
+        padding-left: 14px;
     }
 
     /* selecting all columns but the firs one */
     .table.parlist th + th,
     .table.parlist td + td {
-        padding-left: 34px;
+        padding-left: 26px;
+    }
+
+    .table.parlist th:last-child,
+    .table.parlist td:last-child {
+        padding-right: 14px;
     }
 
     .table.parlist,
@@ -2256,6 +2292,11 @@ footer a {
     .table.parlist th + th,
     .table.parlist td + td {
         padding-left: 36px;
+    }
+
+    .table.parlist th:last-child,
+    .table.parlist td:last-child {
+        padding-right: 24px;
     }
 
     .table.parlist caption {
