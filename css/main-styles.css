@@ -33,7 +33,7 @@ MOBILE LANDSCAPE
 SMALL TABLET PORTRAIT (min-width: 768)
 LARGE TABLET PORTRAIT (min-width: 1024)
 SMALL TABLET LANDSCAPE (min-width: 1024)
-DESKTOP/LAPTOP (min-width: 1366)
+DESKTOP/LAPTOP, LARGE TABLET LANDSCAPE (min-width: 1366)
 -------------------------------------------------
 In each there are subcategories:
 - GLOBAL
@@ -620,6 +620,24 @@ PRICE LIST
     width: 100%;
 }
 
+/* TEMPORARY */
+.special__offer {
+    font-family: roboto, arial;
+    text-align: center;
+    color: red;
+}
+
+.special__offer p:first-of-type {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding-bottom: 0.3rem;
+}
+
+.special__offer p:last-of-type {
+    font-size: 0.45rem;
+}
+/* end of TEMPORARY */
+
 .table.pricelist {
     font-family: var(--fontPar);
     text-align: right;
@@ -744,6 +762,10 @@ ORDER
 */
 .order {
     color: var(--base);
+}
+
+.order a {
+    color: rgb(255, 255, 255);
 }
 
 .order .frame {
@@ -1326,6 +1348,17 @@ footer a {
         width: 90%;
     }
 
+    /* TEMPORARY */
+    .special__offer p:first-of-type {
+        font-size: 1.6rem;
+        padding-bottom: 0.6rem;
+    }
+
+    .special__offer p:last-of-type {
+        font-size: 0.8rem;
+    }
+    /* end of TEMPORARY */
+
     .table.pricelist td:first-child {
         padding-left: 14px;
     }
@@ -1679,6 +1712,17 @@ footer a {
     .btn-container-pricelist {
         width: 82%;
     }
+
+    /* TEMPORARY */
+    .special__offer p:first-of-type {
+        font-size: 2rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .special__offer p:last-of-type {
+        font-size: 1rem;
+    }
+    /* end of TEMPORARY */
 
     .table.pricelist td:first-child {
         padding-left: 26px;
@@ -2037,6 +2081,17 @@ footer a {
         width: 70%;
     }
 
+    /* TEMPORARY */
+    .special__offer p:first-of-type {
+        font-size: 1.6rem;
+        padding-bottom: 0.6rem;
+    }
+
+    .special__offer p:last-of-type {
+        font-size: 0.8rem;
+    }
+    /* end of TEMPORARY */
+
     .table.pricelist td:first-child {
         padding-left: 14px;
     }
@@ -2381,6 +2436,17 @@ footer a {
     PRICE LIST
     =================
     */
+    /* TEMPORARY */
+    .special__offer p:first-of-type {
+        font-size: 2rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .special__offer p:last-of-type {
+        font-size: 1rem;
+    }
+    /* end of TEMPORARY */
+
     .table.pricelist,
     .table.pricelist td {
         border-width: 2px;
