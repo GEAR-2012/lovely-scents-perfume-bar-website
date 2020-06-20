@@ -36,3 +36,5 @@ v2.5
 - updated CSS (more & defined media queries)
 - new icons in footer
 - improved javascript (check for orientation & screen size)
+- active (callable) phone number at 'order'
+- COVID-19 special offer title
