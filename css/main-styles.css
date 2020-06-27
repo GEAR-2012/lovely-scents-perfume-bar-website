@@ -9,6 +9,7 @@
     --baseOp1: rgba(174, 148, 83, 0.8);
     --baseOp2: rgba(174, 148, 83, 0.9);
     --baseOp3: rgba(174, 148, 83, 0.3);
+    --baseHighLight: rgb(248, 212, 120);
     /*--- dark ---*/
     --dark: rgb(0, 0, 0);
     --darkOp1: rgba(0, 0, 0, 0.8);
@@ -607,6 +608,10 @@ PERFUME LIST
     color: grey;
     opacity: 0.4;
     text-decoration: line-through;
+}
+
+.new {
+    color: var(--baseHighLight);
 }
 
 /*
