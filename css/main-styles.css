@@ -1,5 +1,5 @@
 /* This is a mobile first CSS style */
-/* Last modified 20 Jun 2020 by Sandor Tudja in Kemnay, Scotland */
+/* Last modified 27 Jun 2020 by Sandor Tudja in Kemnay, Scotland */
 /* © Gear Web development 2020 */
 :root {
     /* ========================== VARIABLES ========================== */
@@ -604,6 +604,7 @@ PERFUME LIST
     padding-top: 4px;
 }
 
+/* marking rows */
 .unavailable {
     color: grey;
     opacity: 0.4;
@@ -613,6 +614,26 @@ PERFUME LIST
 .new {
     color: var(--baseHighLight);
 }
+
+.sale {
+    color: var(--lightOp2);
+}
+/* end of marking rows */
+
+/* legend */
+.legend {
+    justify-self: left;
+    margin-inline-start: 3vw;
+}
+
+.legend p {
+    font-family: var(--fontPar);
+    font-weight: 300;
+    font-size: 1.6vw;
+    line-height: 2.5vw;
+    margin-bottom: 1vw;
+}
+/* end of legend */
 
 /*
 =================
