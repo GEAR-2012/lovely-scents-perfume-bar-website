@@ -12,13 +12,52 @@ let menuSwitch = true; //Is menu on?
 let hideTimer;
 let delayTimer;
 
+/* CHECK FOR CHANGE OF MEDIA IF SO REFRESH THE PAGE */
+let media = 0;
+
+onload = function () {
+    // determine the size of media
+    chageMedia();
+};
+
 onorientationchange = function () {
     location.reload();
 };
 
 onresize = function () {
-    location.reload();
+    // check for change of media
+    if (chageMedia()) {
+        location.reload();
+    }
 };
+
+function chageMedia() {
+    const switchPoints = {
+        size_1: 768,
+        size_2: 1024,
+        size_3: 1366,
+    }; // media switch points
+    let windowSize = window.innerWidth;
+    let newMed = 0;
+    // determine the size of media
+    if (windowSize < switchPoints.size_1) {
+        newMed = 1;
+    } else if (windowSize < switchPoints.size_2) {
+        newMed = 2;
+    } else if (windowSize < switchPoints.size_3) {
+        newMed = 3;
+    } else {
+        newMed = 4;
+    }
+    // if the media changed return true else false
+    if (newMed != media) {
+        media = newMed;
+        return true;
+    } else {
+        return false;
+    }
+}
+/* end of: CHECK FOR CHANGE OF MEDIA IF SO REFRESH THE PAGE */
 
 // calculate the hidden state of the menu items (transleteX amount)
 function setMenuSlideAmount() {
