@@ -25,7 +25,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/resetstyle.css" />
         <link rel="stylesheet" href="css/main-styles.css" />
-        <link rel="stylesheet" href="css/style-lightbox.css" />
+        <link rel="stylesheet" href="css/carousel.css" />
     </head>
 
     <body onload="StartTimer()" onmousemove="ResetTimer()">
@@ -247,23 +247,23 @@
                     </p>
                     <div class="pictures">
                         <img
-                            src="img/gallery/06-03-2019/Jars.jpg"
+                            src="img/carousel/Jars.jpg"
                             alt="shelf jar perfume"
                         />
                         <img
-                            src="img/gallery/29-06-2019/full-left-PS.jpg"
+                            src="img/carousel/full-left-PS.jpg"
                             alt="shelf jar perfume"
                         />
                         <img
-                            src="img/gallery/29-06-2019/full-front-down-PS.jpg"
+                            src="img/carousel/full-front-down-PS.jpg"
                             alt="shelf jar perfume"
                         />
                         <img
-                            src="img/gallery/29-06-2019/series-2-PS.jpg"
+                            src="img/carousel/s2_2_e.jpg"
                             alt="shelf jar perfume"
                         />
                         <img
-                            src="img/gallery/29-06-2019/full-front-PS.jpg"
+                            src="img/carousel/full-front-PS.jpg"
                             alt="shelf jar perfume"
                         />
                     </div>
@@ -299,9 +299,9 @@
                         </span>
                     </p>
                     <div class="pictures">
-                        <img src="img/gallery/f_005.jpg" alt="perfume" />
-                        <img src="img/gallery/l_068.jpg" alt="perfume" />
-                        <img src="img/gallery/f_012.jpg" alt="perfume" />
+                        <img src="img/carousel/s1_1_e.jpg" alt="perfume" />
+                        <img src="img/carousel/s1_4_e.jpg" alt="perfume" />
+                        <img src="img/carousel/s3_2_e.jpg" alt="perfume" />
                     </div>
                 </div>
             </section>
@@ -887,108 +887,22 @@
                 ><!-- menu anchor -->
                 <div class="frame">
                     <h2 class="section-title dark">gallery</h2>
-                    <div class="lightbox-container">
-                        <div class="big-picture">
-                            <div class="text counter"></div>
-                            <div class="btn next" onclick="plusSlide(1)">
-                                &#10095;
-                            </div>
-                            <div class="btn prev" onclick="plusSlide(-1)">
-                                &#10094;
-                            </div>
-                            <div class="text caption"></div>
+                    <div id="carousel">
+                        <div id="main-pic-cont">
+                            <i
+                                id="left-arrow"
+                                class="fas fa-arrow-alt-circle-left"
+                            ></i>
+                            <i
+                                id="right-arrow"
+                                class="fas fa-arrow-alt-circle-right"
+                            ></i>
+                            <i id="expand" class="fas fa-expand"></i>
+                            <i id="compress" class="fas fa-compress"></i>
+                            <img src="" alt="" />
                         </div>
-
-                        <div class="thumbstrip-container">
-                            <div class="thumbstrip">
-                                <img
-                                    onclick="actualSlide(0)"
-                                    src="img/gallery/29-06-2019/series-2-PS.jpg"
-                                    alt="our perfume shelves"
-                                />
-                                <img
-                                    onclick="actualSlide(1)"
-                                    src="img/gallery/29-06-2019/full-front-down-PS.jpg"
-                                    alt="our perfume shelves"
-                                />
-                                <img
-                                    onclick="actualSlide(2)"
-                                    src="img/gallery/29-06-2019/full-front-far-PS.jpg"
-                                    alt="our perfume shelves"
-                                />
-                                <img
-                                    onclick="actualSlide(3)"
-                                    src="img/gallery/29-06-2019/full-front-PS.jpg"
-                                    alt="our perfume shelves"
-                                />
-                                <img
-                                    onclick="actualSlide(4)"
-                                    src="img/gallery/29-06-2019/full-left-PS.jpg"
-                                    alt="our perfume shelves"
-                                />
-                                <img
-                                    onclick="actualSlide(5)"
-                                    src="img/gallery/29-06-2019/full-right-PS.jpg"
-                                    alt="our perfume shelves"
-                                />
-
-                                <img
-                                    onclick="actualSlide(6)"
-                                    src="img/gallery/22-04-2019/10ml-AP.jpg"
-                                    alt="10ml perfume bottles"
-                                />
-                                <img
-                                    onclick="actualSlide(7)"
-                                    src="img/gallery/22-04-2019/11ml-AP.jpg"
-                                    alt="11ml perfume bottles"
-                                />
-                                <img
-                                    onclick="actualSlide(8)"
-                                    src="img/gallery/22-04-2019/30ml-AP.jpg"
-                                    alt="30ml perfume bottles"
-                                />
-                                <img
-                                    onclick="actualSlide(9)"
-                                    src="img/gallery/22-04-2019/50ml-AP.jpg"
-                                    alt="50ml perfume bottles"
-                                />
-                                <img
-                                    onclick="actualSlide(10)"
-                                    src="img/gallery/22-04-2019/100ml-AP.jpg"
-                                    alt="100ml perfume bottles"
-                                />
-
-                                <img
-                                    onclick="actualSlide(11)"
-                                    src="img/gallery/06-03-2019/Jars.jpg"
-                                    alt="the perfume jars in detail"
-                                />
-                                <img
-                                    onclick="actualSlide(12)"
-                                    src="img/gallery/06-03-2019/Vintages_mixed.jpg"
-                                    alt="vintage pump glasses"
-                                />
-                                <img
-                                    onclick="actualSlide(13)"
-                                    src="img/gallery/06-03-2019/Vintage_100_purple.jpg"
-                                    alt="100ml vintage purple"
-                                />
-                                <img
-                                    onclick="actualSlide(14)"
-                                    src="img/gallery/06-03-2019/Vintage_100_blue.jpg"
-                                    alt="80ml vintage blue"
-                                />
-                                <img
-                                    onclick="actualSlide(15)"
-                                    src="img/gallery/06-03-2019/Vintage_80_gold.jpg"
-                                    alt="80ml vintage gold"
-                                />
-                                <img
-                                    onclick="actualSlide(16)"
-                                    src="img/gallery/06-03-2019/Vintage_80_black.jpg"
-                                    alt="80ml vintage black"
-                                />
-                            </div>
+                        <div id="strip-cont">
+                            <div id="strip"></div>
                         </div>
                     </div>
                 </div>
@@ -1080,9 +994,9 @@
         <script src="js/menu-script.js"></script>
         <script src="js/perfume-list_button-script.js"></script>
         <script src="js/price-list_button-script.js"></script>
-        <script src="js/script-lightbox.js"></script>
+        <script src="js/carousel.js"></script>
+        <script src="js/list-marking.js"></script>
         <!-- temporarly for the COVID-19 sales -->
         <script src="js/covid-sales.js"></script>
-        <script src="js/list-marking.js"></script>
     </body>
 </html>
