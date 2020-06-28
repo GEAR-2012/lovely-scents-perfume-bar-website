@@ -1,4 +1,4 @@
-/* Last modified 19 Jun 2020 by Sandor Tudja in Kemnay, Scotland */
+/* Last modified 28 Jun 2020 by Sandor Tudja in Kemnay, Scotland */
 /* © Gear Web development 2020 */
 const getMenuBtn = document.querySelector(".container-menu-btn");
 const getMenuItems = document.querySelectorAll(".menu-item");
