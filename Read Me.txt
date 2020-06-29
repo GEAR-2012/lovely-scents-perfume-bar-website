@@ -43,3 +43,4 @@ v2.6
 - 'smart' perfume list marking + marking legends
 - new picture gallery (carousel)
 - updated reload (pade refresh) when screen size switch points are reached
+- pach for refresh functionality

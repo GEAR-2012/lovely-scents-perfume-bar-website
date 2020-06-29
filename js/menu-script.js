@@ -30,7 +30,6 @@ onresize = function () {
 };
 
 function chageMedia() {
-    console.log("change");
     const switchPoints = {
         size_1: 768,
         size_2: 1024,
