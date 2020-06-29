@@ -44,3 +44,4 @@ v2.6
 - new picture gallery (carousel)
 - updated reload (pade refresh) when screen size switch points are reached
 - pach for refresh functionality
+- updated full screen mode (now the background image size is 'contain')

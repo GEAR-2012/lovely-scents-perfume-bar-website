@@ -105,6 +105,7 @@ function fullscreenSwitcher() {
 
 /* View in fullscreen */
 function openFullscreen() {
+    mainPic.style.backgroundSize = "contain";
     if (mainPic.requestFullscreen) {
         mainPic.requestFullscreen();
     } else if (mainPic.mozRequestFullScreen) {
@@ -124,6 +125,7 @@ function openFullscreen() {
 
 /* Close fullscreen */
 function closeFullscreen() {
+    mainPic.style.backgroundSize = "cover";
     if (document.exitFullscreen) {
         document.exitFullscreen();
     } else if (document.mozCancelFullScreen) {
