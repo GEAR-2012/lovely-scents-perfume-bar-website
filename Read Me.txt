@@ -38,3 +38,8 @@ v2.5
 - improved javascript (check for orientation & screen size)
 - active (callable) phone number at 'order'
 - COVID-19 special offer title
+
+v2.6
+- 'smart' perfume list marking + marking legends
+- new picture gallery (carousel)
+- updated reload (pade refresh) when screen size switch points are reached
