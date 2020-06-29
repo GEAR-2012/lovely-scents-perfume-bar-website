@@ -48,6 +48,7 @@ getPictsUrls()
     });
 
 onload = () => {
+    chageMedia(); // since only one on load is possible this 'onload' call this function in 'menu-script.js'
     leftArrow.addEventListener("click", nextPicture);
     rightArrow.addEventListener("click", nextPicture);
     expand.addEventListener("click", fullscreenSwitcher);
@@ -55,6 +56,7 @@ onload = () => {
     compress.classList.toggle("hide");
     startTimer();
 };
+
 docBody.onmousemove = () => resetTimers();
 docBody.onscroll = () => resetTimers();
 docBody.ontouchstart = () => resetTimers();

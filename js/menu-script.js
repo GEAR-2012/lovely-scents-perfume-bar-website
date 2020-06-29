@@ -16,11 +16,6 @@ let galleryExpanded = false; // if gallery expanded by user then 'true' else 'fa
 /* CHECK FOR CHANGE OF MEDIA IF SO REFRESH THE PAGE */
 let media = 0;
 
-onload = function () {
-    // determine the size of media
-    chageMedia();
-};
-
 onorientationchange = function () {
     if (!galleryExpanded) {
         location.reload();
@@ -35,6 +30,7 @@ onresize = function () {
 };
 
 function chageMedia() {
+    console.log("change");
     const switchPoints = {
         size_1: 768,
         size_2: 1024,
