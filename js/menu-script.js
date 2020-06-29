@@ -1,4 +1,4 @@
-/* Last modified 28 Jun 2020 by Sandor Tudja in Kemnay, Scotland */
+/* Last modified 29 Jun 2020 by Sandor Tudja in Kemnay, Scotland */
 /* © Gear Web development 2020 */
 const getMenuBtn = document.querySelector(".container-menu-btn");
 const getMenuItems = document.querySelectorAll(".menu-item");
@@ -11,6 +11,7 @@ let fullAnimTime = menuAnimSpeed + itemAnimDelay * getMenuItems.length;
 let menuSwitch = true; //Is menu on?
 let hideTimer;
 let delayTimer;
+let galleryExpanded = false; // if gallery expanded by user then 'true' else 'false' 'carousel.js'
 
 /* CHECK FOR CHANGE OF MEDIA IF SO REFRESH THE PAGE */
 let media = 0;
@@ -21,12 +22,14 @@ onload = function () {
 };
 
 onorientationchange = function () {
-    location.reload();
+    if (!galleryExpanded) {
+        location.reload();
+    }
 };
 
 onresize = function () {
     // check for change of media
-    if (chageMedia()) {
+    if (chageMedia() && !galleryExpanded) {
         location.reload();
     }
 };

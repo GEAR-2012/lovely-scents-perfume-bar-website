@@ -1,3 +1,5 @@
+/* Last modified 29 Jun 2020 by Sandor Tudja in Kemnay, Scotland */
+/* © Gear Web development 2020 */
 const docBody = document.querySelector("body");
 // const carousel = document.querySelector("#carousel");
 const mainPic = document.querySelector("#main-pic-cont");
@@ -96,6 +98,7 @@ function fullscreenSwitcher() {
     // full screen mode
     expand.classList.toggle("hide");
     compress.classList.toggle("hide");
+    galleryExpanded = expandedPic; // 'galleryExpanded' used by 'menu-script.js'
 }
 
 /* View in fullscreen */
