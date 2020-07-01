@@ -1,5 +1,5 @@
 /* This is a mobile first CSS style */
-/* Last modified 27 Jun 2020 by Sandor Tudja in Kemnay, Scotland */
+/* Last modified 01 Jul 2020 by Sandor Tudja in Kemnay, Scotland */
 /* © Gear Web development 2020 */
 :root {
     /* ========================== VARIABLES ========================== */
@@ -166,6 +166,10 @@ buttons
     color: var(--light);
     border: 2px solid var(--base);
     background-color: var(--dark);
+}
+
+.btn-fade {
+    opacity: 0.5;
 }
 /* *********** */
 
@@ -647,23 +651,23 @@ PRICE LIST
     width: 100%;
 }
 
-/* TEMPORARY */
+/* ON SALE */
 .special__offer {
     font-family: roboto, arial;
     text-align: center;
-    color: red;
+    color: var(--base);
 }
 
-.special__offer p:first-of-type {
+.special__offer .title {
     font-size: 0.9rem;
     font-weight: bold;
     padding-bottom: 0.3rem;
 }
 
-.special__offer p:last-of-type {
+.special__offer .explain {
     font-size: 0.45rem;
 }
-/* end of TEMPORARY */
+/* end of ON SALE */
 
 .table.pricelist {
     font-family: var(--fontPar);
@@ -712,11 +716,11 @@ PRICE LIST
     font-weight: bold;
 }
 
-/* COVID-19 */
+/* ON SALE */
 .table.pricelist td {
     font-size: 11px;
 }
-/* new prices */
+/* on sale prices */
 .table.pricelist.init td:nth-child(3) {
     position: relative;
     font-weight: normal;
@@ -728,7 +732,7 @@ PRICE LIST
     left: 11px;
     content: "";
     width: 84%;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid var(--base);
     transform: skewY(-10deg);
 }
 
@@ -736,6 +740,7 @@ PRICE LIST
     font-weight: bold;
 }
 /* no refill service */
+/*
 .table.pricelist.ref {
     position: relative;
     color: rgba(133, 133, 133, 0.3);
@@ -743,7 +748,7 @@ PRICE LIST
 
 .table.pricelist.ref:before {
     box-sizing: border-box;
-    content: "Sorry.\aThis service temporarily unavailable\a because of the\a Coronavirus (COVID-19)\a measurements.";
+    content: "Sorry.\aThis service temporarily unavailable\a because of the\a Coronavirus (ON SALE)\a measurements.";
     white-space: pre;
     text-align: center;
     position: absolute;
@@ -758,7 +763,7 @@ PRICE LIST
     border-radius: 10px;
     background-color: rgb(255, 253, 165);
 }
-
+*/
 .table.pricelist.gift-packaging td:first-of-type {
     padding-left: 26px;
 }
@@ -766,7 +771,7 @@ PRICE LIST
 .table.pricelist.gift-packaging td:last-of-type {
     padding-right: 26px;
 }
-/* END OF COVID-19 */
+/* END OF ON SALE */
 
 /*
 =================
@@ -1065,17 +1070,17 @@ footer a {
         line-height: 22px;
     }
 
-    /* COVID-19 */
+    /* ON SALE */
     .table.pricelist.init td:nth-child(3):before {
         left: 14px;
     }
-
+    /*  
     .table.pricelist.ref:before {
-        content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus (COVID-19)\a measurements.";
+        content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus (ON SALE)\a measurements.";
         top: 66px;
         padding: 14px 44px;
     }
-
+    */
     .table.pricelist.gift-packaging td:first-of-type {
         padding-left: 26px;
     }
@@ -1083,7 +1088,7 @@ footer a {
     .table.pricelist.gift-packaging td:last-of-type {
         padding-right: 26px;
     }
-    /* END OF COVID-19 */
+    /* END OF ON SALE */
 
     /*
     =================
@@ -1375,16 +1380,16 @@ footer a {
         width: 90%;
     }
 
-    /* TEMPORARY */
-    .special__offer p:first-of-type {
+    /* ON SALE */
+    .special__offer .title {
         font-size: 1.6rem;
         padding-bottom: 0.6rem;
     }
 
-    .special__offer p:last-of-type {
+    .special__offer .explain {
         font-size: 0.8rem;
     }
-    /* end of TEMPORARY */
+    /* end of ON SALE */
 
     .table.pricelist td:first-child {
         padding-left: 14px;
@@ -1415,17 +1420,17 @@ footer a {
         padding-top: 14px;
     }
 
-    /* COVID-19 */
-    /* new prices */
+    /* ON SALE */
+    /* on sale prices */
     .table.pricelist.init td:nth-child(3):before {
         bottom: 14px;
         left: 24px;
         border-width: 3px;
     }
-
     /* no refill service */
+    /*  
     .table.pricelist.ref:before {
-        content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus (COVID-19)\a measurements.";
+        content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus (ON SALE)\a measurements.";
         top: 42px;
         font-size: 1.8rem;
         line-height: 2.8rem;
@@ -1433,7 +1438,8 @@ footer a {
         border-width: 3px;
         border-radius: 22px;
     }
-    /* END OF COVID-19 */
+    */
+    /* END OF ON SALE */
 
     /*
     =================
@@ -1740,16 +1746,16 @@ footer a {
         width: 82%;
     }
 
-    /* TEMPORARY */
-    .special__offer p:first-of-type {
+    /* ON SALE */
+    .special__offer .title {
         font-size: 2rem;
         padding-bottom: 0.8rem;
     }
 
-    .special__offer p:last-of-type {
+    .special__offer .explain {
         font-size: 1rem;
     }
-    /* end of TEMPORARY */
+    /* end of ON SALE */
 
     .table.pricelist td:first-child {
         padding-left: 26px;
@@ -1770,14 +1776,15 @@ footer a {
         padding-top: 18px;
     }
 
-    /* COVID-19 */
-    /* new prices */
+    /* ON SALE */
+    /* on sale prices */
     .table.pricelist.init td:nth-child(3):before {
         bottom: 18px;
         border-width: 4px;
     }
 
     /* no refill service */
+    /*  
     .table.pricelist.ref:before {
         top: 54px;
         font-size: 2.4rem;
@@ -1786,7 +1793,8 @@ footer a {
         border-width: 4px;
         border-radius: 30px;
     }
-    /* END OF COVID-19 */
+    */
+    /* END OF ON SALE */
 
     /*
     =================
@@ -2108,16 +2116,16 @@ footer a {
         width: 70%;
     }
 
-    /* TEMPORARY */
-    .special__offer p:first-of-type {
+    /* ON SALE */
+    .special__offer .title {
         font-size: 1.6rem;
         padding-bottom: 0.6rem;
     }
 
-    .special__offer p:last-of-type {
+    .special__offer .explain {
         font-size: 0.8rem;
     }
-    /* end of TEMPORARY */
+    /* end of ON SALE */
 
     .table.pricelist td:first-child {
         padding-left: 14px;
@@ -2148,8 +2156,8 @@ footer a {
         padding-top: 14px;
     }
 
-    /* COVID-19 */
-    /* new prices */
+    /* ON SALE */
+    /* on sale prices */
     .table.pricelist.init td:nth-child(3):before {
         bottom: 14px;
         left: 24px;
@@ -2157,8 +2165,9 @@ footer a {
     }
 
     /* no refill service */
+    /*  
     .table.pricelist.ref:before {
-        content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus (COVID-19)\a measurements.";
+        content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus (ON SALE)\a measurements.";
         top: 42px;
         font-size: 1.8rem;
         line-height: 2.8rem;
@@ -2166,7 +2175,8 @@ footer a {
         border-width: 3px;
         border-radius: 22px;
     }
-    /* END OF COVID-19 */
+    */
+    /* END OF ON SALE */
 
     /*
     =================
@@ -2463,16 +2473,16 @@ footer a {
     PRICE LIST
     =================
     */
-    /* TEMPORARY */
-    .special__offer p:first-of-type {
+    /* ON SALE */
+    .special__offer .title {
         font-size: 2rem;
         padding-bottom: 0.8rem;
     }
 
-    .special__offer p:last-of-type {
+    .special__offer .explain {
         font-size: 1rem;
     }
-    /* end of TEMPORARY */
+    /* end of ON SALE */
 
     .table.pricelist,
     .table.pricelist td {
@@ -2504,8 +2514,8 @@ footer a {
         padding-top: 16px;
     }
 
-    /* COVID-19 */
-    /* new prices */
+    /* ON SALE */
+    /* on sale prices */
     .table.pricelist.init td:nth-child(3):before {
         bottom: 12px;
         left: 28px;
@@ -2513,6 +2523,8 @@ footer a {
     }
 
     /* no refill service */
+
+    /* 
     .table.pricelist.ref:before {
         top: 37px;
         font-size: 2rem;
@@ -2520,8 +2532,9 @@ footer a {
         padding: 30px 62px;
         border-width: 4px;
         border-radius: 28px;
-    }
-    /* END OF COVID-19 */
+    } 
+    */
+    /* END OF ON SALE */
     /*
     =================
     GALLERY
