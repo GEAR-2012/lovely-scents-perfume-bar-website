@@ -51,3 +51,5 @@ v2.7
 - remove COVID-19 window from refill prices
 - update from COVID-19 sale to summer sale so it can use later as well
 - update perfume list & price list buttons logic (toggle CSS classes)
+- update keywords & description meta tags
+- temporarily remove discount table from pricelist
