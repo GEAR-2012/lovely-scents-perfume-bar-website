@@ -726,7 +726,12 @@ PRICE LIST
     font-weight: normal;
 }
 
-.table.pricelist.init td:nth-child(3):before {
+/* 
+This rule below belong to the on sale function, it makes the cross over line for
+the old prices. It is activated the cross over lines will apears.
+*/
+
+/* .table.pricelist.init td:nth-child(3):before {
     position: absolute;
     bottom: 8px;
     left: 11px;
@@ -734,7 +739,7 @@ PRICE LIST
     width: 84%;
     border-bottom: 2px solid var(--base);
     transform: skewY(-10deg);
-}
+} */
 
 .table.pricelist.init td:last-child {
     font-weight: bold;
