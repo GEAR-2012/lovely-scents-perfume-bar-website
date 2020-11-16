@@ -53,3 +53,6 @@ v2.7
 - update perfume list & price list buttons logic (toggle CSS classes)
 - update keywords & description meta tags
 - temporarily remove discount table from pricelist
+
+v2.8
+- correcting the header's z-index because the active carousel thumb was upper than the header

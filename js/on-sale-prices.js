@@ -7,8 +7,8 @@ const saleTxt = document.querySelector(".special__offer");
 
 let newPriceArr = ["4.90", "4.50", "7.50", "9.90", "14.90", "17.50", "20.50"];
 
-saleTitleText = `Summer Sale`;
-saleExplText = `Great opportunity to get your favourite fragrance for an even better price until the end of July.`;
+saleTitleText = `Winter Sale`;
+saleExplText = `Great opportunity to get your favourite fragrance for an even better price until the end of January.`;
 
 // this loop is add a new prices next to the old ones
 priceLsTable.forEach((elem, i) => {

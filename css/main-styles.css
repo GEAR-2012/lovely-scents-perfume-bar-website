@@ -1,5 +1,5 @@
 /* This is a mobile first CSS style */
-/* Last modified 01 Sept 2020 by Sandor Tudja in Kemnay, Scotland */
+/* Last modified 06 November 2020 by Sandor Tudja in Kemnay, Scotland */
 /* © Gear Web development 2020 */
 :root {
     /* ========================== VARIABLES ========================== */
@@ -244,7 +244,7 @@ header {
     left: 0;
     width: 100%;
     height: 65px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .phone-menu-BG {
@@ -728,10 +728,10 @@ PRICE LIST
 
 /* 
 This rule below belong to the on sale function, it makes the cross over line for
-the old prices. It is activated the cross over lines will apears.
+the old prices. If it is activated the cross over lines will apears.
 */
 
-/* .table.pricelist.init td:nth-child(3):before {
+.table.pricelist.init td:nth-child(3):before {
     position: absolute;
     bottom: 8px;
     left: 11px;
@@ -739,12 +739,12 @@ the old prices. It is activated the cross over lines will apears.
     width: 84%;
     border-bottom: 2px solid var(--base);
     transform: skewY(-10deg);
-} */
+}
 
 .table.pricelist.init td:last-child {
     font-weight: bold;
 }
-/* no refill service */
+/* no refill service COVID-19 */
 /*
 .table.pricelist.ref {
     position: relative;
@@ -1432,7 +1432,7 @@ footer a {
         left: 24px;
         border-width: 3px;
     }
-    /* no refill service */
+    /* no refill service COVID-19 */
     /*  
     .table.pricelist.ref:before {
         content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus (ON SALE)\a measurements.";
@@ -1788,7 +1788,7 @@ footer a {
         border-width: 4px;
     }
 
-    /* no refill service */
+    /* no refill service COVID-19 */
     /*  
     .table.pricelist.ref:before {
         top: 54px;
@@ -2169,7 +2169,7 @@ footer a {
         border-width: 3px;
     }
 
-    /* no refill service */
+    /* no refill service COVID-19 */
     /*  
     .table.pricelist.ref:before {
         content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus (ON SALE)\a measurements.";
@@ -2527,7 +2527,7 @@ footer a {
         border-width: 4px;
     }
 
-    /* no refill service */
+    /* no refill service COVID-19 */
 
     /* 
     .table.pricelist.ref:before {
