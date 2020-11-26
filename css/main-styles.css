@@ -1,5 +1,5 @@
 /* This is a mobile first CSS style */
-/* Last modified 06 November 2020 by Sandor Tudja in Kemnay, Scotland */
+/* Last modified 26 November 2020 by Sandor Tudja in Kemnay, Scotland */
 /* © Gear Web development 2020 */
 :root {
     /* ========================== VARIABLES ========================== */
@@ -634,9 +634,8 @@ PERFUME LIST
 .legend p {
     font-family: var(--fontPar);
     font-weight: 300;
-    font-size: 1.6vw;
-    line-height: 2.5vw;
-    margin-bottom: 1vw;
+    font-size: 3.6vw;
+    line-height: 5vw;
 }
 /* end of legend */
 
@@ -1042,6 +1041,13 @@ footer a {
         line-height: 24px;
     }
 
+    /* legend */
+    .legend p {
+        font-size: 2.3vw;
+        line-height: 3vw;
+    }
+    /* end of legend */
+
     /*
     =================
     PRICE LIST
@@ -1374,6 +1380,13 @@ footer a {
     .table.parlist td {
         font-size: 18px;
     }
+
+    /* legend */
+    .legend p {
+        font-size: 2.2vw;
+        line-height: 3vw;
+    }
+    /* end of legend */
 
     /*
     =================
@@ -1741,6 +1754,13 @@ footer a {
         line-height: 32px;
         padding-top: 8px;
     }
+
+    /* legend */
+    .legend p {
+        font-size: 2.6vw;
+        line-height: 3.2vw;
+    }
+    /* end of legend */
 
     /*
     =================
@@ -2111,6 +2131,13 @@ footer a {
         padding-top: 10px;
     }
 
+    /* legend */
+    .legend p {
+        font-size: 2vw;
+        line-height: 2.8vw;
+    }
+    /* end of legend */
+
     /*
     =================
     PRICE LIST
@@ -2472,6 +2499,14 @@ footer a {
         line-height: 34px;
         padding-top: 16px;
     }
+
+    /* legend */
+    .legend p {
+        font-size: 1.6vw;
+        line-height: 1.8vw;
+        margin-bottom: 1vw;
+    }
+    /* end of legend */
 
     /*
     =================
