@@ -1,5 +1,6 @@
-<!-- Last modified 26 Nov 2020 by Sandor Tudja in Kemnay, Scotland
+<!-- Last modified 15 Dec 2020 by Sandor Tudja in Kemnay, Scotland
 © Gear Web development 2020 -->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -29,6 +30,17 @@
         <link rel="stylesheet" href="css/resetstyle.css" />
         <link rel="stylesheet" href="css/main-styles.css" />
         <link rel="stylesheet" href="css/carousel.css" />
+
+        <!-- JavaScript -->
+        <script src="js/load-perfume-list.js" defer></script>
+        <script src="js/menu-btn-script.js" defer></script>
+        <script src="js/menu-script.js" defer></script>
+        <script src="js/perfume-list_button-script.js" defer></script>
+        <script src="js/price-list_button-script.js" defer></script>
+        <script src="js/carousel.js" defer></script>
+        <!-- The script below activates the on sale function,
+        if we want to re-price all the treatments, for example. -->
+        <script src="js/on-sale-prices.js" defer></script>
     </head>
 
     <body onload="StartTimer()" onmousemove="ResetTimer()">
@@ -216,8 +228,9 @@
                             decision.
                         </span>
                         <span>
-                            Our shop offers 50 kinds of fragrances for all ages. We also provide perfume dispensers of
-                            various sizes and shapes.
+                            Our shop offers 64 kinds of fragrances for all ages. We also provide perfume dispensers of
+                            various sizes and shapes. You can find in our shop packaging materials as well such as paper
+                            bags, baskets etc..
                         </span>
                         <span>
                             We are looking forward to welcoming all our existing and prospective customers to our shop.
@@ -252,248 +265,8 @@
                                 <th>Fragrance family</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>101</td>
-                                <td>AR.CO</td>
-                                <td>Armani: CODE</td>
-                                <td>flower-orange, polyanthus</td>
-                            </tr>
-                            <tr>
-                                <td>107</td>
-                                <td>CD.JA</td>
-                                <td>C.Dior: J'ADORE</td>
-                                <td>floral-rosy-violety</td>
-                            </tr>
-                            <tr>
-                                <td>110</td>
-                                <td>CH.CH</td>
-                                <td>Chanel: CHANCE</td>
-                                <td>chypre-floral</td>
-                            </tr>
-                            <tr>
-                                <td>111</td>
-                                <td>CH.CM</td>
-                                <td>Chanel: COCO MADEMOISELLE</td>
-                                <td>oriental-floral</td>
-                            </tr>
-                            <tr>
-                                <td>112</td>
-                                <td>ES.CH</td>
-                                <td>Escada: CHERRY IN THE AIR</td>
-                                <td>floral-fruity</td>
-                            </tr>
-                            <tr>
-                                <td>115</td>
-                                <td>TM.AL</td>
-                                <td>Thierry Mugler: ALIEN</td>
-                                <td>oriental-woody</td>
-                            </tr>
-                            <tr>
-                                <td>118</td>
-                                <td>DO.LB</td>
-                                <td>Dolce & Gabbana: LIGHT BLUE</td>
-                                <td>floral-fruity</td>
-                            </tr>
-                            <tr>
-                                <td>124</td>
-                                <td>DO.IM</td>
-                                <td>Dolce & Gabbana: L'IMPERATRICE</td>
-                                <td>flower-aqua</td>
-                            </tr>
-                            <tr>
-                                <td>129</td>
-                                <td>AR.SI</td>
-                                <td>Armani: SÍ</td>
-                                <td>cyprus</td>
-                            </tr>
-                            <tr>
-                                <td>132</td>
-                                <td>KE.JU</td>
-                                <td>Kenzo: JUNGLE</td>
-                                <td>oriental-spicy</td>
-                            </tr>
-                            <tr>
-                                <td>139</td>
-                                <td>BV.IG</td>
-                                <td>Bvlgari: INDIAN GARNET</td>
-                                <td>floral-woody</td>
-                            </tr>
-                            <tr>
-                                <td>140</td>
-                                <td>VS.BB</td>
-                                <td>VSecret: BOMBSHELL BLOOM</td>
-                                <td>floral</td>
-                            </tr>
-                            <tr>
-                                <td>142</td>
-                                <td>TF.BO</td>
-                                <td>Tom Ford: BLACK ORCHID</td>
-                                <td>oriental-floral</td>
-                            </tr>
-                            <tr>
-                                <td>143</td>
-                                <td>NR.NI</td>
-                                <td>Nina Ricci: NINA</td>
-                                <td>floral-fruity</td>
-                            </tr>
-                            <tr>
-                                <td>145</td>
-                                <td>LA.VB</td>
-                                <td>Lancome: LA VIE EST BELLE</td>
-                                <td>floral-fruity</td>
-                            </tr>
-                            <tr>
-                                <td>148</td>
-                                <td>TM.AN</td>
-                                <td>T.Mugler: ANGEL</td>
-                                <td>fern aromatic</td>
-                            </tr>
-                            <tr>
-                                <td>150</td>
-                                <td>VE.BC</td>
-                                <td>Versace: BRIGHT CRYSTAL</td>
-                                <td>floral-fruity</td>
-                            </tr>
-                            <tr>
-                                <td>153</td>
-                                <td>VE.ER</td>
-                                <td>Versace: EROS</td>
-                                <td>floral-woody-musky</td>
-                            </tr>
-                            <tr>
-                                <td>155</td>
-                                <td>PR.OL</td>
-                                <td>Paco R.: OLYMPEA</td>
-                                <td>floral-vanilla</td>
-                            </tr>
-                            <tr>
-                                <td>157</td>
-                                <td>YS.BO</td>
-                                <td>Y.S.L.: BLACK OPIUM</td>
-                                <td>floral</td>
-                            </tr>
-                            <tr>
-                                <td>160</td>
-                                <td>HB.SC</td>
-                                <td>Hugo Boss: THE SCENT</td>
-                                <td>floral-fruity</td>
-                            </tr>
-                            <tr>
-                                <td>161</td>
-                                <td>HE.GG</td>
-                                <td>Carolina Herrera: GOOD GIRL</td>
-                                <td>oriental-floral</td>
-                            </tr>
-                            <!-- DISCONTINUED -->
-                            <!-- <tr>
-                                <td>163</td>
-                                <td>YS.MP</td>
-                                <td>Y.S.L.: MON PARIS</td>
-                                <td>citrus fruits</td>
-                            </tr> -->
-                            <tr>
-                                <td>165</td>
-                                <td>AG.SC</td>
-                                <td>Ariana Grande: SWEET LIKE CANDY</td>
-                                <td>woody-fruity</td>
-                            </tr>
-                            <tr>
-                                <td>168</td>
-                                <td>JP.SC</td>
-                                <td>J.P.G.:SCANDAL</td>
-                                <td>oriental-vanilla</td>
-                            </tr>
-                            <tr>
-                                <td>169</td>
-                                <td>CH.GA</td>
-                                <td>Chanel: GABRIELLE</td>
-                                <td>floral</td>
-                            </tr>
-                            <tr>
-                                <td>170</td>
-                                <td>CÉ.NO</td>
-                                <td>Chloé: NOMADE</td>
-                                <td>chypre-floral</td>
-                            </tr>
-                            <tr>
-                                <td>171</td>
-                                <td>BV.PS</td>
-                                <td>Bvlgary: OMNIA PINK SAPPHIRE</td>
-                                <td>floral</td>
-                            </tr>
-                            <tr>
-                                <td>172</td>
-                                <td>AR.SP</td>
-                                <td>Armani: SÍ PASSIONE</td>
-                                <td>floral-fruity</td>
-                            </tr>
-                            <tr>
-                                <td>173</td>
-                                <td>PR.LL</td>
-                                <td>Paco Rabanne: LADY MILLION LUCKY</td>
-                                <td>floral-fruity</td>
-                            </tr>
-                            <tr>
-                                <td>174</td>
-                                <td>CD.JO</td>
-                                <td>C.Dior: JOY</td>
-                                <td>floral-woody</td>
-                            </tr>
-                            <tr>
-                                <td>175</td>
-                                <td>DK.ST</td>
-                                <td>D.K.NY: STORIES</td>
-                                <td>floral</td>
-                            </tr>
-                            <tr>
-                                <td>177</td>
-                                <td>PR.LE</td>
-                                <td>Paco R: OLYMPEA LEGEND</td>
-                                <td>oriental-floral</td>
-                            </tr>
-                            <tr>
-                                <td>178</td>
-                                <td>AR.SF</td>
-                                <td>Armani: Sí FIORI</td>
-                                <td>chypre-floral</td>
-                            </tr>
-                            <tr>
-                                <td>179</td>
-                                <td>LA.BR</td>
-                                <td>Lancome: LA V. E. B. EN ROSE</td>
-                                <td>floral-fruity</td>
-                            </tr>
-                            <tr>
-                                <td>180</td>
-                                <td>YS.LI</td>
-                                <td>Yves Saint Laurent: LIBRE</td>
-                                <td>oriental-fougère</td>
-                            </tr>
-                            <tr>
-                                <td>181</td>
-                                <td>LA.ID</td>
-                                <td>Lancome: IDOLE</td>
-                                <td>musky-chypre-floral</td>
-                            </tr>
-                            <tr>
-                                <td>183</td>
-                                <td>PR.LM</td>
-                                <td>Paco Rabanne: LADY MILLION</td>
-                                <td>floral-woody-musky</td>
-                            </tr>
-                            <tr>
-                                <td>187</td>
-                                <td>GU.GU</td>
-                                <td>Gucci: GUILTY</td>
-                                <td>oriental-floral</td>
-                            </tr>
-                            <tr>
-                                <td>190</td>
-                                <td>GI.AD</td>
-                                <td>Givenchy: ANGE OU DEMON</td>
-                                <td>floral-fruity</td>
-                            </tr>
+                        <tbody id="lady-perfumes">
+                            <!-- JavaScript content 'read-perfume-list.js' -->
                         </tbody>
                     </table>
 
@@ -509,121 +282,8 @@
                                 <th>Fragrance family</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>202</td>
-                                <td>AR.CO</td>
-                                <td>Armani: CODE</td>
-                                <td>woody-spicy</td>
-                            </tr>
-                            <tr>
-                                <td>215</td>
-                                <td>HB.FM</td>
-                                <td>Hugo Boss: HUGO FOR MAN</td>
-                                <td>oriental-woody</td>
-                            </tr>
-                            <tr>
-                                <td>219</td>
-                                <td>JP.GA</td>
-                                <td>Jean Paul Gaultier: LE MALE</td>
-                                <td>oriental-fern</td>
-                            </tr>
-                            <tr>
-                                <td>226</td>
-                                <td>PR.1M</td>
-                                <td>Paco Rabanne: 1 MILLION</td>
-                                <td>fresh and spicy</td>
-                            </tr>
-                            <tr>
-                                <td>231</td>
-                                <td>TM.AN</td>
-                                <td>T.Mugler: ANGEL</td>
-                                <td>oriental-woody</td>
-                            </tr>
-                            <tr>
-                                <td>257</td>
-                                <td>GU.GU</td>
-                                <td>Gucci: GUILTY</td>
-                                <td>woody-aromatic</td>
-                            </tr>
-                            <tr>
-                                <td>263</td>
-                                <td>DI.OB</td>
-                                <td>Diesel: ONLY THE BRAVE</td>
-                                <td>leathery</td>
-                            </tr>
-                            <tr>
-                                <td>267</td>
-                                <td>HE.TH</td>
-                                <td>Hermes: TERRE D'HERMES</td>
-                                <td>woody-chypre</td>
-                            </tr>
-                            <tr>
-                                <td>268</td>
-                                <td>PR.IN</td>
-                                <td>Paco Rabanne: INVICTUS</td>
-                                <td>woody-aqua</td>
-                            </tr>
-                            <tr>
-                                <td>269</td>
-                                <td>BV.ME</td>
-                                <td>Bvlgari: MAN EXTREME</td>
-                                <td>woody-aromatic</td>
-                            </tr>
-                            <tr>
-                                <td>274</td>
-                                <td>TF.TV</td>
-                                <td>Tom Ford: TOBACCO VANILLA</td>
-                                <td>spicy</td>
-                            </tr>
-                            <tr>
-                                <td>279</td>
-                                <td>CD.SA</td>
-                                <td>C.Dior: SAUVAGE</td>
-                                <td>aromatic</td>
-                            </tr>
-                            <tr>
-                                <td>289</td>
-                                <td>PR.1L</td>
-                                <td>Paco Rabanne: 1 MILLION LUCKY</td>
-                                <td>woody</td>
-                            </tr>
-                            <tr>
-                                <td>290</td>
-                                <td>AR.AA</td>
-                                <td>Armani: ACQUADIGIO ABSOLU</td>
-                                <td>woody-aromatic</td>
-                            </tr>
-                            <tr>
-                                <td>291</td>
-                                <td>BV.WE</td>
-                                <td>Bvlgari: MAN WOOD ESSENCE</td>
-                                <td>woody</td>
-                            </tr>
-                            <tr>
-                                <td>292</td>
-                                <td>DO.OG</td>
-                                <td>Dolce & Gabbana: THE ONE GREY</td>
-                                <td>woody-aromatic</td>
-                            </tr>
-                            <tr>
-                                <td>293</td>
-                                <td>PR.IL</td>
-                                <td>Paco R: INVICTUS LEGEND</td>
-                                <td>chypre-woody</td>
-                            </tr>
-                            <tr>
-                                <td>296</td>
-                                <td>HB.IN</td>
-                                <td>Hugo Boss: INFINITE</td>
-                                <td>woody-aromatic</td>
-                            </tr>
-                            <tr>
-                                <td>297</td>
-                                <td>HE.BB</td>
-                                <td>Carolina Herrera: BAD BOY</td>
-                                <td>oriental-spicy</td>
-                            </tr>
+                        <tbody id="gent-perfumes">
+                            <!-- JavaScript content 'read-perfume-list.js' -->
                         </tbody>
                     </table>
                     <!-- legend for marking -->
@@ -869,16 +529,5 @@
             <i class="far fa-copyright"></i>
             <a href="gear.html" target="_blank">GEAR webdev 2020</a>
         </footer>
-
-        <!-- JavaScript -->
-        <script src="js/menu-btn-script.js"></script>
-        <script src="js/menu-script.js"></script>
-        <script src="js/perfume-list_button-script.js"></script>
-        <script src="js/price-list_button-script.js"></script>
-        <script src="js/carousel.js"></script>
-        <script src="js/list-marking.js"></script>
-        <!-- The script below activates the on sale function,
-        if we want to re-price all the treatments, for example. -->
-        <script src="js/on-sale-prices.js"></script>
     </body>
 </html>

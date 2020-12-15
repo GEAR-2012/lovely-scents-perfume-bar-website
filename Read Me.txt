@@ -60,3 +60,9 @@ v2.8
 v2.9 (26 November 2020)
 - correcting 'list-marking.js' the markings was interfering with each other
 - correcting legends font sizes in perfume list section at all media
+
+v3.0 (15 December 2020)
+- making a new JavaScript code which loads the perfume list into the correspondent table from a JSON file 'load-perfume-list.js'
+- the perfule list marking ('new', 'on sale', 'unavailable') happening in the same place by integrating the 'markin-perfume-list.js' into the 'load-perfume-list.js' file
+- bringing up the JavaScript section from the bottom of the body into the head & add to all the 'defer' attribute
+- updating the text content in the packaging section because more perfumes available from now on
