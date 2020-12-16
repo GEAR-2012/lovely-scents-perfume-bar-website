@@ -43,6 +43,7 @@ const quesAnsw = [
     },
 ];
 let quesIndex = 0;
+let captchaSolved = false;
 
 captchaBlock.classList.add("hide");
 sendBtn.disabled = true;
@@ -50,23 +51,26 @@ sendBtn.classList.add("disabled");
 
 // when any input fields change in the contact form
 contactForm.onchange = function (e) {
-    if (e.target.id === "captcha-block__answer") {
-        // if the captcha answer input changed do this:
-        checkAnswer(parseInt(e.target.value));
-    } else if (
-        // if non of the first four input field is empty do this:
-        inputName.value !== "" &&
-        inputEmail.value !== "" &&
-        inputSubject.value !== "" &&
-        inputMessage.value !== ""
-    ) {
-        revealCaptcha("Last question:");
+    if (!captchaSolved) {
+        if (e.target.id === "captcha-block__answer") {
+            // if the captcha answer input changed do this:
+            checkAnswer(parseInt(e.target.value));
+        } else if (
+            // if non of the first four input field is empty do this:
+            inputName.value !== "" &&
+            inputEmail.value !== "" &&
+            inputSubject.value !== "" &&
+            inputMessage.value !== ""
+        ) {
+            revealCaptcha("Last question:");
+        }
     }
 };
 
 function checkAnswer(num) {
     if (num === quesAnsw[quesIndex].answ) {
         // right answer
+        captchaSolved = true;
         hideCaptcha();
         sendBtn.disabled = false;
         sendBtn.classList.remove("disabled");
