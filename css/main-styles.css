@@ -124,6 +124,11 @@ hr {
     display: none;
 }
 
+.disabled {
+    filter: grayscale(100%) brightness(80%) contrast(50%) blur(1px) opacity(70%);
+    cursor: default !important;
+}
+
 /*
 buttons
 ---------------
@@ -869,6 +874,16 @@ CONTACT
 
 .contact .btn {
     padding: 0 18px;
+}
+
+.contact input::-webkit-outer-spin-button,
+.contact input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.captcha-block__answer {
+    margin-top: 2rem;
 }
 
 /*

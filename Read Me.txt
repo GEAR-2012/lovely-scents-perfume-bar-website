@@ -66,3 +66,6 @@ v3.0 (15 December 2020)
 - the perfule list marking ('new', 'on sale', 'unavailable') happening in the same place by integrating the 'markin-perfume-list.js' into the 'load-perfume-list.js' file
 - bringing up the JavaScript section from the bottom of the body into the head & add to all the 'defer' attribute
 - updating the text content in the packaging section because more perfumes available from now on
+
+v3.1 (16 December 2020)
+- making a new JavaScript code 'captcha.js' which one is organise a CAPTCHA function to the contact form section

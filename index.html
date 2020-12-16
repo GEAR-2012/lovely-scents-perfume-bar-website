@@ -1,4 +1,4 @@
-<!-- Last modified 15 Dec 2020 by Sandor Tudja in Kemnay, Scotland
+<!-- Last modified 16 Dec 2020 by Sandor Tudja in Kemnay, Scotland
 © Gear Web development 2020 -->
 
 <!DOCTYPE html>
@@ -37,6 +37,7 @@
         <script src="js/menu-script.js" defer></script>
         <script src="js/perfume-list_button-script.js" defer></script>
         <script src="js/price-list_button-script.js" defer></script>
+        <script src="js/captcha.js" defer></script>
         <script src="js/carousel.js" defer></script>
         <!-- The script below activates the on sale function,
         if we want to re-price all the treatments, for example. -->
@@ -473,7 +474,7 @@
                 ><!-- menu anchor -->
                 <div class="frame">
                     <h2 class="section-title light">contact</h2>
-                    <form class="form" action="contactform.php" method="post">
+                    <form id="contactform" class="form" action="contactform.php" method="post">
                         <input
                             class="input"
                             type="text"
@@ -509,7 +510,24 @@
                             minlength="10"
                             maxlength="300"
                         ></textarea>
-                        <button class="btn light" type="submit" name="submit">Send email</button>
+                        <!-- CAPTCHA -->
+                        <div class="captcha-block" id="captcha-block">
+                            <label
+                                id="captcha-block__question"
+                                class="captcha-block__question paragraph light"
+                                for="captcha-block__answer"
+                            ></label>
+                            <input
+                                name="answer"
+                                type="number"
+                                class="captcha-block__answer input"
+                                id="captcha-block__answer"
+                            />
+                        </div>
+                        <!-- end of CAPTCHA -->
+                        <button id="contactform__btn" class="btn light disabled" type="submit" name="submit">
+                            Send email
+                        </button>
                     </form>
                 </div>
             </section>
