@@ -5,7 +5,7 @@ Last modified 15 Dec 2020 by Sandor Tudja in Kemnay, Scotland
 
 // variables
 // perfume number list of unavailable perfumes:
-const unavailablePerfumes = [129, 202];
+const unavailablePerfumes = [129, 148, 202];
 // perfume number list of new perfumes:
 const newPerfumes = [109, 126, 144, 287, 294];
 // perfume number list of perfumes on sale:
