@@ -5,10 +5,10 @@
     /* ========================== VARIABLES ========================== */
     /* ----------------- used colors ----------------- */
     /*--- Xmass ---*/
-    --base: rgb(31, 136, 52);
-    --baseOp1: rgba(253, 74, 61, 0.8);
-    --baseOp3: rgba(0, 255, 98, 0.3);
-    --baseHighLight: rgb(37, 236, 97);
+    --base: #88a34f;
+    --baseOp1: #bf352f;
+    --baseOp3: #224732;
+    --baseHighLight: #ffd99b;
     /*--- gold ---*/
     /* --base: rgb(174, 148, 83);
     --baseOp1: rgba(174, 148, 83, 0.8);
