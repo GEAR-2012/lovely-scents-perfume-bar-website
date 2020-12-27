@@ -4,17 +4,12 @@
 :root {
     /* ========================== VARIABLES ========================== */
     /* ----------------- used colors ----------------- */
-    /*--- Xmass ---*/
-    --base: #88a34f;
-    --baseOp1: #bf352f;
-    --baseOp3: #224732;
-    --baseHighLight: #ffd99b;
     /*--- gold ---*/
-    /* --base: rgb(174, 148, 83);
+    --base: rgb(174, 148, 83);
     --baseOp1: rgba(174, 148, 83, 0.8);
     --baseOp2: rgba(174, 148, 83, 0.9);
     --baseOp3: rgba(174, 148, 83, 0.3);
-    --baseHighLight: rgb(248, 212, 120); */
+    --baseHighLight: rgb(248, 212, 120);
     /*--- dark ---*/
     --dark: rgb(0, 0, 0);
     --darkOp1: rgba(0, 0, 0, 0.8);
@@ -740,7 +735,7 @@ This rule below belong to the on sale function, it makes the cross over line for
 the old prices. If it is activated the cross over lines will apears.
 */
 
-.table.pricelist.init td:nth-child(3):before {
+/* .table.pricelist.init td:nth-child(3):before {
     position: absolute;
     bottom: 8px;
     left: 11px;
@@ -748,13 +743,13 @@ the old prices. If it is activated the cross over lines will apears.
     width: 84%;
     border-bottom: 2px solid var(--base);
     transform: skewY(-10deg);
-}
+} */
 
 .table.pricelist.init td:last-child {
     font-weight: bold;
 }
 /* no refill service COVID-19 */
-/*
+
 .table.pricelist.ref {
     position: relative;
     color: rgba(133, 133, 133, 0.3);
@@ -762,7 +757,7 @@ the old prices. If it is activated the cross over lines will apears.
 
 .table.pricelist.ref:before {
     box-sizing: border-box;
-    content: "Sorry.\aThis service temporarily unavailable\a because of the\a Coronavirus (ON SALE)\a measurements.";
+    content: "Sorry.\aThis service temporarily unavailable\a because of the\a Coronavirus\a measurements.";
     white-space: pre;
     text-align: center;
     position: absolute;
@@ -777,7 +772,7 @@ the old prices. If it is activated the cross over lines will apears.
     border-radius: 10px;
     background-color: rgb(255, 253, 165);
 }
-*/
+
 .table.pricelist.gift-packaging td:first-of-type {
     padding-left: 26px;
 }
@@ -1466,9 +1461,9 @@ footer a {
         border-width: 3px;
     }
     /* no refill service COVID-19 */
-    /*  
+
     .table.pricelist.ref:before {
-        content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus (ON SALE)\a measurements.";
+        content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus\a measurements.";
         top: 42px;
         font-size: 1.8rem;
         line-height: 2.8rem;
@@ -1476,7 +1471,7 @@ footer a {
         border-width: 3px;
         border-radius: 22px;
     }
-    */
+
     /* END OF ON SALE */
 
     /*
@@ -1829,7 +1824,7 @@ footer a {
     }
 
     /* no refill service COVID-19 */
-    /*  
+
     .table.pricelist.ref:before {
         top: 54px;
         font-size: 2.4rem;
@@ -1838,7 +1833,7 @@ footer a {
         border-width: 4px;
         border-radius: 30px;
     }
-    */
+
     /* END OF ON SALE */
 
     /*
@@ -2217,9 +2212,9 @@ footer a {
     }
 
     /* no refill service COVID-19 */
-    /*  
+
     .table.pricelist.ref:before {
-        content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus (ON SALE)\a measurements.";
+        content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus\a measurements.";
         top: 42px;
         font-size: 1.8rem;
         line-height: 2.8rem;
@@ -2227,7 +2222,7 @@ footer a {
         border-width: 3px;
         border-radius: 22px;
     }
-    */
+
     /* END OF ON SALE */
 
     /*
@@ -2584,7 +2579,6 @@ footer a {
 
     /* no refill service COVID-19 */
 
-    /* 
     .table.pricelist.ref:before {
         top: 37px;
         font-size: 2rem;
@@ -2592,8 +2586,8 @@ footer a {
         padding: 30px 62px;
         border-width: 4px;
         border-radius: 28px;
-    } 
-    */
+    }
+
     /* END OF ON SALE */
     /*
     =================
