@@ -1,5 +1,5 @@
-/* Last modified 29 Jun 2020 by Sandor Tudja in Kemnay, Scotland */
-/* © Gear Web development 2020 */
+/* Last modified 21 Febr 2021 by Sandor Tudja in Kemnay, Scotland */
+/* © Gear Web development 2021 */
 const docBody = document.querySelector("body");
 // const carousel = document.querySelector("#carousel");
 const mainPic = document.querySelector("#main-pic-cont");
@@ -150,7 +150,7 @@ function makeStrip() {
         let thumbDiv = document.createElement("div");
         thumbDiv.classList.add("thumb");
         thumbDiv.setAttribute("id", `thumb_${i}`);
-        thumbDiv.style.backgroundImage = `URL(${picUrls[i]})`;
+        thumbDiv.style.backgroundImage = `URL(${pic})`;
         thumbDiv.addEventListener("click", indexByThumb);
         strip.appendChild(thumbDiv);
     });
@@ -159,21 +159,14 @@ function makeStrip() {
     // get the width of the first thumbnail
     thumbSize = thumbArr[0].offsetWidth;
     // get the gap size of the thumbnail strip
-    thumbGap = parseFloat(
-        getComputedStyle(strip).getPropertyValue("gap").slice(0, -2),
-        10
-    );
+    thumbGap = parseFloat(getComputedStyle(strip).getPropertyValue("gap").slice(0, -2), 10);
     // get the width of the thumbnail strip
     stripWidth = strip.offsetWidth;
 }
 
 function updateStrip() {
     // scroll the strip
-    let scrollLeft =
-        thumbGap +
-        pictureIndex * (thumbSize + thumbGap) +
-        thumbSize / 2 -
-        stripContWidth / 2;
+    let scrollLeft = thumbGap + pictureIndex * (thumbSize + thumbGap) + thumbSize / 2 - stripContWidth / 2;
     stripCont.scroll(scrollLeft, 0);
     // higligh the actual thumbnail
     thumbArr.forEach((thumb, i) => {

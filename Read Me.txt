@@ -69,3 +69,9 @@ v3.0 (15 December 2020)
 
 v3.1 (16 December 2020)
 - making a new JavaScript code 'captcha.js' which one is organise a CAPTCHA function to the contact form section
+
+v3.2 (21 February 2021)
+- changing older pictures on carousel and at the "Perfume" and "Packaging" sections
+- update "Coronavirus" word to "COVID-19" on the warning jumbotron at the "Perfume Refill" section
+- update carousel.js
+- update images.json

@@ -1,6 +1,6 @@
 /* This is a mobile first CSS style */
-/* Last modified 26 November 2020 by Sandor Tudja in Kemnay, Scotland */
-/* © Gear Web development 2020 */
+/* Last modified 21 Febr 2021 by Sandor Tudja in Kemnay, Scotland */
+/* © Gear Web development 2021 */
 :root {
     /* ========================== VARIABLES ========================== */
     /* ----------------- used colors ----------------- */
@@ -757,7 +757,7 @@ the old prices. If it is activated the cross over lines will apears.
 
 .table.pricelist.ref:before {
     box-sizing: border-box;
-    content: "Sorry.\aThis service temporarily unavailable\a because of the\a Coronavirus\a measurements.";
+    content: "Sorry.\aThis service temporarily unavailable\a because of the\a COVID-19\a measurements.";
     white-space: pre;
     text-align: center;
     position: absolute;
@@ -1102,7 +1102,7 @@ footer a {
     }
     /*  
     .table.pricelist.ref:before {
-        content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus (ON SALE)\a measurements.";
+        content: "Sorry.\aThis service temporarily unavailable\a because of the COVID-19 (ON SALE)\a measurements.";
         top: 66px;
         padding: 14px 44px;
     }
@@ -1463,7 +1463,7 @@ footer a {
     /* no refill service COVID-19 */
 
     .table.pricelist.ref:before {
-        content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus\a measurements.";
+        content: "Sorry.\aThis service temporarily unavailable\a because of the COVID-19\a measurements.";
         top: 42px;
         font-size: 1.8rem;
         line-height: 2.8rem;
@@ -2214,7 +2214,7 @@ footer a {
     /* no refill service COVID-19 */
 
     .table.pricelist.ref:before {
-        content: "Sorry.\aThis service temporarily unavailable\a because of the Coronavirus\a measurements.";
+        content: "Sorry.\aThis service temporarily unavailable\a because of the COVID-19\a measurements.";
         top: 42px;
         font-size: 1.8rem;
         line-height: 2.8rem;
