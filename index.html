@@ -3,168 +3,156 @@
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <title>Lovely Scents Perfume Bar</title>
-        <meta charset="UTF-8" />
-        <meta
-            name="keywords"
-            content="perfume aftershave fragrance scent lovely alternative copy inspired eau de toilette cologne aberdeen"
-        />
-        <meta
-            name="description"
-            content="This site provides a large variety of alternative perfume, aftershave. Discover Lovely Scents' webshop or visit our perfume shop in Aberdeen in person."
-        />
+  <head>
+    <title>Lovely Scents Perfume Bar</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="perfume aftershave fragrance scent lovely alternative copy inspired eau de toilette cologne aberdeen"
+    />
+    <meta
+      name="description"
+      content="This site provides a large variety of alternative perfume, aftershave. Discover Lovely Scents' webshop or visit our perfume shop in Aberdeen in person."
+    />
 
-        <meta name="author" content="Sandor Tudja" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- fontawesome -->
-        <script src="https://kit.fontawesome.com/f3fb50eddd.js" crossorigin="anonymous"></script>
-        <!-- fonts -->
-        <link
-            href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900|Exo+2:100,200,300,400,500,600,700,800,900&display=swap"
-            rel="stylesheet"
-        />
-        <!-- favicon -->
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/resetstyle.css" />
-        <link rel="stylesheet" href="css/main-styles.css" />
-        <link rel="stylesheet" href="css/carousel.css" />
+    <meta name="author" content="Sandor Tudja" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/f3fb50eddd.js" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900|Exo+2:100,200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/resetstyle.css" />
+    <link rel="stylesheet" href="css/main-styles.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
 
-        <!-- JavaScript -->
-        <script src="js/load-perfume-list.js" defer></script>
-        <script src="js/menu-btn-script.js" defer></script>
-        <script src="js/menu-script.js" defer></script>
-        <script src="js/perfume-list_button-script.js" defer></script>
-        <script src="js/price-list_button-script.js" defer></script>
-        <script src="js/captcha.js" defer></script>
-        <script src="js/carousel.js" defer></script>
-        <!-- The script below activates the on sale function,
+    <!-- JavaScript -->
+    <script src="js/load-perfume-list.js" defer></script>
+    <script src="js/menu-btn-script.js" defer></script>
+    <script src="js/menu-script.js" defer></script>
+    <script src="js/perfume-list_button-script.js" defer></script>
+    <script src="js/price-list_button-script.js" defer></script>
+    <script src="js/captcha.js" defer></script>
+    <script src="js/carousel.js" defer></script>
+    <!-- The script below activates the on sale function,
         if we want to re-price all the treatments, for example. -->
-        <!-- <script src="js/on-sale-prices.js" defer></script> -->
-    </head>
+    <!-- <script src="js/on-sale-prices.js" defer></script> -->
+  </head>
 
-    <body onload="StartTimer()" onmousemove="ResetTimer()">
-        <header>
-            <svg class="phone-menu-BG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 95">
-                <path id="BG" class="cls-1" d="M0,0H375V85L187.5,95,0,85Z" />
-            </svg>
+  <body onload="StartTimer()" onmousemove="ResetTimer()">
+    <header>
+      <svg class="phone-menu-BG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 95">
+        <path id="BG" class="cls-1" d="M0,0H375V85L187.5,95,0,85Z" />
+      </svg>
 
-            <a href="#an1">
-                <svg class="logo-header" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                    <g class="flames">
-                        <g
-                            class="flame-3 flame"
-                            transform="matrix(0.216248 0.100838 -0.0756492 0.16223 -73.1745 -153.73)"
-                        >
-                            <path
-                                d="M1532.6 381.7C1683.3 381.7 1790.3 500 1790.3 500 1790.3 500 1667.2 618.3 1532.6 618.3 1398.1 618.3 1275 500 1275 500 1275 500 1381.9 381.7 1532.6 381.7Z"
-                            />
-                        </g>
-                        <g class="flame-2 flame" transform="matrix(0.238604 0 0 0.179001 -139.503 -33.547)">
-                            <path
-                                d="M1532.6 381.7C1683.3 381.7 1790.3 500 1790.3 500 1790.3 500 1667.2 618.3 1532.6 618.3 1398.1 618.3 1275 500 1275 500 1275 500 1381.9 381.7 1532.6 381.7Z"
-                            />
-                        </g>
-                        <g
-                            class="flame-1 flame"
-                            transform="matrix(0.216248 -0.100838 0.0756492 0.16223 -148.825 103.386)"
-                        >
-                            <path
-                                d="M1532.6 381.7C1683.3 381.7 1790.3 500 1790.3 500 1790.3 500 1667.2 618.3 1532.6 618.3 1398.1 618.3 1275 500 1275 500 1275 500 1381.9 381.7 1532.6 381.7Z"
-                            />
-                        </g>
-                    </g>
-                    <g class="bottle-head">
-                        <g transform="matrix(0.129944 0 0 0.129944 -9.67072 19.5619)">
-                            <circle cx="1028.1" cy="287.3" r="211.5" />
-                        </g>
-                    </g>
-                    <g class="bottle-body" transform="matrix(0.157048 0 0 0.157048 -32.0946 27.9041)">
-                        <path
-                            d="M1210.9 673.2C1042.3 397.9 503.2 498.9 355.5 820.9 231.1 1092.1 245.8 1481.8 566.2 1720.3 844.5 1724 1227.9 1720.7 1479.9 1720.3 1802.2 1487.7 1826.3 1025.1 1727.5 783.8 1583.8 433.4 1222.1 300.3 818.5 425.7 1238.9 406.5 1579 563 1597.3 938.3 1613.6 1271.6 1468.4 1627.6 996.5 1632.2 590.1 1636.3 401.3 1218.2 495 930.3 593 629.2 920.7 470.8 1210.9 673.2Z"
-                        />
-                    </g>
-                </svg>
-            </a>
+      <a href="#an1">
+        <svg class="logo-header" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <g class="flames">
+            <g class="flame-3 flame" transform="matrix(0.216248 0.100838 -0.0756492 0.16223 -73.1745 -153.73)">
+              <path
+                d="M1532.6 381.7C1683.3 381.7 1790.3 500 1790.3 500 1790.3 500 1667.2 618.3 1532.6 618.3 1398.1 618.3 1275 500 1275 500 1275 500 1381.9 381.7 1532.6 381.7Z"
+              />
+            </g>
+            <g class="flame-2 flame" transform="matrix(0.238604 0 0 0.179001 -139.503 -33.547)">
+              <path
+                d="M1532.6 381.7C1683.3 381.7 1790.3 500 1790.3 500 1790.3 500 1667.2 618.3 1532.6 618.3 1398.1 618.3 1275 500 1275 500 1275 500 1381.9 381.7 1532.6 381.7Z"
+              />
+            </g>
+            <g class="flame-1 flame" transform="matrix(0.216248 -0.100838 0.0756492 0.16223 -148.825 103.386)">
+              <path
+                d="M1532.6 381.7C1683.3 381.7 1790.3 500 1790.3 500 1790.3 500 1667.2 618.3 1532.6 618.3 1398.1 618.3 1275 500 1275 500 1275 500 1381.9 381.7 1532.6 381.7Z"
+              />
+            </g>
+          </g>
+          <g class="bottle-head">
+            <g transform="matrix(0.129944 0 0 0.129944 -9.67072 19.5619)">
+              <circle cx="1028.1" cy="287.3" r="211.5" />
+            </g>
+          </g>
+          <g class="bottle-body" transform="matrix(0.157048 0 0 0.157048 -32.0946 27.9041)">
+            <path
+              d="M1210.9 673.2C1042.3 397.9 503.2 498.9 355.5 820.9 231.1 1092.1 245.8 1481.8 566.2 1720.3 844.5 1724 1227.9 1720.7 1479.9 1720.3 1802.2 1487.7 1826.3 1025.1 1727.5 783.8 1583.8 433.4 1222.1 300.3 818.5 425.7 1238.9 406.5 1579 563 1597.3 938.3 1613.6 1271.6 1468.4 1627.6 996.5 1632.2 590.1 1636.3 401.3 1218.2 495 930.3 593 629.2 920.7 470.8 1210.9 673.2Z"
+            />
+          </g>
+        </svg>
+      </a>
 
-            <nav class="navigation">
-                <div class="container-menu-btn">
-                    <svg class="menu-btn">
-                        <circle class="circle" cx="28" cy="28" r="2" />
-                        <line class="line line-1" x1="12" y1="18" x2="44" y2="18" />
-                        <line class="line line-2" x1="12" y1="28" x2="44" y2="28" />
-                        <line class="line line-3" x1="12" y1="38" x2="44" y2="38" />
-                    </svg>
-                </div>
+      <nav class="navigation">
+        <div class="container-menu-btn">
+          <svg class="menu-btn">
+            <circle class="circle" cx="28" cy="28" r="2" />
+            <line class="line line-1" x1="12" y1="18" x2="44" y2="18" />
+            <line class="line line-2" x1="12" y1="28" x2="44" y2="28" />
+            <line class="line line-3" x1="12" y1="38" x2="44" y2="38" />
+          </svg>
+        </div>
 
-                <ul class="menu">
-                    <li class="menu-item"><a href="#an1">home</a></li>
-                    <li class="menu-item"><a href="#an2">the perfume</a></li>
-                    <li class="menu-item"><a href="#an3">packaging</a></li>
-                    <li class="menu-item"><a href="#an4">perfume list</a></li>
-                    <li class="menu-item"><a href="#an5">price list</a></li>
-                    <li class="menu-item"><a href="#an6">gallery</a></li>
-                    <li class="menu-item"><a href="#an7">order</a></li>
-                    <li class="menu-item"><a href="#an8">contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <ul class="menu">
+          <li class="menu-item"><a href="#an1">home</a></li>
+          <li class="menu-item"><a href="#an2">the perfume</a></li>
+          <li class="menu-item"><a href="#an3">packaging</a></li>
+          <li class="menu-item"><a href="#an4">perfume list</a></li>
+          <li class="menu-item"><a href="#an5">price list</a></li>
+          <li class="menu-item"><a href="#an6">gallery</a></li>
+          <li class="menu-item"><a href="#an7">order</a></li>
+          <li class="menu-item"><a href="#an8">contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <div class="wrapper">
-            <section class="block welcome light">
-                <a class="anchor" id="an1"></a
-                ><!-- menu anchor -->
-                <div class="cont__1">
-                    <h3>welcome to the</h3>
+    <div class="wrapper">
+      <section class="block welcome light">
+        <a class="anchor" id="an1"></a
+        ><!-- menu anchor -->
+        <div class="cont__1">
+          <h3>welcome to the</h3>
 
-                    <div class="cont__2">
-                        <div class="cont__logo">
-                            <svg class="logo work" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                                <g class="flames">
-                                    <g
-                                        class="flame-3 flame"
-                                        transform="matrix(0.216248 0.100838 -0.0756492 0.16223 -73.1745 -153.73)"
-                                    >
-                                        <path
-                                            d="M1532.6 381.7C1683.3 381.7 1790.3 500 1790.3 500 1790.3 500 1667.2 618.3 1532.6 618.3 1398.1 618.3 1275 500 1275 500 1275 500 1381.9 381.7 1532.6 381.7Z"
-                                        />
-                                    </g>
-                                    <g class="flame-2 flame" transform="matrix(0.238604 0 0 0.179001 -139.503 -33.547)">
-                                        <path
-                                            d="M1532.6 381.7C1683.3 381.7 1790.3 500 1790.3 500 1790.3 500 1667.2 618.3 1532.6 618.3 1398.1 618.3 1275 500 1275 500 1275 500 1381.9 381.7 1532.6 381.7Z"
-                                        />
-                                    </g>
-                                    <g
-                                        class="flame-1 flame"
-                                        transform="matrix(0.216248 -0.100838 0.0756492 0.16223 -148.825 103.386)"
-                                    >
-                                        <path
-                                            d="M1532.6 381.7C1683.3 381.7 1790.3 500 1790.3 500 1790.3 500 1667.2 618.3 1532.6 618.3 1398.1 618.3 1275 500 1275 500 1275 500 1381.9 381.7 1532.6 381.7Z"
-                                        />
-                                    </g>
-                                </g>
-                                <g class="bottle-head">
-                                    <g transform="matrix(0.129944 0 0 0.129944 -9.67072 19.5619)">
-                                        <circle cx="1028.1" cy="287.3" r="211.5" />
-                                    </g>
-                                </g>
-                                <g class="bottle-body" transform="matrix(0.157048 0 0 0.157048 -32.0946 27.9041)">
-                                    <path
-                                        d="M1210.9 673.2C1042.3 397.9 503.2 498.9 355.5 820.9 231.1 1092.1 245.8 1481.8 566.2 1720.3 844.5 1724 1227.9 1720.7 1479.9 1720.3 1802.2 1487.7 1826.3 1025.1 1727.5 783.8 1583.8 433.4 1222.1 300.3 818.5 425.7 1238.9 406.5 1579 563 1597.3 938.3 1613.6 1271.6 1468.4 1627.6 996.5 1632.2 590.1 1636.3 401.3 1218.2 495 930.3 593 629.2 920.7 470.8 1210.9 673.2Z"
-                                    />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="cont__3">
-                            <h1>lovely scents</h1>
-                            <h2>perfume bar</h2>
-                        </div>
-                    </div>
-                    <h3>website</h3>
-                </div>
+          <div class="cont__2">
+            <div class="cont__logo">
+              <svg class="logo work" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <g class="flames">
+                  <g class="flame-3 flame" transform="matrix(0.216248 0.100838 -0.0756492 0.16223 -73.1745 -153.73)">
+                    <path
+                      d="M1532.6 381.7C1683.3 381.7 1790.3 500 1790.3 500 1790.3 500 1667.2 618.3 1532.6 618.3 1398.1 618.3 1275 500 1275 500 1275 500 1381.9 381.7 1532.6 381.7Z"
+                    />
+                  </g>
+                  <g class="flame-2 flame" transform="matrix(0.238604 0 0 0.179001 -139.503 -33.547)">
+                    <path
+                      d="M1532.6 381.7C1683.3 381.7 1790.3 500 1790.3 500 1790.3 500 1667.2 618.3 1532.6 618.3 1398.1 618.3 1275 500 1275 500 1275 500 1381.9 381.7 1532.6 381.7Z"
+                    />
+                  </g>
+                  <g class="flame-1 flame" transform="matrix(0.216248 -0.100838 0.0756492 0.16223 -148.825 103.386)">
+                    <path
+                      d="M1532.6 381.7C1683.3 381.7 1790.3 500 1790.3 500 1790.3 500 1667.2 618.3 1532.6 618.3 1398.1 618.3 1275 500 1275 500 1275 500 1381.9 381.7 1532.6 381.7Z"
+                    />
+                  </g>
+                </g>
+                <g class="bottle-head">
+                  <g transform="matrix(0.129944 0 0 0.129944 -9.67072 19.5619)">
+                    <circle cx="1028.1" cy="287.3" r="211.5" />
+                  </g>
+                </g>
+                <g class="bottle-body" transform="matrix(0.157048 0 0 0.157048 -32.0946 27.9041)">
+                  <path
+                    d="M1210.9 673.2C1042.3 397.9 503.2 498.9 355.5 820.9 231.1 1092.1 245.8 1481.8 566.2 1720.3 844.5 1724 1227.9 1720.7 1479.9 1720.3 1802.2 1487.7 1826.3 1025.1 1727.5 783.8 1583.8 433.4 1222.1 300.3 818.5 425.7 1238.9 406.5 1579 563 1597.3 938.3 1613.6 1271.6 1468.4 1627.6 996.5 1632.2 590.1 1636.3 401.3 1218.2 495 930.3 593 629.2 920.7 470.8 1210.9 673.2Z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="cont__3">
+              <h1>lovely scents</h1>
+              <h2>perfume bar</h2>
+            </div>
+          </div>
+          <h3>website</h3>
+        </div>
 
-                <!-- <div class="frame">
+        <!-- <div class="frame">
                     <div class="logo-container">
                         <div class="logo-main"></div>
                         <div class="welcome-text-2">
@@ -172,380 +160,366 @@
                         </div>
                     </div>
                 </div> -->
-            </section>
+      </section>
 
-            <section class="block the-perfume dark">
-                <a class="anchor" id="an2"></a
-                ><!-- menu anchor -->
-                <h2 class="section-title light">
-                    <span>The</span>
-                    <span>hand decanted</span>
-                    <span>perfume</span>
-                </h2>
-                <div class="container">
-                    <p class="paragraph light">
-                        <span>
-                            Our decanted perfume product is mostly made from French ingredients produced by our
-                            supplier. Its composition is the same in all ‘Eau De Toilets’ quality, with all its physical
-                            and chemical characteristics.
-                        </span>
-                        <span>
-                            We can keep a low commercial price because of the scents not sold in the original packaging
-                            (genuine perfume bottle/box) but refill perfume bottles (10, 11, 30, 50, 100ml) and our
-                            supplier produces them in Hungary from the ingredients.
-                        </span>
-                        <span>
-                            Our list ranges from classic to the latest scents perfume types. In our store, on wooden
-                            shelving system we decant each different scent into glass bottles by hand, from 1 litre
-                            glass containers with copper taps. Our clients can choose from the perfume list of scents
-                            which they prefer, from the testers on the counter they can also try it and we can fill it
-                            in the desired sized bottle. Later the empty bottle can be refilled at an even better price
-                            with the same or a different fragrance.
-                        </span>
-                    </p>
-                    <div class="pictures">
-                        <img src="img/carousel/s0_A00012.jpg" alt="shelf jar perfume" />
-                        <img src="img/carousel/s0_A00011.jpg" alt="shelf jar perfume" />
-                        <img src="img/carousel/s0_A00002.jpg" alt="shelf jar perfume" />
-                        <img src="img/carousel/s0_A00004.jpg" alt="shelf jar perfume" />
-                        <img src="img/carousel/s0_A00008.jpg" alt="shelf jar perfume" />
-                    </div>
-                </div>
-            </section>
-
-            <section class="block packaging light">
-                <a class="anchor" id="an3"></a
-                ><!-- menu anchor -->
-                <h2 class="section-title dark">packaging</h2>
-                <div class="container">
-                    <p class="paragraph dark">
-                        <span>
-                            The various fragrances are sold from 1 litre decorative glass containers with a copper tap,
-                            each with a fragrance tester in the form of glass bottles.
-                        </span>
-                        <span>
-                            The fragrance samples can be examined by the clients, thus making their choice easier. Also,
-                            a comprehensive list of fragrances - both classical and up-to-date - will help you make your
-                            decision.
-                        </span>
-                        <span>
-                            Our shop offers 64 kinds of fragrances for all ages. We also provide perfume dispensers of
-                            various sizes and shapes. You can find in our shop packaging materials as well such as paper
-                            bags, baskets etc..
-                        </span>
-                        <span>
-                            We are looking forward to welcoming all our existing and prospective customers to our shop.
-                        </span>
-                    </p>
-                    <div class="pictures">
-                        <img src="img/carousel/s0_A00007.jpg" alt="perfume" />
-                        <img src="img/carousel/s0_A00009.jpg" alt="perfume" />
-                        <img src="img/carousel/s0_A00010.jpg" alt="perfume" />
-                    </div>
-                </div>
-            </section>
-
-            <section class="block perfume-list dark">
-                <a class="anchor" id="an4"></a
-                ><!-- menu anchor -->
-                <div class="frame">
-                    <h2 class="section-title light">perfume-list</h2>
-                    <div class="btn-container-parlist">
-                        <button class="btn light parlist female" type="button" name="button-parlist">For Her</button>
-                        <button class="btn light parlist male" type="button" name="button-parlist">For Him</button>
-                    </div>
-                    <table class="table parlist female">
-                        <caption>
-                            Fragrances for Ladies
-                        </caption>
-                        <thead>
-                            <tr>
-                                <th>No.</th>
-                                <th>Code</th>
-                                <th>Original</th>
-                                <th>Fragrance family</th>
-                            </tr>
-                        </thead>
-                        <tbody id="lady-perfumes">
-                            <!-- JavaScript content 'read-perfume-list.js' -->
-                        </tbody>
-                    </table>
-
-                    <table class="table parlist male">
-                        <caption>
-                            Fragrances for Gentlemen
-                        </caption>
-                        <thead>
-                            <tr>
-                                <th>No.</th>
-                                <th>Code</th>
-                                <th>Original</th>
-                                <th>Fragrance family</th>
-                            </tr>
-                        </thead>
-                        <tbody id="gent-perfumes">
-                            <!-- JavaScript content 'read-perfume-list.js' -->
-                        </tbody>
-                    </table>
-                    <!-- legend for marking -->
-                    <div class="legend">
-                        <p class="new hide">* New arrival.</p>
-                        <p class="unavailable hide">* Temporarily do not available.</p>
-                        <p class="sale hide">* On sale.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="block price-list light">
-                <a class="anchor" id="an5"></a
-                ><!-- menu anchor -->
-                <div class="frame">
-                    <h2 class="section-title dark">price-list</h2>
-
-                    <div class="btn-container-pricelist">
-                        <button class="btn dark pricelist init" type="button" name="button-pricelist">
-                            Perfumes with Glass Bottle
-                        </button>
-                        <button class="btn dark pricelist ref" type="button" name="button-pricelist">
-                            Perfumes Refills
-                        </button>
-                    </div>
-                    <div class="special__offer"></div>
-                    <table class="table pricelist init">
-                        <caption>
-                            Perfumes with Glass Bottle
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>10ml</td>
-                                <td>Metal Bottle with perfume:</td>
-                                <td>£5.50</td>
-                            </tr>
-                            <tr>
-                                <td>11ml</td>
-                                <td>Glass Bottle with perfume:</td>
-                                <td>£4.99</td>
-                            </tr>
-                            <tr>
-                                <td>30ml</td>
-                                <td>Glass Bottle with perfume:</td>
-                                <td>£8.50</td>
-                            </tr>
-                            <tr>
-                                <td>50ml</td>
-                                <td>Glass Bottle with perfume:</td>
-                                <td>£11.50</td>
-                            </tr>
-                            <tr>
-                                <td>100ml</td>
-                                <td>Glass Bottle with perfume:</td>
-                                <td>£16.50</td>
-                            </tr>
-                            <tr>
-                                <td>80ml</td>
-                                <td>Vintage Glass Bottle with perfume:</td>
-                                <td>£18.90</td>
-                            </tr>
-                            <tr>
-                                <td>100ml</td>
-                                <td>Vintage Glass Bottle with perfume:</td>
-                                <td>£22.50</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <hr class="hr__1" />
-
-                    <table class="table pricelist ref">
-                        <caption>
-                            Perfumes Refills
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>10ml</td>
-                                <td>perfume:</td>
-                                <td>£3.00</td>
-                            </tr>
-                            <tr>
-                                <td>11ml</td>
-                                <td>perfume:</td>
-                                <td>£3.50</td>
-                            </tr>
-                            <tr>
-                                <td>30ml</td>
-                                <td>perfume:</td>
-                                <td>£5.50</td>
-                            </tr>
-                            <tr>
-                                <td>50ml</td>
-                                <td>perfume:</td>
-                                <td>£7.99</td>
-                            </tr>
-                            <tr>
-                                <td>80ml</td>
-                                <td>perfume:</td>
-                                <td>£10.90</td>
-                            </tr>
-                            <tr>
-                                <td>100ml</td>
-                                <td>perfume:</td>
-                                <td>£12.50</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <hr class="hr__2" />
-
-                    <table class="table pricelist gift-packaging">
-                        <caption>
-                            Gitf Packaging
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>Gift bag sparkly silver:</td>
-                                <td>£2.00</td>
-                            </tr>
-                            <tr>
-                                <td>Gift box small:</td>
-                                <td>£3.50</td>
-                            </tr>
-                            <tr>
-                                <td>Gift box big:</td>
-                                <td>£4.50</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <hr style="display: none" class="hr__3" />
-
-                    <table style="display: none" class="table pricelist discount">
-                        <caption>
-                            Spend more Save more
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>When you spend over £33:</td>
-                                <td>free 11ml perfume/aftershave</td>
-                            </tr>
-                            <tr>
-                                <td>When you spend over £48:</td>
-                                <td>free 30ml perfume/aftershave</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-            <section class="block gallery light">
-                <a class="anchor" id="an6"></a
-                ><!-- menu anchor -->
-                <div class="frame">
-                    <h2 class="section-title dark">gallery</h2>
-                    <div id="carousel">
-                        <div id="main-pic-cont">
-                            <i id="left-arrow" class="fas fa-arrow-alt-circle-left"></i>
-                            <i id="right-arrow" class="fas fa-arrow-alt-circle-right"></i>
-                            <i id="expand" class="fas fa-expand"></i>
-                            <i id="compress" class="fas fa-compress"></i>
-                            <img src="" alt="" />
-                        </div>
-                        <div id="strip-cont">
-                            <div id="strip"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="block order dark">
-                <a class="anchor" id="an7"></a
-                ><!-- menu anchor -->
-                <h2 class="section-title light">order</h2>
-                <div class="frame">
-                    <p class="paragraph msg">You can order on the number below:</p>
-                    <p class="paragraph phone">
-                        <a href="tel:+447738173361">07738173361</a>
-                        <br /><span>(Aberdeen)</span>
-                    </p>
-                </div>
-            </section>
-
-            <section class="block contact dark">
-                <a class="anchor" id="an8"></a
-                ><!-- menu anchor -->
-                <div class="frame">
-                    <h2 class="section-title light">contact</h2>
-                    <form id="contactform" class="form" action="contactform.php" method="post">
-                        <input
-                            class="input"
-                            type="text"
-                            name="name"
-                            placeholder="Your Name"
-                            required
-                            minlength="3"
-                            maxlength="30"
-                        />
-                        <input
-                            class="input"
-                            type="email"
-                            name="mail"
-                            placeholder="Your email address"
-                            required
-                            minlength="7"
-                            maxlength="30"
-                        />
-                        <input
-                            class="input"
-                            type="text"
-                            name="subject"
-                            placeholder="Subject"
-                            required
-                            minlength="3"
-                            maxlength="15"
-                        />
-                        <textarea
-                            class="input"
-                            name="message"
-                            placeholder="Your Message"
-                            required
-                            minlength="10"
-                            maxlength="300"
-                        ></textarea>
-                        <!-- CAPTCHA -->
-                        <div class="captcha-block" id="captcha-block">
-                            <label
-                                id="captcha-block__question"
-                                class="captcha-block__question paragraph light"
-                                for="captcha-block__answer"
-                            ></label>
-                            <input
-                                name="answer"
-                                type="number"
-                                class="captcha-block__answer input"
-                                id="captcha-block__answer"
-                            />
-                        </div>
-                        <!-- end of CAPTCHA -->
-                        <button id="contactform__btn" class="btn light disabled" type="submit" name="submit">
-                            Send email
-                        </button>
-                    </form>
-                </div>
-            </section>
+      <section class="block the-perfume dark">
+        <a class="anchor" id="an2"></a
+        ><!-- menu anchor -->
+        <h2 class="section-title light">
+          <span>The</span>
+          <span>hand decanted</span>
+          <span>perfume</span>
+        </h2>
+        <div class="container">
+          <p class="paragraph light">
+            <span>
+              Our decanted perfume product is mostly made from French ingredients produced by our supplier. Its
+              composition is the same in all ‘Eau De Toilets’ quality, with all its physical and chemical
+              characteristics.
+            </span>
+            <span>
+              We can keep a low commercial price because of the scents not sold in the original packaging (genuine
+              perfume bottle/box) but refill perfume bottles (10, 11, 30, 50, 100ml) and our supplier produces them in
+              Hungary from the ingredients.
+            </span>
+            <span>
+              Our list ranges from classic to the latest scents perfume types. In our store, on wooden shelving system
+              we decant each different scent into glass bottles by hand, from 1 litre glass containers with copper taps.
+              Our clients can choose from the perfume list of scents which they prefer, from the testers on the counter
+              they can also try it and we can fill it in the desired sized bottle. Later the empty bottle can be
+              refilled at an even better price with the same or a different fragrance.
+            </span>
+          </p>
+          <div class="pictures">
+            <img src="img/carousel/s0_A00012.jpg" alt="shelf jar perfume" />
+            <img src="img/carousel/s0_A00011.jpg" alt="shelf jar perfume" />
+            <img src="img/carousel/s0_A00002.jpg" alt="shelf jar perfume" />
+            <img src="img/carousel/s0_A00004.jpg" alt="shelf jar perfume" />
+            <img src="img/carousel/s0_A00008.jpg" alt="shelf jar perfume" />
+          </div>
         </div>
+      </section>
 
-        <footer>
-            <i class="fas fa-map-marker-alt"></i>
-            <a
-                href="https://www.google.hu/maps/place/564+George+St,+Aberdeen+AB25+3XU/@57.1558379,-2.1099416,17z/data=!3m1!4b1!4m5!3m4!1s0x48840e19427ebae1:0xd05026c84bfaf0d2!8m2!3d57.155835!4d-2.1077529"
-                target="_blank"
-                >564 George St., Aberdeen</a
-            >
-            <i class="fab fa-facebook"></i>
-            <a href="https://www.facebook.com/Lovely-Scents-Perfume-Bar-in-Aberdeen-238255647056326/" target="_blank"
-                >Lovely Scents Perfume Bar</a
-            >
-            <i class="far fa-copyright"></i>
-            <a href="gear.html" target="_blank">GEAR webdev 2021</a>
-        </footer>
-    </body>
+      <section class="block packaging light">
+        <a class="anchor" id="an3"></a
+        ><!-- menu anchor -->
+        <h2 class="section-title dark">packaging</h2>
+        <div class="container">
+          <p class="paragraph dark">
+            <span>
+              The various fragrances are sold from 1 litre decorative glass containers with a copper tap, each with a
+              fragrance tester in the form of glass bottles.
+            </span>
+            <span>
+              The fragrance samples can be examined by the clients, thus making their choice easier. Also, a
+              comprehensive list of fragrances - both classical and up-to-date - will help you make your decision.
+            </span>
+            <span>
+              Our shop offers 64 kinds of fragrances for all ages. We also provide perfume dispensers of various sizes
+              and shapes. You can find in our shop packaging materials as well such as paper bags, baskets etc..
+            </span>
+            <span> We are looking forward to welcoming all our existing and prospective customers to our shop. </span>
+          </p>
+          <div class="pictures">
+            <img src="img/carousel/s0_A00007.jpg" alt="perfume" />
+            <img src="img/carousel/s0_A00009.jpg" alt="perfume" />
+            <img src="img/carousel/s0_A00010.jpg" alt="perfume" />
+          </div>
+        </div>
+      </section>
+
+      <section class="block perfume-list dark">
+        <a class="anchor" id="an4"></a
+        ><!-- menu anchor -->
+        <div class="frame">
+          <h2 class="section-title light">perfume-list</h2>
+          <div class="btn-container-parlist">
+            <button class="btn light parlist female" type="button" name="button-parlist">For Her</button>
+            <button class="btn light parlist male" type="button" name="button-parlist">For Him</button>
+          </div>
+          <table class="table parlist female">
+            <caption>
+              Fragrances for Ladies
+            </caption>
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Code</th>
+                <th>Original</th>
+                <th>Fragrance family</th>
+              </tr>
+            </thead>
+            <tbody id="lady-perfumes">
+              <!-- JavaScript content 'read-perfume-list.js' -->
+            </tbody>
+          </table>
+
+          <table class="table parlist male">
+            <caption>
+              Fragrances for Gentlemen
+            </caption>
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Code</th>
+                <th>Original</th>
+                <th>Fragrance family</th>
+              </tr>
+            </thead>
+            <tbody id="gent-perfumes">
+              <!-- JavaScript content 'read-perfume-list.js' -->
+            </tbody>
+          </table>
+          <!-- legend for marking -->
+          <div class="legend">
+            <p class="new hide">* New arrival.</p>
+            <p class="unavailable hide">* Temporarily do not available.</p>
+            <p class="sale hide">* On sale.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block price-list light">
+        <a class="anchor" id="an5"></a
+        ><!-- menu anchor -->
+        <div class="frame">
+          <h2 class="section-title dark">price-list</h2>
+
+          <div class="btn-container-pricelist">
+            <button class="btn dark pricelist init" type="button" name="button-pricelist">
+              Perfumes with Glass Bottle
+            </button>
+            <button class="btn dark pricelist ref" type="button" name="button-pricelist">Perfumes Refills</button>
+          </div>
+          <div class="special__offer"></div>
+          <table class="table pricelist init">
+            <caption>
+              Perfumes with Glass Bottle
+            </caption>
+            <tbody>
+              <tr>
+                <td>10ml</td>
+                <td>Metal Bottle with perfume:</td>
+                <td>£5.50</td>
+              </tr>
+              <tr>
+                <td>11ml</td>
+                <td>Glass Bottle with perfume:</td>
+                <td>£4.99</td>
+              </tr>
+              <tr>
+                <td>30ml</td>
+                <td>Glass Bottle with perfume:</td>
+                <td>£7.99</td>
+              </tr>
+              <tr>
+                <td>50ml</td>
+                <td>Glass Bottle with perfume:</td>
+                <td>£11.50</td>
+              </tr>
+              <tr>
+                <td>100ml</td>
+                <td>Glass Bottle with perfume:</td>
+                <td>£16.50</td>
+              </tr>
+              <tr>
+                <td>80ml</td>
+                <td>Vintage Glass Bottle with perfume:</td>
+                <td>£18.90</td>
+              </tr>
+              <tr>
+                <td>100ml</td>
+                <td>Vintage Glass Bottle with perfume:</td>
+                <td>£22.50</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr class="hr__1" />
+
+          <table class="table pricelist ref">
+            <caption>
+              Perfumes Refills
+            </caption>
+            <tbody>
+              <tr>
+                <td>10ml</td>
+                <td>perfume:</td>
+                <td>£3.00</td>
+              </tr>
+              <tr>
+                <td>11ml</td>
+                <td>perfume:</td>
+                <td>£3.50</td>
+              </tr>
+              <tr>
+                <td>30ml</td>
+                <td>perfume:</td>
+                <td>£5.50</td>
+              </tr>
+              <tr>
+                <td>50ml</td>
+                <td>perfume:</td>
+                <td>£7.99</td>
+              </tr>
+              <tr>
+                <td>80ml</td>
+                <td>perfume:</td>
+                <td>£10.90</td>
+              </tr>
+              <tr>
+                <td>100ml</td>
+                <td>perfume:</td>
+                <td>£12.50</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr class="hr__2" />
+
+          <table class="table pricelist gift-packaging">
+            <caption>
+              Gitf Packaging
+            </caption>
+            <tbody>
+              <tr>
+                <td>Gift bag sparkly silver:</td>
+                <td>£2.00</td>
+              </tr>
+              <tr>
+                <td>Gift box small:</td>
+                <td>£3.50</td>
+              </tr>
+              <tr>
+                <td>Gift box big:</td>
+                <td>£4.50</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr style="display: none" class="hr__3" />
+
+          <table style="display: initial" class="table pricelist discount">
+            <caption>
+              Spend more Save more
+            </caption>
+            <tbody>
+              <tr>
+                <td>When you spend over £33:</td>
+                <td>free 11ml perfume/aftershave</td>
+              </tr>
+              <tr>
+                <td>When you spend over £48:</td>
+                <td>free 30ml perfume/aftershave</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="block gallery light">
+        <a class="anchor" id="an6"></a
+        ><!-- menu anchor -->
+        <div class="frame">
+          <h2 class="section-title dark">gallery</h2>
+          <div id="carousel">
+            <div id="main-pic-cont">
+              <i id="left-arrow" class="fas fa-arrow-alt-circle-left"></i>
+              <i id="right-arrow" class="fas fa-arrow-alt-circle-right"></i>
+              <i id="expand" class="fas fa-expand"></i>
+              <i id="compress" class="fas fa-compress"></i>
+              <img src="" alt="" />
+            </div>
+            <div id="strip-cont">
+              <div id="strip"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block order dark">
+        <a class="anchor" id="an7"></a
+        ><!-- menu anchor -->
+        <h2 class="section-title light">order</h2>
+        <div class="frame">
+          <p class="paragraph msg">You can order on the number below:</p>
+          <p class="paragraph phone">
+            <a href="tel:+447738173361">07738173361</a>
+            <br /><span>(Aberdeen)</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="block contact dark">
+        <a class="anchor" id="an8"></a
+        ><!-- menu anchor -->
+        <div class="frame">
+          <h2 class="section-title light">contact</h2>
+          <form id="contactform" class="form" action="contactform.php" method="post">
+            <input
+              class="input"
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              minlength="3"
+              maxlength="30"
+            />
+            <input
+              class="input"
+              type="email"
+              name="mail"
+              placeholder="Your email address"
+              required
+              minlength="7"
+              maxlength="30"
+            />
+            <input
+              class="input"
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              required
+              minlength="3"
+              maxlength="15"
+            />
+            <textarea
+              class="input"
+              name="message"
+              placeholder="Your Message"
+              required
+              minlength="10"
+              maxlength="300"
+            ></textarea>
+            <!-- CAPTCHA -->
+            <div class="captcha-block" id="captcha-block">
+              <label
+                id="captcha-block__question"
+                class="captcha-block__question paragraph light"
+                for="captcha-block__answer"
+              ></label>
+              <input name="answer" type="number" class="captcha-block__answer input" id="captcha-block__answer" />
+            </div>
+            <!-- end of CAPTCHA -->
+            <button id="contactform__btn" class="btn light disabled" type="submit" name="submit">Send email</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <i class="fas fa-map-marker-alt"></i>
+      <a
+        href="https://www.google.hu/maps/place/564+George+St,+Aberdeen+AB25+3XU/@57.1558379,-2.1099416,17z/data=!3m1!4b1!4m5!3m4!1s0x48840e19427ebae1:0xd05026c84bfaf0d2!8m2!3d57.155835!4d-2.1077529"
+        target="_blank"
+        >564 George St., Aberdeen</a
+      >
+      <i class="fab fa-facebook"></i>
+      <a href="https://www.facebook.com/Lovely-Scents-Perfume-Bar-in-Aberdeen-238255647056326/" target="_blank"
+        >Lovely Scents Perfume Bar</a
+      >
+      <i class="far fa-copyright"></i>
+      <a href="gear.html" target="_blank">GEAR webdev 2021</a>
+    </footer>
+  </body>
 </html>
