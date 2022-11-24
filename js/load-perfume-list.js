@@ -9,7 +9,7 @@ const unavailablePerfumes = [101, 129, 148, 155, 161, 168, 202, 279];
 // perfume number list of new perfumes:
 const newPerfumes = [109, 126, 144, 287, 294];
 // perfume number list of perfumes on sale:
-const onSalePerfumes = [107, 153, 267, 274];
+const onSalePerfumes = [];
 
 // get elements
 const ladyPerfumesTable = document.getElementById("lady-perfumes");
